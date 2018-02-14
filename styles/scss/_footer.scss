@@ -1,0 +1,114 @@
+
+
+footer {
+  height: 556px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+}
+
+.upper-footer {
+  width: 100%;
+  min-height: 282px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 70px;
+  // padding-left: 8%;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-nav nav ul {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Brandon_bld', sans-serif;
+  font-size: 1.2em;
+}
+
+.footer-nav nav ul li {
+  margin-bottom: 30px;
+}
+
+.footer-nav nav ul li a {
+  padding: 10px;
+}
+
+.footer-nav button {
+  background-color: #E39049;
+  border: none;
+  padding: 15px 20px;
+  font-family: 'Brandon_bld', sans-serif;
+  font-size: 1.2em;
+}
+
+.addresses {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.address {
+  width: 50%;
+}
+
+.address .name {
+  font-family: 'Monthoers', sans-serif;
+  font-size: 1.7em;
+}
+
+.address p {
+  font-family: 'Brandon_med', sans-serif;
+  font-size: 1em;
+
+  display: inline-block;
+}
+
+.austin {
+  padding-bottom: 25px;
+}
+
+.footer-map img {
+  height: 282px;
+  width: 298px;
+}
+
+.lower-footer {
+  width: 100%;
+  margin: 100px auto;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social ul li {
+  padding: 5px 0;
+  padding-right: 60px;
+}
+
+.social img {
+  height: 27px;
+  width: 27px;
+}
+
+.copyright span {
+  font-family: 'Brandon_med', sans-serif;
+  font-size: 1.2em;
+}

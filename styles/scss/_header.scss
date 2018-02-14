@@ -1,0 +1,36 @@
+
+
+header {
+  font-family: 'Brandon_bld', sans-serif;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+
+}
+
+nav {
+  align-self: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.logo-withstar img {
+  width: 103px;
+  height: 98px;
+}
+
+.logo-typeonly img {
+  width: 88px;
+  height: 91px;
+}
+
+nav a {
+  padding: 10px 25px;
+}

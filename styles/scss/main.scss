@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Brandon_bld';
+  src: url('../../fonts/Brandon_bld.otf');
+}
+@font-face {
+  font-family: 'Brandon_med';
+  src: url('../../fonts/Brandon_med.otf');
+}
+@font-face {
+  font-family: 'Monthoers';
+  src: url('../../fonts/Monthoers.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+
+@import 'normalize';
+@import 'reset';
+
+////////////////HOMEPAGE/////////////////////////
+
+@import 'header';
+@import 'hero';
+@import 'locations';
+@import 'about';
+@import 'menus';
+@import 'footer';
+@import 'diagonal';

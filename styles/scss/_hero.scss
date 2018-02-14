@@ -1,0 +1,32 @@
+.hero {
+  width: 80%;
+  margin: 50px auto;
+  margin-top: 80px;
+  position: relative;
+  max-width: 1000px;
+}
+
+.hero-img {
+  height: 340px;
+  width: 743px;
+  background-color: #FFF;
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
+              url('../../img/seemi-samuel-15564.jpg');
+  background-position: 0% 90%;
+  background-size: cover;
+
+}
+
+.hero-headline {
+  font-family: 'Monthoers', sans-serif;
+  height: 237px;
+  width: 315px;
+  border-bottom: 5px solid black;
+  position: absolute;
+  top: 60px;
+  right: 38px;
+}
+
+.hero-headline h1 {
+  font-size: 4.7em;
+}

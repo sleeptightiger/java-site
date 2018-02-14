@@ -1,0 +1,68 @@
+.about {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  height: 265px;
+  display: flex;
+  box-shadow: 0px 9px 16px 0px rgba(0,0,0,0.24);
+  margin: 20px 0;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-img {
+  height: 265px;
+  width: 100%;
+}
+
+.card-text {
+  padding: 50px 40px;
+  max-width: 430px;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.card-text h2 {
+  font-family: 'Monthoers', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-family: 'Brandon_med', sans-serif;
+  font-size: 1em;
+  line-height: 25px;
+}
+
+.card .food {
+  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
+              url('../../img/pexels-photo-803897.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.card .events {
+  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
+              url('../../img/pexels-photo-800406.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.card .coffee {
+  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
+              url('../../img/andrew-spencer-332965.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.card .catering {
+  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
+              url('../../img/nick-hillier-313992.jpg');
+  background-position: center;
+  background-size: cover;
+}
