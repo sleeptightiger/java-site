@@ -3,6 +3,7 @@
   margin: 50px auto;
   max-width: 1000px;
   position: relative;
+  height: 550px;
 }
 
 .location-headline {
@@ -31,9 +32,49 @@
 }
 
 .locations-map {
-  height: 300px;
-  width: 500px;
-  background-color: #333;
+  height: 500px;
+  width: 1000px;
+  background-color: #FFF;
+  background-image: url('../../img/map.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -8;
+  position: absolute;
+  left: -300px;
+  top: 130px;
+}
+
+.pointer {
+  position: absolute;
+  z-index: 100;
+  width: 75px;
+  height: 75px;
+}
+
+.one {
+  top: 60px;
+  left: 300px;
+}
+
+.two {
+  top: 120px;
+  left: 340px;
+}
+
+.threee {
+  top: 280px;
+  left: 300px;
+}
+
+.four {
+  top: 160px;
+  left: 420px;
+}
+
+.five {
+  top: 370px;
+  left: 600px;
 }
 
 .locations-right {
