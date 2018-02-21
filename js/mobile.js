@@ -1,6 +1,5 @@
 const nav = document.querySelector('nav');
 let innerNav = nav.innerHTML;
-console.log(nav);
 
 const ham = `
   <div class="hamburger">
@@ -18,7 +17,6 @@ responsive = width => {
 
 
   } else if(width > 768) {
-    console.log("Not Here!");
     nav.innerHTML = innerNav;
   }
 }

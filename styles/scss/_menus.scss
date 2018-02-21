@@ -99,20 +99,23 @@
 
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 975px) {
   .menus {
     width: 90%;
   }
 
   .menu-gallery {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .menu-link {
     width: 50%;
     max-width: 334px;
     height: 180px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
   }
 
   .menu-link img {
@@ -129,6 +132,16 @@
     max-width: 334px;
     height: 180px;
     padding: 0 120px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu-gallery {
+      justify-content: space-between;
+    }
+
+    .menu-link {
+      margin-bottom: 20px;
+    }
   }
 
 }

@@ -86,12 +86,12 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 975px) {
   .about {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .card {
     height: 410px;
@@ -141,8 +141,10 @@
     margin-top: -170px;
   }
 
+}
 
-
-
-
+@media screen and (max-width: 769px) {
+  .about {
+    justify-content: space-between;
+  }
 }

@@ -170,9 +170,9 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 975px) {
   .upper-footer {
-    width: 688px;
+    width: 90%;
     flex-wrap: wrap;
     padding-top: 40px;
   }
@@ -195,7 +195,21 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
   }
 
   .lower-footer {
-    width: 688px;
+    width: 90%;
     left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .upper-footer {
+    width: 688px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+
+  footer {
+    height: 768px;
+    background-color: #FFF;
+    width: 100%;
   }
 }

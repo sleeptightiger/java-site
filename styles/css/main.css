@@ -908,12 +908,12 @@ nav a {
 @media screen and (max-width: 1024px) {
   .about {
     width: 90%; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 975px) {
   .about {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
 
   .card {
     height: 410px;
@@ -951,6 +951,9 @@ nav a {
 
   .card #events {
     margin-top: -170px; } }
+@media screen and (max-width: 769px) {
+  .about {
+    justify-content: space-between; } }
 .menus {
   width: 100%;
   margin: 120px auto;
@@ -1032,18 +1035,19 @@ nav a {
     max-width: 207px;
     height: 207px;
     padding: 0 60px; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 975px) {
   .menus {
     width: 90%; }
 
   .menu-gallery {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-around; }
 
   .menu-link {
     width: 50%;
     max-width: 334px;
     height: 180px;
-    margin-bottom: 20px; }
+    margin-bottom: 45px; }
 
   .menu-link img {
     width: 100%;
@@ -1057,6 +1061,12 @@ nav a {
     max-width: 334px;
     height: 180px;
     padding: 0 120px; } }
+@media screen and (max-width: 975px) and (max-width: 768px) {
+  .menu-gallery {
+    justify-content: space-between; }
+
+  .menu-link {
+    margin-bottom: 20px; } }
 footer {
   height: 556px;
   width: 100%;
@@ -1190,9 +1200,9 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 
   .addresses {
     margin-left: 0; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 975px) {
   .upper-footer {
-    width: 688px;
+    width: 90%;
     flex-wrap: wrap;
     padding-top: 40px; }
 
@@ -1210,8 +1220,18 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     width: 100%; }
 
   .lower-footer {
-    width: 688px;
+    width: 90%;
     left: 40px; } }
+@media screen and (max-width: 768px) {
+  .upper-footer {
+    width: 688px;
+    flex-wrap: wrap;
+    padding-top: 40px; }
+
+  footer {
+    height: 768px;
+    background-color: #FFF;
+    width: 100%; } }
 .diagonal-bg {
   z-index: -10;
   position: absolute;
