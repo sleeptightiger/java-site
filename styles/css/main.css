@@ -485,9 +485,75 @@ nav ul {
   flex-direction: row; }
 
 nav ul li a:hover {
-  transition: all ease-in-out .3s; }
+  transition: all ease-in-out .1s; }
 
 nav ul li a:hover {
+  color: #bbb; }
+
+.tab {
+  position: relative;
+  display: inline-block; }
+
+.tri {
+  width: 12px;
+  height: 0;
+  border-bottom: 12px solid #E39040;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin: 0 auto;
+  opacity: 0; }
+
+.dropdown .dropdown-content {
+  opacity: 0;
+  position: absolute;
+  background-color: #FFF;
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  transition: all ease-in-out .3s;
+  border-top: 5px solid #E39040; }
+
+.drop-location {
+  margin-left: -25px; }
+
+.drop-menu {
+  margin-left: -40px; }
+
+.drop-catering {
+  margin-left: -30px; }
+
+.drop-store {
+  margin-left: -45px; }
+
+.dropdown-content a {
+  color: black;
+  padding: 16px 16px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px; }
+
+.new {
+  color: #FFF;
+  background-color: #E39040;
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 3px 5px;
+  margin: 0 5px;
+  display: inline-block; }
+
+.smile {
+  font-size: 25px;
+  margin: 0 5px; }
+
+.dropdown-content a:hover {
+  color: #E39040; }
+
+.dropdown:hover .dropdown-content, .dropdown:hover .tri {
+  z-index: 1;
+  opacity: 1; }
+
+.dropdown:hover .locations-tab a {
   color: #bbb; }
 
 .logo-withstar img {
