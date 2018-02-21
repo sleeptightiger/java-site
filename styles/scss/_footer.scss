@@ -10,63 +10,85 @@ footer {
 }
 
 .upper-footer {
-  width: 100%;
+  width: 1000px;
   min-height: 282px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 70px;
-  // padding-left: 8%;
+  padding-top: 97px;
 }
 
 .footer-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 184px;
+  min-width: 163px;
+  text-align: left;
+  align-self: flex-start;
 }
 
 .footer-nav nav ul {
   display: flex;
   flex-direction: column;
+
   font-family: 'Brandon_bld', sans-serif;
-  font-size: 1.2em;
+
 }
 
 .footer-nav nav ul li {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .footer-nav nav ul li a {
-  padding: 10px;
+  padding: 10px 0px;
+  font-size: 14px;
+  transition: all ease-in-out 0.3s;
+}
+
+.footer-nav nav ul li a:hover {
+  color: #E39049;
 }
 
 .footer-nav button {
+  margin-top: 24px;
   background-color: #E39049;
   border: none;
-  padding: 15px 20px;
   font-family: 'Brandon_bld', sans-serif;
-  font-size: 1.2em;
+  font-size: 16px;
+  width: 163px;
+  height: 50px;
+  padding: 14px 33px;
+  transition: all ease-in-out 0.3s;
+}
+
+.footer-nav button:hover {
+  color: #FFF;
+  background-color: #000;
 }
 
 .addresses {
   display: flex;
   flex-wrap: wrap;
-  width: 45%;
+  margin-left: 150px;
+  width: 358px;
 }
 
 .address {
-  width: 50%;
+  height: 116px;
+  width: 162px;
+}
+
+.address-right {
+  margin-left: 25px;
 }
 
 .address .name {
   font-family: 'Monthoers', sans-serif;
-  font-size: 1.7em;
+  font-size: 24px;
 }
 
 .address p {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 1em;
+  font-size: 14px;
 
   display: inline-block;
 }
@@ -75,15 +97,27 @@ footer {
   padding-bottom: 25px;
 }
 
-.footer-map img {
+.footer-map {
   height: 282px;
   width: 298px;
+  background: url('../../img/map.png');
+  opacity: .7;
+  background-position: center;
+  background-size: cover;
+  transition: all ease-in-out .3s;
 }
+
+.footer-map:hover {
+  opacity: 1;
+}
+
+
+
 
 .lower-footer {
   width: 100%;
   margin: 100px auto;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -103,12 +137,15 @@ footer {
   padding-right: 60px;
 }
 
-.social img {
-  height: 27px;
-  width: 27px;
+span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
+  transition: all ease-in-out .3s;
+}
+
+span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
+  fill: #E39049;
 }
 
 .copyright span {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 1.2em;
+  font-size: 18px;
 }

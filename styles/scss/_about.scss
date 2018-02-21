@@ -7,8 +7,8 @@
 .card {
   height: 265px;
   display: flex;
-  box-shadow: 0px 9px 16px 0px rgba(0,0,0,0.24);
-  margin: 20px 0;
+  box-shadow: 0px 9px 16px 0px rgba(0,0,0,0.15);
+  margin: 22.6px 0;
 }
 
 .reverse {
@@ -18,10 +18,38 @@
 .card-img {
   height: 265px;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
+.overlay {
+  height: 265px;
+  background: rgba(255, 255, 255, .3);
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.overlay.hover {
+  height: 265px;
+  background: rgba(255, 255, 255, .01);
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.card-img img {
+  width: 100%;
+  margin-top: -350px;
+
+}
+
+
+
 .card-text {
-  padding: 50px 40px;
+  padding: 39px 40px;
   max-width: 450px;
   width: 100%;
   background-color: #FFF;
@@ -29,40 +57,15 @@
 
 .card-text h2 {
   font-family: 'Monthoers', sans-serif;
-  font-size: 2.5em;
+  font-size: 38px;
   margin-bottom: 10px;
 }
 
 .card-text p {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 25px;
-}
-
-.card .food {
-  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
-              url('../../img/pexels-photo-803897.jpeg');
-  background-position: center;
-  background-size: cover;
-}
-
-.card .events {
-  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
-              url('../../img/pexels-photo-800406.jpeg');
-  background-position: center;
-  background-size: cover;
-}
-
-.card .coffee {
-  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
-              url('../../img/andrew-spencer-332965.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-.card .catering {
-  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
-              url('../../img/nick-hillier-313992.jpg');
-  background-position: center;
-  background-size: cover;
+  a {
+    color: #E39049;
+  }
 }

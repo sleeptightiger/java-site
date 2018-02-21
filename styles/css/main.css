@@ -472,7 +472,7 @@ header {
   font-family: 'Brandon_bld', sans-serif;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 25.8px;
   display: flex;
   justify-content: space-between;
   max-width: 1000px; }
@@ -484,6 +484,12 @@ nav ul {
   display: flex;
   flex-direction: row; }
 
+nav ul li a:hover {
+  transition: all ease-in-out .3s; }
+
+nav ul li a:hover {
+  color: #bbb; }
+
 .logo-withstar img {
   width: 103px;
   height: 98px; }
@@ -493,7 +499,8 @@ nav ul {
   height: 91px; }
 
 nav a {
-  padding: 10px 25px; }
+  padding: 10px 26px;
+  font-size: 16px; }
 
 .hero {
   width: 80%;
@@ -520,11 +527,11 @@ nav a {
   right: 38px; }
 
 .hero-headline h1 {
-  font-size: 4.7em; }
+  font-size: 73px; }
 
 .locations {
   width: 80%;
-  margin: 50px auto;
+  margin: 43px auto;
   max-width: 1000px;
   position: relative;
   height: 550px; }
@@ -540,7 +547,7 @@ nav a {
   margin-top: 15px; }
 
 .location-subline {
-  margin-top: 30px;
+  margin-top: 26px;
   height: 96px;
   width: 415px;
   line-height: 25px; }
@@ -672,51 +679,55 @@ nav a {
 .card {
   height: 265px;
   display: flex;
-  box-shadow: 0px 9px 16px 0px rgba(0, 0, 0, 0.24);
-  margin: 20px 0; }
+  box-shadow: 0px 9px 16px 0px rgba(0, 0, 0, 0.15);
+  margin: 22.6px 0; }
 
 .reverse {
   flex-direction: row-reverse; }
 
 .card-img {
   height: 265px;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.overlay {
+  height: 265px;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out 0.3s; }
+
+.overlay.hover {
+  height: 265px;
+  background: rgba(255, 255, 255, 0.01);
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out 0.3s; }
+
+.card-img img {
+  width: 100%;
+  margin-top: -350px; }
 
 .card-text {
-  padding: 50px 40px;
+  padding: 39px 40px;
   max-width: 450px;
   width: 100%;
   background-color: #FFF; }
 
 .card-text h2 {
   font-family: 'Monthoers', sans-serif;
-  font-size: 2.5em;
+  font-size: 38px;
   margin-bottom: 10px; }
 
 .card-text p {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 25px; }
-
-.card .food {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../../img/pexels-photo-803897.jpeg");
-  background-position: center;
-  background-size: cover; }
-
-.card .events {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../../img/pexels-photo-800406.jpeg");
-  background-position: center;
-  background-size: cover; }
-
-.card .coffee {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../../img/andrew-spencer-332965.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.card .catering {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../../img/nick-hillier-313992.jpg");
-  background-position: center;
-  background-size: cover; }
+  .card-text p a {
+    color: #E39049; }
 
 .menus {
   width: 100%;
@@ -726,7 +737,7 @@ nav a {
 
 .menus h1 {
   font-family: 'Monthoers', sans-serif;
-  font-size: 3.5em; }
+  font-size: 50px; }
 
 .menus h1 span {
   background-color: #F2F2F2;
@@ -734,7 +745,7 @@ nav a {
 
 .menus p {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 1.2em;
+  font-size: 18px;
   border-top: 5px solid black;
   padding-top: 60px;
   width: 50%;
@@ -743,7 +754,7 @@ nav a {
 
 .menu-gallery {
   width: 100%;
-  margin: 60px auto;
+  margin: 48px auto;
   display: flex;
   justify-content: space-between; }
 
@@ -751,38 +762,41 @@ nav a {
   width: 30%;
   max-width: 228px;
   height: 228px;
-  background-color: #333;
-  padding: 0 70px;
-  display: flex; }
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  transition: all ease-in-out .3s; }
+
+.menu-link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 228px;
+  width: 290px;
+  z-index: -1; }
 
 .menu-link a {
-  align-self: center; }
+  max-width: 228px;
+  height: 228px;
+  display: flex;
+  padding: 0 70px;
+  cursor: pointer;
+  z-index: 1; }
 
 .menu-link h3 {
   color: #fff;
   font-family: 'Monthoers', sans-serif;
-  font-size: 2em;
-  letter-spacing: 3px; }
+  font-size: 33px;
+  letter-spacing: 3px;
+  align-self: center;
+  z-index: 1; }
 
-.barton {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/barton.png");
-  background-position: center;
-  background-size: cover; }
+.cityhall img, .airport img {
+  margin-left: -40px; }
 
-.cityhall {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/cityhall.png");
-  background-position: center;
-  background-size: cover; }
-
-.three {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/three.png");
-  background-position: center;
-  background-size: cover; }
-
-.airport {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/airport.png");
-  background-position: center;
-  background-size: cover; }
+.barton:hover, .cityhall:hover, .three:hover, .airport:hover {
+  background: rgba(227, 144, 73, 0.7); }
 
 footer {
   height: 556px;
@@ -793,66 +807,92 @@ footer {
   bottom: 0; }
 
 .upper-footer {
-  width: 100%;
+  width: 1000px;
   min-height: 282px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 70px; }
+  padding-top: 97px; }
 
 .footer-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  height: 184px;
+  min-width: 163px;
+  text-align: left;
+  align-self: flex-start; }
 
 .footer-nav nav ul {
   display: flex;
   flex-direction: column;
-  font-family: 'Brandon_bld', sans-serif;
-  font-size: 1.2em; }
+  font-family: 'Brandon_bld', sans-serif; }
 
 .footer-nav nav ul li {
-  margin-bottom: 30px; }
+  margin-bottom: 16px; }
 
 .footer-nav nav ul li a {
-  padding: 10px; }
+  padding: 10px 0px;
+  font-size: 14px;
+  transition: all ease-in-out 0.3s; }
+
+.footer-nav nav ul li a:hover {
+  color: #E39049; }
 
 .footer-nav button {
+  margin-top: 24px;
   background-color: #E39049;
   border: none;
-  padding: 15px 20px;
   font-family: 'Brandon_bld', sans-serif;
-  font-size: 1.2em; }
+  font-size: 16px;
+  width: 163px;
+  height: 50px;
+  padding: 14px 33px;
+  transition: all ease-in-out 0.3s; }
+
+.footer-nav button:hover {
+  color: #FFF;
+  background-color: #000; }
 
 .addresses {
   display: flex;
   flex-wrap: wrap;
-  width: 45%; }
+  margin-left: 150px;
+  width: 358px; }
 
 .address {
-  width: 50%; }
+  height: 116px;
+  width: 162px; }
+
+.address-right {
+  margin-left: 25px; }
 
 .address .name {
   font-family: 'Monthoers', sans-serif;
-  font-size: 1.7em; }
+  font-size: 24px; }
 
 .address p {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   display: inline-block; }
 
 .austin {
   padding-bottom: 25px; }
 
-.footer-map img {
+.footer-map {
   height: 282px;
-  width: 298px; }
+  width: 298px;
+  background: url("../../img/map.png");
+  opacity: .7;
+  background-position: center;
+  background-size: cover;
+  transition: all ease-in-out .3s; }
+
+.footer-map:hover {
+  opacity: 1; }
 
 .lower-footer {
   width: 100%;
   margin: 100px auto;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -869,13 +909,15 @@ footer {
   padding: 5px 0;
   padding-right: 60px; }
 
-.social img {
-  height: 27px;
-  width: 27px; }
+span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
+  transition: all ease-in-out .3s; }
+
+span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
+  fill: #E39049; }
 
 .copyright span {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 1.2em; }
+  font-size: 18px; }
 
 .diagonal-bg {
   z-index: -10;

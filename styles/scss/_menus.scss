@@ -7,7 +7,7 @@
 
 .menus h1 {
   font-family: 'Monthoers', sans-serif;
-  font-size: 3.5em;
+  font-size: 50px;
 }
 
 .menus h1 span {
@@ -17,7 +17,7 @@
 
 .menus p {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 1.2em;
+  font-size: 18px;
   border-top: 5px solid black;
   padding-top: 60px;
   width: 50%;
@@ -27,7 +27,7 @@
 
 .menu-gallery {
   width: 100%;
-  margin: 60px auto;
+  margin: 48px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -36,46 +36,47 @@
   width: 30%;
   max-width: 228px;
   height: 228px;
-  background-color: #333;
-  padding: 0 70px;
+  background-color: rgba(0, 0, 0, .3);
+  position: relative;
   display: flex;
+  overflow: hidden;
+  transition: all ease-in-out .3s;
+}
+
+.menu-link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 228px;
+  width: 290px;
+  z-index: -1;
 }
 
 .menu-link a {
-  align-self: center;
+  max-width: 228px;
+  height: 228px;
+  display: flex;
+  padding: 0 70px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .menu-link h3 {
   color: #fff;
   font-family: 'Monthoers', sans-serif;
-  font-size: 2em;
+  font-size: 33px;
   letter-spacing: 3px;
+  align-self: center;
+  z-index: 1;
 }
 
-.barton {
-  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
-              url('../../img/barton.png');
-  background-position: center;
-  background-size: cover;
+.cityhall img, .airport img {
+  margin-left: -40px;
 }
 
-.cityhall {
-  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
-              url('../../img/cityhall.png');
-  background-position: center;
-  background-size: cover;
-}
 
-.three {
-  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
-              url('../../img/three.png');
-  background-position: center;
-  background-size: cover;
-}
 
-.airport {
-  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
-              url('../../img/airport.png');
-  background-position: center;
-  background-size: cover;
+.barton:hover, .cityhall:hover, .three:hover, .airport:hover {
+  background: rgba(227, 144, 73, .7);
+
 }

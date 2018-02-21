@@ -4,7 +4,7 @@ header {
   font-family: 'Brandon_bld', sans-serif;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 25.8px;
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
@@ -20,6 +20,15 @@ nav ul {
   flex-direction: row;
 }
 
+nav ul li a:hover {
+  transition: all ease-in-out .3s;
+}
+
+nav ul li a:hover {
+  //opacity: 20%;
+  color: #bbb;
+}
+
 
 .logo-withstar img {
   width: 103px;
@@ -32,5 +41,6 @@ nav ul {
 }
 
 nav a {
-  padding: 10px 25px;
+  padding: 10px 26px;
+  font-size: 16px;
 }
