@@ -23,11 +23,25 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   for(let i = 0; i < pointers.length; i++) {
-    pointers[i].className = pointers[i].className.replace(" selected", "");
-    pointers[i].setAttribute("src", "img/blackpointer.svg");
+    const svg = pointers[i].querySelector('svg');
+    const path = svg.querySelector('path');
+    if(i == pointers.length - 1) {
+      const poly = svg.querySelector('polygon');
+      poly.setAttribute('fill', '#000');
+    } else {
+      path.setAttribute('fill', '#000');
+    }
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  pointers[slideIndex-1].className += " selected";
-  pointers[slideIndex-1].setAttribute("src", "img/orangepointer.svg");
+  const svg = pointers[slideIndex-1].querySelector('svg');
+  const path = svg.querySelector('path');
+  if(slideIndex == pointers.length) {
+    const poly = svg.querySelector('polygon');
+    poly.setAttribute('fill', '#E39049');
+  } else {
+    path.setAttribute('fill', '#E39049');
+  }
+
+
 }

@@ -801,6 +801,26 @@ nav a {
     height: 322.5px;
     width: 399.72px; }
 
+  .one {
+    top: 138px;
+    left: 190px; }
+
+  .two {
+    top: 135px;
+    left: 210px; }
+
+  .threee {
+    top: 210px;
+    left: 285px; }
+
+  .four {
+    top: 55px;
+    left: 140px; }
+
+  .five {
+    top: 160px;
+    left: 10px; }
+
   .mySlides h3 {
     font-size: 28px; }
 
@@ -1120,7 +1140,7 @@ footer {
 .footer-map {
   height: 282px;
   width: 298px;
-  background: url("../../img/map.png");
+  background: url("../../img/footer-map.JPG");
   opacity: .7;
   background-position: center;
   background-size: cover;
