@@ -40,12 +40,18 @@
   transition: all ease-in-out 0.3s;
 }
 
-.card-img img {
+.card .card-img img {
   width: 100%;
-  margin-top: -350px;
-
+  margin-top: -450px;
 }
 
+.reverse .card-img img {
+  margin-top: -400px;
+}
+
+#events {
+  margin-top: -320px;
+}
 
 
 .card-text {
@@ -68,4 +74,11 @@
   a {
     color: #E39049;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    width: 90%;
+  }
+
 }

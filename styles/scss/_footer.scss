@@ -84,6 +84,7 @@ footer {
 .address .name {
   font-family: 'Monthoers', sans-serif;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .address p {
@@ -148,4 +149,23 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 .copyright span {
   font-family: 'Brandon_med', sans-serif;
   font-size: 18px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    width: 90%;
+  }
+
+  .upper-footer {
+    width: 905px;
+  }
+
+  .addresses {
+    margin-left: 0;
+  }
+
+
+
 }

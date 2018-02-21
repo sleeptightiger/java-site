@@ -53,7 +53,7 @@ nav ul li a:hover {
   min-width: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: -1;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out .1s;
   border-top: 5px solid #E39040;
 
 }
@@ -62,7 +62,7 @@ nav ul li a:hover {
   margin-left: -25px;
 }
 
-.drop-menu {
+.drop-menu, .drop-about {
   margin-left: -40px;
 }
 
@@ -73,6 +73,7 @@ nav ul li a:hover {
 .drop-store {
   margin-left: -45px;
 }
+
 
 
 .dropdown-content a {
@@ -97,6 +98,11 @@ nav ul li a:hover {
 .smile {
   font-size: 25px;
   margin: 0 5px;
+}
+
+.dropdown-content a {
+  color: #000;
+  transition: all ease-in-out .3s;
 }
 
 .dropdown-content a:hover {
@@ -126,4 +132,11 @@ nav ul li a:hover {
 nav a {
   padding: 10px 26px;
   font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    max-width: 905px;
+  }
+
 }

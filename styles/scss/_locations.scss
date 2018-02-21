@@ -3,7 +3,7 @@
   margin: 43px auto;
   max-width: 1000px;
   position: relative;
-  height: 550px;
+  height: 680px;
 }
 
 .location-headline {
@@ -20,7 +20,7 @@
 
 .location-subline {
   margin-top: 26px;
-  height: 96px;
+  height: 70px;
   width: 415px;
   line-height: 25px;
 }
@@ -32,17 +32,17 @@
 }
 
 .locations-map {
-  height: 500px;
-  width: 1000px;
-  background-color: #FFF;
-  background-image: url('../../img/map.svg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -8;
-  position: absolute;
-  left: -300px;
-  top: 130px;
+  height: 462px;
+  width: 572px;
+  background-color: #333;
+  // background-image: url('../../img/map.svg');
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // z-index: -8;
+  // position: absolute;
+  // left: -300px;
+  // top: 130px;
 }
 
 .pointer {
@@ -79,8 +79,8 @@
 
 .locations-right {
   position: absolute;
-  top: 120px;
-  right: 130px;
+  top: 180px;
+  right: 100px;
 }
 
 .slideshow-container {
@@ -99,7 +99,7 @@
 
 .mySlides h3 {
   font-family: 'Monthoers', sans-serif;
-  font-size: 2.5em;
+  font-size: 38px;
   margin: 30px auto;
   text-align: center;
 }
@@ -166,4 +166,17 @@
 .icon svg {
   margin: 15px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .locations {
+    width: 90%;
+    height: 640px;
+  }
+
+  .locations-right {
+    top: 170px;
+    right: 30px;
+  }
+
 }

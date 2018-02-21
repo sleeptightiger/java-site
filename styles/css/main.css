@@ -510,13 +510,13 @@ nav ul li a:hover {
   min-width: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: -1;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out .1s;
   border-top: 5px solid #E39040; }
 
 .drop-location {
   margin-left: -25px; }
 
-.drop-menu {
+.drop-menu, .drop-about {
   margin-left: -40px; }
 
 .drop-catering {
@@ -546,6 +546,10 @@ nav ul li a:hover {
   font-size: 25px;
   margin: 0 5px; }
 
+.dropdown-content a {
+  color: #000;
+  transition: all ease-in-out .3s; }
+
 .dropdown-content a:hover {
   color: #E39040; }
 
@@ -568,6 +572,9 @@ nav a {
   padding: 10px 26px;
   font-size: 16px; }
 
+@media screen and (max-width: 1024px) {
+  header {
+    max-width: 905px; } }
 .hero {
   width: 80%;
   margin: 50px auto;
@@ -595,12 +602,18 @@ nav a {
 .hero-headline h1 {
   font-size: 73px; }
 
+@media screen and (max-width: 1024px) {
+  .hero {
+    width: 90%; }
+
+  .hero-headline {
+    right: -10px; } }
 .locations {
   width: 80%;
   margin: 43px auto;
   max-width: 1000px;
   position: relative;
-  height: 550px; }
+  height: 680px; }
 
 .location-headline {
   border: 5px solid #000;
@@ -614,7 +627,7 @@ nav a {
 
 .location-subline {
   margin-top: 26px;
-  height: 96px;
+  height: 70px;
   width: 415px;
   line-height: 25px; }
 
@@ -624,17 +637,9 @@ nav a {
   font-family: 'Brandon_med', sans-serif; }
 
 .locations-map {
-  height: 500px;
-  width: 1000px;
-  background-color: #FFF;
-  background-image: url("../../img/map.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -8;
-  position: absolute;
-  left: -300px;
-  top: 130px; }
+  height: 462px;
+  width: 572px;
+  background-color: #333; }
 
 .pointer {
   position: absolute;
@@ -664,8 +669,8 @@ nav a {
 
 .locations-right {
   position: absolute;
-  top: 120px;
-  right: 130px; }
+  top: 180px;
+  right: 100px; }
 
 .slideshow-container {
   width: 280px;
@@ -680,7 +685,7 @@ nav a {
 
 .mySlides h3 {
   font-family: 'Monthoers', sans-serif;
-  font-size: 2.5em;
+  font-size: 38px;
   margin: 30px auto;
   text-align: center; }
 
@@ -737,6 +742,14 @@ nav a {
   margin: 15px;
   margin-top: 5px; }
 
+@media screen and (max-width: 1024px) {
+  .locations {
+    width: 90%;
+    height: 640px; }
+
+  .locations-right {
+    top: 170px;
+    right: 30px; } }
 .about {
   width: 80%;
   max-width: 1000px;
@@ -773,9 +786,15 @@ nav a {
   left: 0;
   transition: all ease-in-out 0.3s; }
 
-.card-img img {
+.card .card-img img {
   width: 100%;
-  margin-top: -350px; }
+  margin-top: -450px; }
+
+.reverse .card-img img {
+  margin-top: -400px; }
+
+#events {
+  margin-top: -320px; }
 
 .card-text {
   padding: 39px 40px;
@@ -795,6 +814,9 @@ nav a {
   .card-text p a {
     color: #E39049; }
 
+@media screen and (max-width: 1024px) {
+  .about {
+    width: 90%; } }
 .menus {
   width: 100%;
   margin: 120px auto;
@@ -864,6 +886,18 @@ nav a {
 .barton:hover, .cityhall:hover, .three:hover, .airport:hover {
   background: rgba(227, 144, 73, 0.7); }
 
+@media screen and (max-width: 1024px) {
+  .menus {
+    max-width: 905px; }
+
+  .menu-link {
+    max-width: 207px;
+    height: 207px; }
+
+  .menu-link a {
+    max-width: 207px;
+    height: 207px;
+    padding: 0 60px; } }
 footer {
   height: 556px;
   width: 100%;
@@ -933,7 +967,8 @@ footer {
 
 .address .name {
   font-family: 'Monthoers', sans-serif;
-  font-size: 24px; }
+  font-size: 24px;
+  margin-bottom: 10px; }
 
 .address p {
   font-family: 'Brandon_med', sans-serif;
@@ -983,8 +1018,19 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 
 .copyright span {
   font-family: 'Brandon_med', sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-top: 10px;
+  display: inline-block; }
 
+@media screen and (max-width: 1024px) {
+  footer {
+    width: 90%; }
+
+  .upper-footer {
+    width: 905px; }
+
+  .addresses {
+    margin-left: 0; } }
 .diagonal-bg {
   z-index: -10;
   position: absolute;

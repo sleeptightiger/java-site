@@ -80,3 +80,21 @@
   background: rgba(227, 144, 73, .7);
 
 }
+
+@media screen and (max-width: 1024px) {
+  .menus {
+    max-width: 905px;
+  }
+
+  .menu-link {
+    max-width: 207px;
+    height: 207px;
+  }
+
+  .menu-link a {
+    max-width: 207px;
+    height: 207px;
+    padding: 0 60px;
+  }
+
+}
