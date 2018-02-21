@@ -13,7 +13,7 @@
 }
 
 .location-headline h2 {
-  font-size: 3.3em;
+  font-size: 50px;
   font-family: 'Monthoers', sans-serif;
   margin-top: 15px;
 }
@@ -80,7 +80,7 @@
 .locations-right {
   position: absolute;
   top: 180px;
-  right: 100px;
+  right: 0;
 }
 
 .slideshow-container {
@@ -101,7 +101,7 @@
   font-family: 'Monthoers', sans-serif;
   font-size: 38px;
   margin: 30px auto;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -176,7 +176,40 @@
 
   .locations-right {
     top: 170px;
-    right: 30px;
+    right: 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .locations-map {
+    height: 322.5px;
+    width: 399.72px;
+  }
+
+  .mySlides h3 {
+    font-size: 28px;
+  }
+
+  .slideshow-container {
+    width: 230px;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .locations-right {
+    top: 130px;
+    right: 0;
+  }
+
+  .locations {
+    height: 580px;
   }
 
 }

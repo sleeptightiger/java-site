@@ -43,3 +43,18 @@
   }
 
 }
+
+@media screen and (max-width: 768px) {
+  .hero-img {
+    height: 300px;
+    width: 688px;
+    background-position: 0% 70%;
+  }
+
+  .hero-headline {
+    top: 40px;
+    right: 45px;
+
+  }
+
+}

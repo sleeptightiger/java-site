@@ -575,6 +575,40 @@ nav a {
 @media screen and (max-width: 1024px) {
   header {
     max-width: 905px; } }
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 688px; } }
+.hamburger {
+  width: 29px;
+  height: 20px;
+  position: relative;
+  cursor: pointer; }
+
+.line {
+  position: absolute;
+  height: 3px;
+  width: 29px;
+  background: #000;
+  border-radius: 3px;
+  transition: all cubic-bezier(0.25, 0.1, 0.3, 1.65) 0.3s; }
+
+.line1 {
+  top: 0%; }
+
+.line2 {
+  top: 50%; }
+
+.line3 {
+  top: 100%; }
+
+.close .line1 {
+  transform: rotate(135deg);
+  top: 50%; }
+
+.close .line2, .close .line3 {
+  transform: rotate(225deg);
+  top: 50%; }
+
 .hero {
   width: 80%;
   margin: 50px auto;
@@ -608,6 +642,15 @@ nav a {
 
   .hero-headline {
     right: -10px; } }
+@media screen and (max-width: 768px) {
+  .hero-img {
+    height: 300px;
+    width: 688px;
+    background-position: 0% 70%; }
+
+  .hero-headline {
+    top: 40px;
+    right: 45px; } }
 .locations {
   width: 80%;
   margin: 43px auto;
@@ -621,7 +664,7 @@ nav a {
   display: inline-block; }
 
 .location-headline h2 {
-  font-size: 3.3em;
+  font-size: 50px;
   font-family: 'Monthoers', sans-serif;
   margin-top: 15px; }
 
@@ -670,7 +713,7 @@ nav a {
 .locations-right {
   position: absolute;
   top: 180px;
-  right: 100px; }
+  right: 0; }
 
 .slideshow-container {
   width: 280px;
@@ -687,7 +730,7 @@ nav a {
   font-family: 'Monthoers', sans-serif;
   font-size: 38px;
   margin: 30px auto;
-  text-align: center; }
+  text-align: left; }
 
 .prev, .next {
   cursor: pointer;
@@ -749,7 +792,30 @@ nav a {
 
   .locations-right {
     top: 170px;
-    right: 30px; } }
+    right: 0; } }
+@media screen and (max-width: 768px) {
+  .locations-map {
+    height: 322.5px;
+    width: 399.72px; }
+
+  .mySlides h3 {
+    font-size: 28px; }
+
+  .slideshow-container {
+    width: 230px; }
+
+  .next {
+    right: 0; }
+
+  .prev {
+    left: 0; }
+
+  .locations-right {
+    top: 130px;
+    right: 0; }
+
+  .locations {
+    height: 580px; } }
 .about {
   width: 80%;
   max-width: 1000px;
@@ -787,7 +853,9 @@ nav a {
   transition: all ease-in-out 0.3s; }
 
 .card .card-img img {
-  width: 100%;
+  width: 100%; }
+
+.card .food img {
   margin-top: -450px; }
 
 .reverse .card-img img {
@@ -817,6 +885,49 @@ nav a {
 @media screen and (max-width: 1024px) {
   .about {
     width: 90%; } }
+@media screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  .card {
+    height: 410px;
+    width: 330px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px 0px; }
+
+  .card-img {
+    height: 140px; }
+
+  .card-text {
+    padding: 30px;
+    max-width: 334px;
+    height: 270px; }
+
+  .card-text h2 {
+    font-size: 28px; }
+
+  .overlay {
+    height: 140px; }
+
+  .overlay.hover {
+    height: 140px; }
+
+  .card .food img {
+    width: 100%;
+    margin-top: -300px; }
+
+  .card .catering img {
+    margin-top: -200px; }
+
+  .card .coffee img {
+    margin-top: -300px; }
+
+  .card #events {
+    margin-top: -170px; } }
 .menus {
   width: 100%;
   margin: 120px auto;
@@ -898,6 +1009,31 @@ nav a {
     max-width: 207px;
     height: 207px;
     padding: 0 60px; } }
+@media screen and (max-width: 768px) {
+  .menus {
+    width: 90%; }
+
+  .menu-gallery {
+    flex-wrap: wrap; }
+
+  .menu-link {
+    width: 50%;
+    max-width: 334px;
+    height: 180px;
+    margin-bottom: 20px; }
+
+  .menu-link img {
+    width: 100%;
+    height: 200px;
+    width: 334px; }
+
+  .cityhall img, .airport img {
+    margin-left: 0px; }
+
+  .menu-link a {
+    max-width: 334px;
+    height: 180px;
+    padding: 0 120px; } }
 footer {
   height: 556px;
   width: 100%;
@@ -1031,6 +1167,28 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 
   .addresses {
     margin-left: 0; } }
+@media screen and (max-width: 768px) {
+  .upper-footer {
+    width: 688px;
+    flex-wrap: wrap;
+    padding-top: 40px; }
+
+  .footer-map {
+    height: 170px;
+    width: 100%;
+    order: -1; }
+
+  .footer-nav, .addresses {
+    padding-top: 60px; }
+
+  footer {
+    height: 768px;
+    background-color: #FFF;
+    width: 100%; }
+
+  .lower-footer {
+    width: 688px;
+    left: 40px; } }
 .diagonal-bg {
   z-index: -10;
   position: absolute;

@@ -169,3 +169,33 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 
 
 }
+
+@media screen and (max-width: 768px) {
+  .upper-footer {
+    width: 688px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+
+  .footer-map {
+    height: 170px;
+    width: 100%;
+    order: -1;
+  }
+
+  .footer-nav, .addresses {
+    padding-top: 60px;
+
+  }
+
+  footer {
+    height: 768px;
+    background-color: #FFF;
+    width: 100%;
+  }
+
+  .lower-footer {
+    width: 688px;
+    left: 40px;
+  }
+}

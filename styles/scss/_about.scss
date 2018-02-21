@@ -42,6 +42,9 @@
 
 .card .card-img img {
   width: 100%;
+}
+
+.card .food img {
   margin-top: -450px;
 }
 
@@ -80,5 +83,66 @@
   .about {
     width: 90%;
   }
+
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    height: 410px;
+    width: 330px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px 0px;
+  }
+
+  .card-img {
+    height: 140px;
+  }
+
+  .card-text {
+    padding: 30px;
+    max-width: 334px;
+    height: 270px;
+  }
+
+  .card-text h2 {
+    font-size: 28px;
+  }
+
+  .overlay {
+    height: 140px;
+  }
+
+  .overlay.hover {
+    height: 140px;
+  }
+
+  .card .food img {
+    width: 100%;
+    margin-top: -300px;
+  }
+
+
+  .card .catering img {
+    margin-top: -200px;
+  }
+
+  .card .coffee img {
+    margin-top: -300px;
+  }
+
+  .card #events {
+    margin-top: -170px;
+  }
+
+
+
+
 
 }
