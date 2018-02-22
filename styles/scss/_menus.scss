@@ -20,63 +20,47 @@
   font-size: 18px;
   border-top: 5px solid black;
   padding-top: 60px;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   margin-top: -37px;
 }
 
 .menu-gallery {
-  width: 100%;
-  margin: 48px auto;
-  display: flex;
-  justify-content: space-between;
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(1fr, 200px);
+  grid-gap: 0 28px;
+
 }
 
 .menu-link {
-  width: 30%;
-  max-width: 228px;
-  height: 228px;
   background-color: rgba(0, 0, 0, .3);
   position: relative;
-  display: flex;
-  overflow: hidden;
-  transition: all ease-in-out .3s;
 }
 
 .menu-link img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 228px;
-  width: 290px;
+  width: 100%;
+  position: relative;
   z-index: -1;
+  display: block;
 }
 
-.menu-link a {
-  max-width: 228px;
-  height: 228px;
-  display: flex;
-  padding: 0 70px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.menu-link h3 {
+.menu-text {
+  position: absolute;
   color: #fff;
   font-family: 'Monthoers', sans-serif;
   font-size: 33px;
-  letter-spacing: 3px;
-  align-self: center;
-  z-index: 1;
+  top: 35%;
+  left: 25%;
+  max-width: 50%;
+  text-align: center;
 }
 
-.cityhall img, .airport img {
-  margin-left: -40px;
-}
-
-
-
-.barton:hover, .cityhall:hover, .three:hover, .airport:hover {
+.menu-link:hover {
   background: rgba(227, 144, 73, .7);
 
 }
@@ -86,62 +70,43 @@
     max-width: 905px;
   }
 
-  .menu-link {
-    max-width: 207px;
-    height: 207px;
-  }
-
-  .menu-link a {
-    max-width: 207px;
-    height: 207px;
-    padding: 0 60px;
+  .menu-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 21px;
   }
 
 }
 
-
-
-@media screen and (max-width: 975px) {
-  .menus {
-    width: 90%;
-  }
-
-  .menu-gallery {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .menu-link {
-    width: 50%;
-    max-width: 334px;
-    height: 180px;
-    margin-bottom: 45px;
-  }
-
-  .menu-link img {
-    width: 100%;
-    height: 200px;
-    width: 334px;
-  }
-
-  .cityhall img, .airport img {
-    margin-left: 0px;
-  }
-
-  .menu-link a {
-    max-width: 334px;
-    height: 180px;
-    padding: 0 120px;
-  }
-
   @media screen and (max-width: 768px) {
     .menu-gallery {
-      justify-content: space-between;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 50% 50%;
+      grid-gap: 20px;
     }
 
     .menu-link {
-      margin-bottom: 20px;
+      max-height: 180px;
+      overflow: hidden;
     }
+
+    .menu-link a img {
+      margin-top: -40px;
+    }
+
+    .menus p {
+      width: 80%
+    }
+
+    .menu-text {
+      width: 100%;
+      top: 40%;
+    }
+
   }
 
+@media screen and (max-width: 480px) {
+  .menu-text {
+    width: 50%;
+    top: 30%;
+  }
 }

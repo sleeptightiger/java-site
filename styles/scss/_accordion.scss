@@ -1,0 +1,92 @@
+.hidden-menu {
+  transform: translateY(-454px);
+  z-index: 100;
+  transition: all ease-in .5s;
+  position: absolute;
+}
+
+.unhide {
+  transform: translateY(0px);
+}
+
+.tab-group {
+  width: 100%;
+}
+
+.tab {
+  width: 100%;
+  position: relative;
+}
+
+.tab label span {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.tab input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999;
+}
+
+.drop-nav .new {
+  line-height: 1;
+}
+
+.drop-nav .smile {
+  line-height: 2;
+}
+
+.tab button {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  font-family: 'Brandon_med', sans-serif;
+  font-size: 16px;
+  display: block;
+  line-height: 4;
+  margin-bottom: -5px;
+  padding-left: 2em;
+  transition: letter-spacing .55s;
+  border: 1px solid #F2F2F2;
+  margin-top: -5px;
+  text-align: left;
+}
+
+.tab button {
+  outline: none;
+}
+
+.tabLocal {
+  padding-top: 70px;
+}
+
+.tab input:focus + label, .tab label:hover {
+  letter-spacing: 1px;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.open-tab {
+  max-height: 25em;
+}
+
+// .tab input:checked ~ .tab-content {
+//   max-height: 25em;
+// }
+
+.tab-content li {
+  width: 100%;
+  border-bottom: 1px solid #DCDCDC;
+  line-height: 3;
+  padding-left: 3em;
+  font-size: 16px;
+  font-family: 'Brandon_med', sans-serif;
+  background-color: #F2F2F2;
+
+}

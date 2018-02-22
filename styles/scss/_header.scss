@@ -136,14 +136,17 @@ nav a {
 
 @media screen and (max-width: 1024px) {
   header {
+    width: 90%;
     max-width: 905px;
   }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 875px) {
   header {
-    max-width: 688px;
+    width: 90%;
+    // max-width: 688px;
+    margin-bottom: 0px;
   }
 
 }

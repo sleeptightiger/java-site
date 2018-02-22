@@ -1,5 +1,7 @@
 const nav = document.querySelector('nav');
+const hidden = document.querySelector('.hidden-menu');
 let innerNav = nav.innerHTML;
+const buttons = document.querySelectorAll('.tab button');
 
 const ham = `
   <div class="hamburger">
@@ -10,14 +12,21 @@ const ham = `
 `;
 
 responsive = width => {
-  if(width <= 768) {
+  if(width <= 875) {
     nav.innerHTML = '';
     nav.innerHTML = ham;
 
 
 
-  } else if(width > 768) {
+  } else if(width > 875) {
     nav.innerHTML = innerNav;
+  }
+}
+
+hide = (elements) => {
+  for(let i = 0; i < elements.length; i++) {
+    const tab = elements[i].nextElementSibling;
+    tab.classList.remove('open-tab');
   }
 }
 
@@ -31,5 +40,16 @@ window.addEventListener('resize', (e) => {
 
 nav.addEventListener('click', () => {
   const hamburger = document.querySelector('.hamburger');
+  hide(buttons);
   hamburger.classList.toggle('close');
+  hidden.classList.toggle('unhide');
 });
+
+for(let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', () => {
+    const tab = buttons[i].nextElementSibling;
+    hide(buttons);
+    tab.classList.toggle('open-tab');
+  });
+
+}

@@ -8,10 +8,80 @@
   </head>
   <body>
     <!-- DIAGONALS -->
-
     <div class="diagonal-bg"></div>
 
     <div class="diagonal-bg-lower"></div>
+
+    <!--  DROPDOWN MENU  -->
+    <div class="tab-group hidden-menu">
+      <div class="tab">
+
+        <!-- <input type="radio" name="tabs" id="tab-one">
+        <label for="tab-one" class="tabLocal">LOCATIONS <span>&GT;</span></label> -->
+        <button type="button" name="button" class="tabLocal">LOCATIONS <span>&GT;</span></button>
+        <div class="tab-content">
+          <ul class="locations-nav drop-nav">
+            <li><a href="#"><span>Barton Springs</span></a></li>
+            <li><a href="#"><span>City Hall</span></a></li>
+            <li><a href="#"><span>360 Express</span></a></li>
+            <li><a href="#"><span>Austin Airport</span></a></li>
+            <li><a href="#"><span>Dripping Springs <span class="new">NEW</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab">
+        <!-- <input type="radio" name="tabs" id="tab-two">
+        <label for="tab-two" class="tabLabel">MENUS <span>&GT;</span></label> -->
+        <button type="button" name="button">MENUS <span>&GT;</span></button>
+        <div class="tab-content">
+          <ul class="menus-nav drop-nav">
+            <li><a href="#"><span>Barton Springs</span></a></li>
+            <li><a href="#"><span>City Hall</span></a></li>
+            <li><a href="#"><span>360 Express</span></a></li>
+            <li><a href="#"><span>Happy Hour <span class="smile">&#9787;</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab">
+        <!-- <input type="radio" name="tabs" id="tab-three">
+        <label for="tab-three" class="tabLabel">CATERING <span>&GT;</span></label> -->
+        <button type="button" name="button">CATERING <span>&GT;</span></button>
+        <div class="tab-content">
+          <ul class="catering-nav drop-nav">
+            <li><a href="#"><span>Onsite Events</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab">
+        <!-- <input type="radio" name="tabs" id="tab-four">
+        <label for="tab-four" class="tabLabel">STORE <span>&GT;</span></label> -->
+        <button type="button" name="button">STORE <span>&GT;</span></button>
+        <div class="tab-content">
+          <ul class="store-nav drop-nav">
+            <li><a href="#"><span>MERCHANDISE</span></a></li>
+            <li><a href="#"><span>GIFT CARDS</span></a></li>
+            <li><a href="#"><span>BUY COFFEE</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab">
+        <!-- <input type="radio" name="tabs" id="tab-five">
+        <label for="tab-five" class="tabLabel">ABOUT <span>&GT;</span></label> -->
+        <button type="button" name="button">ABOUT <span>&GT;</span></button>
+        <div class="tab-content">
+          <ul class="about-nav drop-nav">
+            <li><a href="#"><span>CALENDAR</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab">
+        <!-- <input type="radio" name="tabs" id="tab-six">
+        <label for="tab-six" class="tabLabel">CONTACT</label> -->
+        <button type="button" name="button">CONTACT</button>
+        <div class="tab-content">
+        </div>
+      </div>
+    </div>
 
     <!-- HEADER -->
     <header>
@@ -159,6 +229,7 @@
           </div>
           <a class="next" onclick="plusSlides(1)">&#9658;</a>
 
+          <div class="slides">
           <div class="mySlides fade">
 
             <h3>barton springs</h3>
@@ -334,6 +405,7 @@
             </div>
 
           </div>
+          </div>
 
         </div>
       </div>
@@ -400,22 +472,43 @@
       <h1 class="one"><span>menus</span></h1>
       <p>Choose a location and see what’s on the menu!</p>
       <div class="menu-gallery">
-        <div class="menu-link barton">
-          <a href="#"><h3>barton springs</h3></a>
-          <img src="img/barton.png" alt="barton springs">
-        </div>
-        <div class="menu-link cityhall">
-          <a href="#"><h3>city hall</h3></a>
-          <img src="img/cityhall.png" alt="cityhall">
-        </div>
-        <div class="menu-link three">
-          <a href="#"><h3>360 express</h3></a>
-          <img src="img/three.png" alt="360">
-        </div>
-        <div class="menu-link airport">
-          <a href="#"><h3>austin airport</h3></a>
-          <img src="img/airport.png" alt="airport">
-        </div>
+        <a href="#">
+          <div class="menu-link barton">
+            <div class="menu-text">
+              <h3>barton springs</h3>
+            </div>
+            <img src="img/barton.png" alt="barton springs">
+          </div>
+        </a>
+        <a href="#">
+          <div class="menu-link cityhall">
+            <div class="menu-text">
+              <h3>city hall</h3>
+            </div>
+
+            <img src="img/cityhall.png" alt="cityhall">
+
+          </div>
+        </a>
+        <a href="#">
+          <div class="menu-link three">
+            <div class="menu-text">
+              <h3>360 express</h3>
+            </div>
+
+            <img src="img/three.png" alt="360">
+
+          </div>
+        </a>
+        <a href="#">
+          <div class="menu-link airport">
+            <div class="menu-text">
+              <h3>austin airport</h3>
+            </div>
+            <img src="img/airport.png" alt="airport">
+
+          </div>
+        </a>
       </div>
     </div>
 
@@ -490,6 +583,8 @@
         </div>
       </div>
     </footer>
+
+
     <script type="text/javascript" src="js/locations.js"></script>
     <script type="text/javascript" src="js/about.js"></script>
     <script type="text/javascript" src="js/mobile.js"></script>
