@@ -10,6 +10,9 @@
 * {
   box-sizing: border-box; }
 
+*:focus {
+  outline: none; }
+
 body {
   position: relative; }
 
@@ -607,8 +610,9 @@ nav a {
   line-height: 1;
   transition: all ease-in-out .3s; }
 
-.tab button:focus > span {
-  transform: rotate(90deg); }
+.arrow-down {
+  transform-origin: center right;
+  transform: rotate(90deg) translateX(7px) translateY(5px); }
 
 .tab input {
   position: absolute;
@@ -789,7 +793,6 @@ nav a {
 .locations-map {
   height: 462px;
   width: 572px;
-  background-color: #333;
   background-image: url("../../img/austin-map.jpg");
   background-position: center;
   background-size: cover;

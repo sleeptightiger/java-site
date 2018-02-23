@@ -25,8 +25,9 @@
   transition: all ease-in-out .3s;
 }
 
-.tab button:focus > span {
-  transform: rotate(90deg);
+.arrow-down {
+  transform-origin: center right;
+  transform: rotate(90deg) translateX(7px) translateY(5px);
 }
 
 .tab input {

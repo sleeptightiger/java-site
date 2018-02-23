@@ -2,6 +2,7 @@ const nav = document.querySelector('nav');
 const hidden = document.querySelector('.hidden-menu');
 let innerNav = nav.innerHTML;
 const buttons = document.querySelectorAll('.tab button');
+const arrows = document.querySelectorAll('.arrow');
 
 const ham = `
   <div class="hamburger">
@@ -30,6 +31,12 @@ hide = (elements) => {
   }
 }
 
+arrowUp = (elements) => {
+  for(let i = 0; i < arrows.length; i++) {
+    arrows[i].classList.remove('arrow-down');
+  }
+}
+
 const width = window.innerWidth;
 responsive(width);
 
@@ -48,6 +55,12 @@ nav.addEventListener('click', () => {
 for(let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', () => {
     const tab = buttons[i].nextElementSibling;
+    if(arrows[i].classList.contains('arrow-down')) {
+      arrowUp(arrows);
+    } else {
+      arrowUp(arrows);
+      arrows[i].classList.toggle('arrow-down');
+    }
     if(tab.classList.contains('open-tab')) {
       hide(buttons);
     } else {
