@@ -1,7 +1,7 @@
 .hidden-menu {
   transform: translateY(-454px);
   z-index: 100;
-  transition: all ease-in .5s;
+  transition: all ease-in .3s;
   position: absolute;
 }
 
@@ -22,6 +22,11 @@
   font-size: 25px;
   display: inline-block;
   line-height: 1;
+  transition: all ease-in-out .3s;
+}
+
+.tab button:focus > span {
+  transform: rotate(90deg);
 }
 
 .tab input {
@@ -49,7 +54,7 @@
   line-height: 4;
   margin-bottom: -5px;
   padding-left: 2em;
-  transition: letter-spacing .55s;
+  transition: letter-spacing .3s;
   border: 1px solid #F2F2F2;
   margin-top: -5px;
   text-align: left;
@@ -57,21 +62,39 @@
 
 .tab button {
   outline: none;
+  transition: all ease-in-out .3s;
 }
+
+// .tab button:focus, .tab button:hover {
+//   color: #E39049;
+// }
 
 .tabLocal {
   padding-top: 70px;
 }
 
-.tab input:focus + label, .tab label:hover {
-  letter-spacing: 1px;
-}
+// .tab input:focus + label, .tab label:hover {
+//   letter-spacing: 1px;
+// }
 
 .tab-content {
   max-height: 0;
   overflow: hidden;
-  transition: all .35s;
+  transition: all .3s;
 }
+
+
+.smile {
+  transition: all ease-in-out .3s;
+}
+
+.drop-nav li a {
+  transition: all ease-in-out .3s;
+}
+
+// .drop-nav li:hover > a {
+//   color: #E39049;
+// }
 
 .open-tab {
   max-height: 25em;
@@ -89,5 +112,5 @@
   font-size: 16px;
   font-family: 'Brandon_med', sans-serif;
   background-color: #F2F2F2;
-
+  cursor: pointer;
 }
