@@ -47,10 +47,20 @@
   z-index: 100;
 }
 
+.pointer svg path {
+  transition: all ease-in-out .3s;
+}
+
+.pointer svg polygon {
+  transition: all ease-in-out .3s;
+}
+
 .one {
   top: 215px;
   left: 280px;
+
 }
+
 
 .two {
   top: 210px;

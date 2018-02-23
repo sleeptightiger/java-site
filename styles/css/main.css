@@ -502,6 +502,7 @@ nav ul li a:hover {
   border-right: 10px solid transparent;
   margin: 0 auto;
   opacity: 0;
+  z-index: -1;
   transform: translateY(-50px);
   transition: all ease-in-out .3s; }
 
@@ -515,6 +516,12 @@ nav ul li a:hover {
   transform: translateY(-50px);
   transition: all ease-in-out .3s;
   border-top: 5px solid #E39040; }
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .tri {
+  z-index: 10;
+  opacity: 1;
+  transform: translateY(5px); }
 
 .drop-location {
   margin-left: -25px; }
@@ -555,11 +562,6 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
   color: #E39040; }
-
-.dropdown:hover .dropdown-content, .dropdown:hover .tri {
-  z-index: 10;
-  opacity: 1;
-  transform: translateY(10px); }
 
 .dropdown:hover .locations-tab a {
   color: #bbb; }
@@ -789,6 +791,12 @@ nav a {
 .pointer {
   position: absolute;
   z-index: 100; }
+
+.pointer svg path {
+  transition: all ease-in-out .3s; }
+
+.pointer svg polygon {
+  transition: all ease-in-out .3s; }
 
 .one {
   top: 215px;
