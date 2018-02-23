@@ -48,8 +48,12 @@ nav.addEventListener('click', () => {
 for(let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', () => {
     const tab = buttons[i].nextElementSibling;
-    hide(buttons);
-    tab.classList.toggle('open-tab');
+    if(tab.classList.contains('open-tab')) {
+      hide(buttons);
+    } else {
+      hide(buttons);
+      tab.classList.toggle('open-tab');
+    }
   });
 
 }

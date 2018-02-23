@@ -596,9 +596,10 @@ nav a {
   width: 100%;
   position: relative; }
 
-.tab label span {
-  font-size: 16px;
-  display: inline-block; }
+.tab button span {
+  font-size: 25px;
+  display: inline-block;
+  line-height: 1; }
 
 .tab input {
   position: absolute;
@@ -1312,7 +1313,8 @@ nav a {
 
 .menu-link {
   background-color: rgba(0, 0, 0, 0.3);
-  position: relative; }
+  position: relative;
+  transition: all ease-in-out .3s; }
 
 .menu-link img {
   width: 100%;

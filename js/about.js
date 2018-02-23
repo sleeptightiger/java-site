@@ -1,17 +1,19 @@
-const card = document.querySelectorAll(".card");
+const photos = document.querySelectorAll(".img");
+const text = document.querySelectorAll(".text");
 
-for(let i = 0;i < card.length; i++) {
-  card[i].addEventListener('mouseover', (e) => {
-
-    const overlay = card[i].querySelector('.overlay');
-    overlay.classList.toggle('hover');
+for(let i = 0;i < photos.length; i++) {
+  photos[i].addEventListener('mouseover', (e) => {
+    photos[i].classList.toggle('clear');
   });
-}
 
-for(let i = 0;i < card.length; i++) {
-  card[i].addEventListener('mouseout', (e) => {
+  photos[i].addEventListener('mouseout', (e) => {
+    photos[i].classList.remove('clear');
+  });
+  text[i].addEventListener('mouseover', (e) => {
+    photos[i].classList.toggle('clear');
+  });
 
-    const overlay = card[i].querySelector('.overlay');
-    overlay.classList.remove('hover');
+  text[i].addEventListener('mouseout', (e) => {
+    photos[i].classList.remove('clear');
   });
 }
