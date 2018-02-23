@@ -471,6 +471,45 @@ a {
   text-decoration: none;
   color: black; }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.row {
+  margin: 0 -15px;
+  position: relative; }
+
+[class^="col-"] {
+  float: left;
+  padding: 0 15px; }
+
+.col-12 {
+  width: 100%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-4 {
+  width: 33.333%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-2 {
+  width: 16.667%; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 80%; } }
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%; } }
 header {
   font-family: 'Brandon_bld', sans-serif;
   margin: 0 auto;
@@ -673,11 +712,13 @@ nav a {
   cursor: pointer; }
 
 .hamburger {
-  width: 29px;
+  width: 30px;
   height: 20px;
   position: relative;
   z-index: 101;
-  cursor: pointer; }
+  cursor: pointer;
+  box-sizing: content-box;
+  padding: 5px; }
 
 .line {
   position: absolute;
@@ -688,13 +729,13 @@ nav a {
   transition: all cubic-bezier(0.25, 0.1, 0.3, 1.65) 0.3s; }
 
 .line1 {
-  top: 0%; }
+  top: 18%; }
 
 .line2 {
   top: 50%; }
 
 .line3 {
-  top: 100%; }
+  top: 83%; }
 
 .close .line1 {
   transform: rotate(135deg);
@@ -705,11 +746,8 @@ nav a {
   top: 50%; }
 
 .hero {
-  width: 80%;
   margin: 50px auto;
-  margin-top: 80px;
-  position: relative;
-  max-width: 1000px; }
+  margin-top: 80px; }
 
 .hero-img {
   height: 340px;
@@ -733,9 +771,6 @@ nav a {
   font-size: 73px; }
 
 @media screen and (max-width: 1024px) {
-  .hero {
-    width: 90%; }
-
   .hero-headline {
     right: -10px; } }
 @media screen and (max-width: 875px) {
@@ -763,11 +798,8 @@ nav a {
     top: 110px;
     right: 0px; } }
 .locations {
-  width: 80%;
   margin: 43px auto;
-  max-width: 1000px;
-  position: relative;
-  height: 680px; }
+  position: relative; }
 
 .location-headline {
   border: 5px solid #000;
@@ -901,10 +933,6 @@ nav a {
   margin-top: 5px; }
 
 @media screen and (max-width: 1024px) {
-  .locations {
-    width: 90%;
-    height: 640px; }
-
   .locations-right {
     top: 170px;
     right: 0; } }
@@ -996,11 +1024,7 @@ nav a {
     display: flex;
     justify-content: center;
     margin-top: 20px; } }
-.about {
-  width: 80%;
-  max-width: 1000px;
-  height: 1300px;
-  margin: 80px auto;
+.wrapper {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -1144,12 +1168,10 @@ nav a {
   grid-column-end: 11; }
 
 @media screen and (max-width: 768px) {
-  .about {
-    width: 90%;
+  .wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(41, 1fr);
-    grid-gap: 0px 23px;
-    height: 1500px; }
+    grid-gap: 0px 23px; }
 
   .text {
     padding: 20px; }
@@ -1226,10 +1248,9 @@ nav a {
     grid-column-start: 2;
     grid-column-end: 3; } }
 @media screen and (max-width: 480px) {
-  .about {
+  .wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(81, 1fr);
-    height: 2000px; }
+    grid-template-rows: repeat(81, 1fr); }
 
   .food-box {
     grid-column-start: 1;
@@ -1303,7 +1324,6 @@ nav a {
     grid-column-start: 1;
     grid-column-end: 2; } }
 .menus {
-  width: 100%;
   margin: 120px auto;
   text-align: center;
   max-width: 1000px; }
@@ -1326,7 +1346,7 @@ nav a {
   margin-top: -37px; }
 
 .menu-gallery {
-  width: 95%;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 60px;
@@ -1360,9 +1380,6 @@ nav a {
   background: rgba(227, 144, 73, 0.7); }
 
 @media screen and (max-width: 1024px) {
-  .menus {
-    max-width: 905px; }
-
   .menu-gallery {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0 21px; } }
@@ -1391,13 +1408,10 @@ nav a {
     top: 30%; } }
 footer {
   height: 556px;
-  width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
   position: relative; }
 
 .upper-footer {
-  width: 1000px;
   min-height: 282px;
   display: flex;
   flex-direction: row;
@@ -1510,17 +1524,10 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
   display: inline-block; }
 
 @media screen and (max-width: 1024px) {
-  footer {
-    width: 90%; }
-
-  .upper-footer {
-    width: 905px; }
-
   .addresses {
     margin-left: 0; } }
 @media screen and (max-width: 975px) {
   .upper-footer {
-    width: 90%;
     flex-wrap: wrap;
     padding-top: 40px; }
 
@@ -1542,7 +1549,6 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     left: 40px; } }
 @media screen and (max-width: 768px) {
   .upper-footer {
-    width: 90%;
     flex-wrap: wrap;
     padding-top: 40px; }
 

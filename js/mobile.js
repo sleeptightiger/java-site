@@ -3,24 +3,19 @@ const hidden = document.querySelector('.hidden-menu');
 let innerNav = nav.innerHTML;
 const buttons = document.querySelectorAll('.tab button');
 const arrows = document.querySelectorAll('.arrow');
+const hamburger = document.querySelector('.hamburger');
 
-const ham = `
-  <div class="hamburger">
-    <span class="line line1"></span>
-    <span class="line line2"></span>
-    <span class="line line3"></span>
-  </div>
-`;
+
 
 responsive = width => {
   if(width <= 875) {
-    nav.innerHTML = '';
-    nav.innerHTML = ham;
-
+    nav.style.display = 'none';
+    hamburger.style.display = 'block';
 
 
   } else if(width > 875) {
-    nav.innerHTML = innerNav;
+    nav.style.display = 'block';
+    hamburger.style.display = 'none';
   }
 }
 
@@ -45,8 +40,8 @@ window.addEventListener('resize', (e) => {
   responsive(width);
 });
 
-nav.addEventListener('click', () => {
-  const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+
   hide(buttons);
   hamburger.classList.toggle('close');
   hidden.classList.toggle('unhide');

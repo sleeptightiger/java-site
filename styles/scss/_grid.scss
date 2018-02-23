@@ -1,0 +1,45 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin: 0 -15px;
+  position: relative;
+}
+
+[class^="col-"] {
+  float: left;
+  padding: 0 15px;
+}
+
+.col-12 { width: 100%; }
+.col-6  { width: 50%; }
+.col-4  { width: 33.333%; }
+.col-3  { width: 25%; }
+.col-2  { width: 16.667%; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+
+  }
+}

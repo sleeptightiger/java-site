@@ -2,15 +2,12 @@
 
 footer {
   height: 556px;
-  width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   // bottom: 0;
 }
 
 .upper-footer {
-  width: 1000px;
   min-height: 282px;
   display: flex;
   flex-direction: row;
@@ -155,13 +152,9 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 }
 
 @media screen and (max-width: 1024px) {
-  footer {
-    width: 90%;
-  }
 
-  .upper-footer {
-    width: 905px;
-  }
+
+
 
   .addresses {
     margin-left: 0;
@@ -173,7 +166,6 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 
 @media screen and (max-width: 975px) {
   .upper-footer {
-    width: 90%;
     flex-wrap: wrap;
     padding-top: 40px;
   }
@@ -203,7 +195,6 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 
 @media screen and (max-width: 768px) {
   .upper-footer {
-    width: 90%;
     flex-wrap: wrap;
     padding-top: 40px;
   }

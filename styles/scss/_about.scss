@@ -1,8 +1,4 @@
-.about {
-  width: 80%;
-  max-width: 1000px;
-  height: 1300px;
-  margin: 80px auto;
+.wrapper {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -176,12 +172,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about {
-    width: 90%;
+  .wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(41, 1fr);
     grid-gap: 0px 23px;
-    height: 1500px;
   }
 
   .text {
@@ -275,10 +269,9 @@
 }
 
 @media screen and (max-width: 480px) {
-  .about {
+  .wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(81, 1fr);
-    height: 2000px;
   }
 
   .food-box {

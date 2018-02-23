@@ -1,9 +1,6 @@
 .locations {
-  width: 80%;
   margin: 43px auto;
-  max-width: 1000px;
   position: relative;
-  height: 680px;
 }
 
 .location-headline {
@@ -171,8 +168,6 @@
 
 @media screen and (max-width: 1024px) {
   .locations {
-    width: 90%;
-    height: 640px;
   }
 
   .locations-right {

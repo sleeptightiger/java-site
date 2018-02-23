@@ -1,9 +1,9 @@
+
+
+
 .hero {
-  width: 80%;
   margin: 50px auto;
   margin-top: 80px;
-  position: relative;
-  max-width: 1000px;
 }
 
 .hero-img {
@@ -34,9 +34,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .hero {
-    width: 90%;
-  }
+
 
   .hero-headline {
     right: -10px;

@@ -1,9 +1,11 @@
 .hamburger {
-  width: 29px;
+  width: 30px;
   height: 20px;
   position: relative;
   z-index: 101;
   cursor: pointer;
+  box-sizing: content-box;
+  padding: 5px;
 }
 
 .line {
@@ -16,7 +18,7 @@
 }
 
 .line1 {
-  top: 0%;
+  top: 18%;
 }
 
 .line2 {
@@ -24,7 +26,7 @@
 }
 
 .line3 {
-  top: 100%;
+  top: 83%;
 }
 
 .close .line1 {
