@@ -19,7 +19,6 @@
 
 .hero-headline {
   font-family: 'Monthoers', sans-serif;
-  height: 237px;
   width: 315px;
   border-bottom: 5px solid black;
   position: absolute;
@@ -32,8 +31,7 @@
 .hero-headline h1 {
   font-size: 73px;
   word-spacing: -20px;
-  line-height: 70px;
-  align-self: flex-end;
+  line-height: 74px;
 }
 
 @media screen and (max-width: 1024px) {

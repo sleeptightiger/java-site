@@ -4,6 +4,7 @@ let innerNav = nav.innerHTML;
 const buttons = document.querySelectorAll('.tab button');
 const arrows = document.querySelectorAll('.arrow');
 const hamburger = document.querySelector('.hamburger');
+let modalOpen = false;
 
 
 
@@ -14,8 +15,12 @@ responsive = width => {
 
 
   } else if(width > 875) {
-    nav.style.display = 'block';
-    hamburger.style.display = 'none';
+    if(!modalOpen) {
+      hamburger.style.display = 'none';
+      nav.style.display = 'block';
+    }
+
+
   }
 }
 
@@ -45,6 +50,8 @@ hamburger.addEventListener('click', () => {
   hide(buttons);
   hamburger.classList.toggle('close');
   hidden.classList.toggle('unhide');
+  modalOpen = !modalOpen;
+  console.log(modalOpen);
 });
 
 for(let i = 0; i < buttons.length; i++) {
