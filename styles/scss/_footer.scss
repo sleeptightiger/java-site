@@ -45,8 +45,9 @@ footer {
   color: #E39049;
 }
 
-.footer-nav button {
+.footer-nav .button {
   margin-top: 24px;
+  display: inline-block;
   background-color: #E39049;
   border: none;
   font-family: 'Brandon_bld', sans-serif;
@@ -54,10 +55,11 @@ footer {
   width: 163px;
   height: 50px;
   padding: 14px 33px;
+  padding-top: 16px;
   transition: all ease-in-out 0.3s;
 }
 
-.footer-nav button:hover {
+.footer-nav .button:hover {
   color: #FFF;
   background-color: #000;
 }

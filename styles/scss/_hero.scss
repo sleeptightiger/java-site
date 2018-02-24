@@ -25,12 +25,15 @@
   position: absolute;
   top: 60px;
   right: 38px;
+  display: flex;
 
 }
 
 .hero-headline h1 {
   font-size: 73px;
-  // word-spacing: 1px;
+  word-spacing: -20px;
+  line-height: 70px;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 1024px) {

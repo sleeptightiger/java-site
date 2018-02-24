@@ -6,7 +6,8 @@
   src: url("../../fonts/Brandon_med.otf"); }
 @font-face {
   font-family: 'Monthoers';
-  src: url("../../fonts/Monthoers.ttf"); }
+  src: url("../../fonts/Monthoers.ttf");
+  word-spacing: -5px; }
 * {
   box-sizing: border-box; }
 
@@ -536,34 +537,56 @@ nav ul li a:hover {
   position: relative;
   display: inline-block; }
 
-.tri {
-  width: 12px;
-  height: 0;
-  border-bottom: 12px solid #E39040;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  margin: 0 auto;
-  opacity: 0;
-  z-index: -1;
-  transform: translateY(-50px);
-  transition: all ease-in-out .3s; }
-
 .dropdown .dropdown-content {
-  opacity: 0;
   position: absolute;
   background-color: #FFF;
   min-width: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: -1;
-  transform: translateY(-50px);
-  transition: all ease-in-out .3s;
   border-top: 5px solid #E39040; }
 
-.dropdown:hover .dropdown-content,
-.dropdown:hover .tri {
-  z-index: 10;
+.dropdown-content:before {
+  content: "";
+  height: 0;
+  border-bottom: 12px solid #E39040;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  position: absolute;
+  top: -15px;
+  left: 80px; }
+
+.dropdown .dropdown-content {
   opacity: 1;
-  transform: translateY(5px); }
+  z-index: 10; }
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover {
+  opacity: 1;
+  z-index: 10;
+  transform-origin: top;
+  perspective: 1000px; }
+
+.parent1 {
+  position: absolute;
+  margin-top: 20px;
+  transition-duration: 300ms;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  z-index: -1; }
+
+.parent3 {
+  transition-property: all;
+  transition-duration: 300ms;
+  transform: rotateX(-45deg);
+  transform-origin: top;
+  opacity: 0; }
+
+.dropdown:hover .parent1 {
+  opacity: 1;
+  z-index: 10; }
+
+.dropdown:hover .parent1 .parent2 .parent3 {
+  transform: rotateX(0deg);
+  opacity: 1; }
 
 .drop-location {
   margin-left: -25px; }
@@ -578,7 +601,7 @@ nav ul li a:hover {
   margin-left: -45px; }
 
 .dropdown-content a {
-  color: black;
+  color: #000;
   padding: 16px 16px;
   padding-bottom: 10px;
   text-decoration: none;
@@ -603,9 +626,6 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
   color: #E39040; }
-
-.dropdown:hover .locations-tab a {
-  color: #bbb; }
 
 .logo-withstar img {
   width: 103px;
@@ -765,10 +785,14 @@ nav a {
   border-bottom: 5px solid black;
   position: absolute;
   top: 60px;
-  right: 38px; }
+  right: 38px;
+  display: flex; }
 
 .hero-headline h1 {
-  font-size: 73px; }
+  font-size: 73px;
+  word-spacing: -20px;
+  line-height: 70px;
+  align-self: flex-end; }
 
 @media screen and (max-width: 1024px) {
   .hero-headline {
@@ -871,6 +895,7 @@ nav a {
   max-width: 1000px;
   position: relative;
   margin: 0 auto;
+  right: 70px;
   text-align: center; }
 
 .mySlides {
@@ -881,7 +906,8 @@ nav a {
   font-family: 'Monthoers', sans-serif;
   font-size: 38px;
   margin: 30px auto;
-  text-align: left; }
+  text-align: left;
+  padding-left: 15px; }
 
 .prev, .next {
   cursor: pointer;
@@ -901,18 +927,18 @@ nav a {
 
 .dot {
   cursor: pointer;
-  height: 18px;
-  width: 18px;
-  margin: 0 5px;
+  height: 16px;
+  width: 16px;
+  margin: 0 7px;
   background-color: #fff;
   border: 3px solid #000;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease; }
+  transition: all 0.2s ease; }
 
 .active, .dot:hover {
   background-color: #E39049;
-  border: none; }
+  border: 3px solid #E39049; }
 
 .fade {
   animation-name: fade;
@@ -935,7 +961,10 @@ nav a {
 @media screen and (max-width: 1024px) {
   .locations-right {
     top: 170px;
-    right: 0; } }
+    right: 0; }
+
+  .slideshow-container {
+    right: 0px; } }
 @media screen and (max-width: 768px) {
   .locations-map {
     height: 322.5px;
@@ -975,7 +1004,7 @@ nav a {
 
   .locations-right {
     top: 170px;
-    right: 0; }
+    right: 0px; }
 
   .locations {
     height: 580px; } }
@@ -1051,7 +1080,7 @@ nav a {
 .catering-img,
 .event-img,
 .coffee-img {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   transition: all ease-in-out .5s; }
 
 .clear {
@@ -1089,7 +1118,7 @@ nav a {
 .catering-box,
 .event-box,
 .coffee-box {
-  box-shadow: 0px 5px 22px -2px #555555; }
+  box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.15); }
 
 .bg {
   width: 100%;
@@ -1371,10 +1400,18 @@ nav a {
   color: #fff;
   font-family: 'Monthoers', sans-serif;
   font-size: 33px;
-  top: 35%;
-  left: 25%;
-  max-width: 50%;
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.menu-text h3 {
+  display: block; }
 
 .menu-link:hover {
   background: rgba(227, 144, 73, 0.7); }
@@ -1401,11 +1438,16 @@ nav a {
 
   .menu-text {
     width: 100%;
-    top: 40%; } }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; } }
 @media screen and (max-width: 480px) {
   .menu-text {
-    width: 50%;
-    top: 30%; } }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; } }
 footer {
   height: 556px;
   margin: 0 auto;
@@ -1440,8 +1482,9 @@ footer {
 .footer-nav nav ul li a:hover {
   color: #E39049; }
 
-.footer-nav button {
+.footer-nav .button {
   margin-top: 24px;
+  display: inline-block;
   background-color: #E39049;
   border: none;
   font-family: 'Brandon_bld', sans-serif;
@@ -1449,9 +1492,10 @@ footer {
   width: 163px;
   height: 50px;
   padding: 14px 33px;
+  padding-top: 16px;
   transition: all ease-in-out 0.3s; }
 
-.footer-nav button:hover {
+.footer-nav .button:hover {
   color: #FFF;
   background-color: #000; }
 
