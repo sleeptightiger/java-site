@@ -1509,7 +1509,12 @@ footer {
 
 .footer-map iframe {
   min-height: 282px;
-  width: 100%; }
+  width: 100%;
+  opacity: .7;
+  transition: all ease-out .3s; }
+
+.footer-map:hover > iframe {
+  opacity: 1; }
 
 .lower-footer {
   width: 100%;
