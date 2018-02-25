@@ -28,10 +28,11 @@ hide = (elements) => {
   for(let i = 0; i < elements.length; i++) {
     const tab = elements[i].nextElementSibling;
     tab.classList.remove('open-tab');
+
   }
 }
 
-arrowUp = (elements) => {
+arrowUp = () => {
   for(let i = 0; i < arrows.length; i++) {
     arrows[i].classList.remove('arrow-down');
   }
@@ -48,19 +49,19 @@ window.addEventListener('resize', (e) => {
 hamburger.addEventListener('click', () => {
 
   hide(buttons);
+  arrowUp();
   hamburger.classList.toggle('close');
   hidden.classList.toggle('unhide');
   modalOpen = !modalOpen;
-  console.log(modalOpen);
 });
 
 for(let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', () => {
     const tab = buttons[i].nextElementSibling;
     if(arrows[i].classList.contains('arrow-down')) {
-      arrowUp(arrows);
+      arrowUp();
     } else {
-      arrowUp(arrows);
+      arrowUp();
       arrows[i].classList.toggle('arrow-down');
     }
     if(tab.classList.contains('open-tab')) {
