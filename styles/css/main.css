@@ -556,10 +556,6 @@ nav ul li a:hover {
   top: -13px;
   left: 80px; }
 
-.dropdown .dropdown-content {
-  opacity: 1;
-  z-index: 10; }
-
 .dropdown:hover .dropdown-content,
 .dropdown:hover {
   opacity: 1;
@@ -627,10 +623,13 @@ nav ul li a:hover {
   font-size: 25px;
   margin: 0 5px; }
 
-.dropdown-content a, .smile {
+.dropdown-content a,
+.dropdown-content a .smile {
+  color: #000;
   transition: all ease-out .3s; }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropdown-content a:hover > .smile {
   color: #E39040; }
 
 .logo-withstar img {
