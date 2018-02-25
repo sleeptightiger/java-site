@@ -1,7 +1,7 @@
 .hidden-menu {
   transform: translateY(-454px);
   z-index: 100;
-  transition: all ease-in .3s;
+  transition: all ease-out .3s;
   position: absolute;
 }
 
@@ -18,16 +18,13 @@
   position: relative;
 }
 
-.tab button span {
-  font-size: 25px;
-  display: inline-block;
-  line-height: 1;
-  transition: all ease-in-out .3s;
+.arrow {
+  transition: all ease-out .3s;
 }
 
 .arrow-down {
-  transform-origin: center right;
-  transform: rotate(90deg) translateX(7px) translateY(5px);
+  transform-origin: center;
+  transform: rotate(90deg);
 }
 
 .tab input {
@@ -63,20 +60,14 @@
 
 .tab button {
   outline: none;
-  transition: all ease-in-out .3s;
+  transition: all ease-out .3s;
 }
 
-// .tab button:focus, .tab button:hover {
-//   color: #E39049;
-// }
 
 .tabLocal {
   padding-top: 70px;
 }
 
-// .tab input:focus + label, .tab label:hover {
-//   letter-spacing: 1px;
-// }
 
 .tab-content {
   max-height: 0;
@@ -86,11 +77,11 @@
 
 
 .smile {
-  transition: all ease-in-out .3s;
+  transition: all ease-out .3s;
 }
 
 .drop-nav li a {
-  transition: all ease-in-out .3s;
+  transition: all ease-out .3s;
 }
 
 // .drop-nav li:hover > a {

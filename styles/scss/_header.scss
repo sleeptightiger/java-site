@@ -21,7 +21,7 @@ nav ul {
 }
 
 nav ul li a:hover {
-  transition: all ease-in-out .1s;
+  transition: all ease-out .1s;
 }
 
 nav ul li a:hover {
@@ -39,17 +39,18 @@ nav ul li a:hover {
   min-width: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-top: 5px solid #E39040;
-
+  margin-top: 10px;
+  padding: 5px 0;
 }
 
 .dropdown-content:before {
   content: "";
   height:0;
-  border-bottom:12px solid #E39040;
-  border-left:12px solid transparent;
-  border-right:12px solid transparent;
+  border-bottom:9px solid #E39040;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
   position: absolute;
-  top: -15px;
+  top: -13px;
   left: 80px;
 }
 
@@ -58,6 +59,7 @@ nav ul li a:hover {
 .dropdown .dropdown-content {
   opacity: 1;
   z-index: 10;
+
 }
 
 
@@ -72,7 +74,7 @@ nav ul li a:hover {
 
 .parent1 	{
   position: absolute;
-  margin-top: 20px;
+  margin-top: 10px;
 	transition-duration: 300ms;
 	perspective: 1000px;
 	transform-style: preserve-3d;
@@ -118,21 +120,26 @@ nav ul li a:hover {
 
 .dropdown-content a {
     color: #000;
-    padding: 16px 16px;
-    padding-bottom: 10px;
+    padding: 14px 16px;
     text-decoration: none;
     display: block;
     font-size: 16px;
 }
 
-.new {
-  color: #FFF;
-  background-color: #E39040;
-  border-radius: 20px;
+.dropdown-content a span {
+  line-height: 0;
+  position: relative;
+  top: 3px;
+}
+
+.dropdown-content .new:after {
+  content: "NEW";
+  background: #E39040;
   font-size: 10px;
-  padding: 3px 5px;
-  margin: 0 5px;
-  display: inline-block;
+  padding: 0 5px;
+  border-radius: 15px;
+  margin-left: 6px;
+  color: #fff;
 }
 
 .smile {
@@ -141,7 +148,7 @@ nav ul li a:hover {
 }
 
 .dropdown-content a, .smile {
-  transition: all ease-in-out .3s;
+  transition: all ease-out .3s;
 }
 
 .dropdown-content a:hover {
@@ -175,7 +182,6 @@ nav a {
 @media screen and (max-width: 875px) {
   header {
     width: 90%;
-    // max-width: 688px;
     margin-bottom: 0px;
   }
 

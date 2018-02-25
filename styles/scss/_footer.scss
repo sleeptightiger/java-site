@@ -4,45 +4,26 @@ footer {
   height: 556px;
   margin: 0 auto;
   position: relative;
-  // bottom: 0;
+  background-color: #FFF;
+  width: 100%;
 }
 
 .upper-footer {
-  min-height: 282px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 97px;
-}
-
-.footer-nav {
-  // height: 184px;
-  min-width: 163px;
-  text-align: left;
-  align-self: flex-start;
+  margin-top: 88.4px;
+  display: grid;
+  grid-template-columns: 25% 42% 33%;
 }
 
 .footer-nav nav ul {
   display: flex;
   flex-direction: column;
-
   font-family: 'Brandon_bld', sans-serif;
-
 }
 
-.footer-nav nav ul li {
-  margin-bottom: 16px;
-}
-
-.footer-nav nav ul li a {
-  padding: 10px 0px;
+.footer-nav nav ul a {
+  padding-left: 0;
   font-size: 14px;
-  transition: all ease-in-out 0.3s;
-}
-
-.footer-nav nav ul li a:hover {
-  color: #E39049;
+  line-height: 31px;
 }
 
 .footer-nav .button {
@@ -52,11 +33,12 @@ footer {
   border: none;
   font-family: 'Brandon_bld', sans-serif;
   font-size: 16px;
-  width: 163px;
+  min-width: 163px;
   height: 50px;
-  padding: 14px 33px;
+  padding: 14px 30px;
   padding-top: 16px;
-  transition: all ease-in-out 0.3s;
+  text-align: center;
+  transition: all ease-out 0.3s;
 }
 
 .footer-nav .button:hover {
@@ -65,19 +47,9 @@ footer {
 }
 
 .addresses {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 150px;
-  width: 358px;
-}
-
-.address {
-  height: 116px;
-  width: 162px;
-}
-
-.address-right {
-  margin-left: 25px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
 }
 
 .address .name {
@@ -97,21 +69,10 @@ footer {
   padding-bottom: 25px;
 }
 
-.footer-map {
-  height: 282px;
-  width: 298px;
-  background: url('../../img/footer-map.JPG');
-  opacity: .7;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all ease-in-out .3s;
+.footer-map iframe {
+  min-height: 282px;
+  width: 100%;
 }
-
-.footer-map:hover {
-  opacity: 1;
-}
-
 
 
 
@@ -122,9 +83,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  // position: absolute;
-  // left: 0;
-  // bottom: 0;
 }
 
 .social ul {
@@ -139,7 +97,7 @@ footer {
 }
 
 span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
-  transition: all ease-in-out .3s;
+  transition: all ease-out .3s;
 }
 
 span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
@@ -158,70 +116,41 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 
 
 
-  .addresses {
-    margin-left: 0;
-  }
-
-
 
 }
 
 @media screen and (max-width: 975px) {
-  .upper-footer {
-    flex-wrap: wrap;
-    padding-top: 40px;
-  }
-
-  .footer-map {
-    height: 170px;
-    width: 100%;
-    order: -1;
-  }
-
-  .footer-nav, .addresses {
-    padding-top: 60px;
-
-  }
-
-  footer {
-    height: 768px;
-    background-color: #FFF;
-    width: 100%;
-  }
 
   .lower-footer {
-    width: 90%;
+    width: 100%;
     left: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
+
   .upper-footer {
-    flex-wrap: wrap;
-    padding-top: 40px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 70%;
+  }
+
+  .footer-map {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 59.6px;
   }
 
   footer {
     height: 768px;
-    background-color: #FFF;
-    width: 100%;
   }
+
+
 }
 
 @media screen and (max-width: 600px) {
 
-  .footer-nav {
-    width: 100%;
-  }
-
-  .footer-nav button {
-    width: 100%;
-  }
-
   .upper-footer {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 100px;
+    grid-template-columns: 40% 60%;
   }
 
   .lower-footer {
@@ -242,15 +171,37 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     padding-right: 10%;
   }
 
-  .addresses {
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .upper-footer {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40% 40%;
+  }
+
+  .footer-map {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .footer-nav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-bottom: 60px;
+  }
+
+  .footer-nav .button {
     width: 100%;
   }
 
-  .address {
-    width: 45%;
-    margin-bottom: 44px;
+  .addresses {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin-bottom: 83px;
   }
-
-
 
 }
