@@ -53,6 +53,8 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('close');
   hidden.classList.toggle('unhide');
   modalOpen = !modalOpen;
+  const width = window.innerWidth;
+  responsive(width);
 });
 
 for(let i = 0; i < buttons.length; i++) {
