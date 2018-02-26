@@ -118,12 +118,6 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-.dropdown-content a span {
-  line-height: 0;
-  position: relative;
-  top: 3px;
-}
-
 .dropdown-content .new:after {
   content: "NEW";
   background: #E39040;
@@ -134,20 +128,35 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.smile {
-  font-size: 25px;
-  margin: 0 5px;
+.dropdown-content a span svg {
+  position: relative;
+  top: 3px;
 }
 
-.dropdown-content a,
-.dropdown-content a .smile {
+.dropdown-content a .icon svg {
+  height: 18px;
+  width: 18px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.dropdown-content a {
   color: #000;
   transition: all ease-out .3s;
 }
 
-.dropdown-content a:hover,
-.dropdown-content a:hover > .smile {
+.dropdown-content a:hover {
+  fill: #E39040;
   color: #E39040;
+}
+
+.dropdown-content a .icon svg path {
+  color: #000;
+  transition: all ease-out .09s;
+}
+
+.dropdown-content a:hover > .icon svg path {
+  fill: #E39040;
 }
 
 
