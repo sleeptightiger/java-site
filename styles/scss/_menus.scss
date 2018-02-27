@@ -102,8 +102,18 @@
   .menu-link {
     height: 100%;
     img {
-      
+      height: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-gallery {
+    height: 298px;
+  }
+
+  .menus p {
+    width: 80%;
   }
 }
 
