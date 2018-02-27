@@ -118,7 +118,8 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
-.dropdown-content .new:after {
+.dropdown-content .new:after,
+.drop-nav .new:after {
   content: "NEW";
   background: #E39040;
   font-size: 10px;
@@ -133,11 +134,16 @@ nav ul li a:hover {
   top: 3px;
 }
 
+.dropdown-content a .icon {
+  position: relative;
+}
+
 .dropdown-content a .icon svg {
   height: 18px;
   width: 18px;
   margin: 0 5px;
   display: inline-block;
+  position: absolute;
 }
 
 .dropdown-content a {
