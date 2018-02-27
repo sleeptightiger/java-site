@@ -1081,12 +1081,22 @@ nav a {
   flex-direction: row-reverse; }
 
 .card .img {
-  background-color: #333;
   flex-grow: 2;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
+  .card .img .overlay {
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    height: 335px;
+    transition: all ease-out .3s; }
+  .card .img .clear {
+    background-color: rgba(255, 255, 255, 0); }
   .card .img img {
-    width: 100%; }
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -5; }
   .card .img .long {
     margin-top: -100px; }
   .card .img .short {

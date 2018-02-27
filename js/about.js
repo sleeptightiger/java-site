@@ -1,4 +1,4 @@
-const photos = document.querySelectorAll(".img");
+const photos = document.querySelectorAll(".img .overlay");
 const text = document.querySelectorAll(".text");
 
 for(let i = 0;i < photos.length; i++) {
