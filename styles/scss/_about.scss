@@ -76,11 +76,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     .card {
-      margin: 10px;
+      margin-right: 20px;
+      margin-bottom: 20px;
       width: 40%;
       height: 800px;
       flex-direction: column-reverse;
+      &:nth-child(2n) {
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
     }
+
+
   }
 
   .card .text {
