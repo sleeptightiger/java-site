@@ -35,31 +35,21 @@ findHeights = (elements) => {
   return heights;
 }
 
-findMax = (heights) => {
-  let max = 0;
-  for(let i = 0; i < heights.length; i++) {
-    if(max < heights[i]) {
-      max = heights[i];
+findMax = (elem) => {
+  let maxHeight = 0;
+  for(let i = 0; i < elem.length; i++) {
+    if(maxHeight < elem[i].offsetHeight) {
+      maxHeight = elem[i].offsetHeight;
     }
+
   }
-  return max;
+  return maxHeight;
 }
 
-findMin = (heights) => {
-  let min = heights[0];
-  for(let i = 0; i < heights.length; i++) {
-    if(min > heights[i]) {
-      min = heights[i];
-    }
-  }
-  return min;
-}
-
-setHeight = (elements, height) => {
-  let thisHeight = height + 70;
-  for(let i = 0; i < elements.length; i++) {
-    let set = 'height:' + thisHeight + 'px;';
-    elements[i].setAttribute('style', set);
+setHeight = (elem, maxHeight) => {
+  for(let i = 0; i < elem.length; i++) {
+    let height = `height: ${maxHeight}px;`
+    elem[i].setAttribute('style', height);
   }
 }
 
@@ -69,23 +59,34 @@ removeHeight = (elements) => {
   }
 }
 
+evenHeights = (className) => {
+  const elem = document.querySelectorAll(`.${className}`);
+  let maxHeight = findMax(elem);
 
+  setHeight(elem, maxHeight);
 
-width = window.innerWidth;
-if(width > 768) {
-  const heights = findHeights(text);
-  const maxHeight = findMax(heights);
-  setHeight(card, maxHeight);
+  window.addEventListener('resize', (e) => {
+    width = window.innerWidth;
+    if(width > 768) {
+      maxHeight = findMax(elem);
+      setHeight(elem, maxHeight);
+    } else {
+      removeHeight(elem);
+    }
+
+  });
 }
 
-window.addEventListener('resize', (e) => {
-  width = window.innerWidth;
-  if(width > 768) {
-    const heights = findHeights(text);
-    const maxHeight = findMax(heights);
-    setHeight(card, maxHeight);
-  } else {
-    removeHeight(card);
-  }
 
-});
+
+
+evenHeights("card");
+
+
+// width = window.innerWidth;
+// if(width > 768) {
+//   const heights = findHeights(text);
+//   const maxHeight = findMax(heights);
+//   setHeight(card, maxHeight);
+// }
+//

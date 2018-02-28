@@ -681,6 +681,7 @@ nav a {
   position: relative; }
 
 .arrow {
+  margin-left: 6px;
   transition: all ease-out .3s; }
 
 .arrow-down {
@@ -1072,7 +1073,6 @@ nav a {
     color: #000;
     font-family: 'Brandon_med', sans-serif;
     margin-bottom: 23px;
-    flex-grow: 1;
     box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.15);
     display: flex; }
 
