@@ -949,8 +949,8 @@ nav a {
   transition: all 0.2s ease; }
 
 .active, .dot:hover {
-  background-color: #E39049;
-  border: 3px solid #E39049; }
+  background-color: #E39040;
+  border: 3px solid #E39040; }
 
 .fade {
   animation-name: fade;
@@ -1293,7 +1293,7 @@ footer {
 .footer-nav .button {
   margin-top: 24px;
   display: inline-block;
-  background-color: #E39049;
+  background-color: #E39040;
   border: none;
   font-family: 'Brandon_bld', sans-serif;
   font-size: 16px;

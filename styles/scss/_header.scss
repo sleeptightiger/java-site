@@ -38,7 +38,7 @@ nav ul li a:hover {
   background-color: #FFF;
   min-width: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-top: 5px solid #E39040;
+  border-top: 5px solid $accent-color;
   margin-top: 10px;
   padding: 5px 0;
 }
@@ -46,7 +46,7 @@ nav ul li a:hover {
 .dropdown-content:before {
   content: "";
   height:0;
-  border-bottom:9px solid #E39040;
+  border-bottom:9px solid $accent-color;
   border-left:10px solid transparent;
   border-right:10px solid transparent;
   position: absolute;
@@ -121,7 +121,7 @@ nav ul li a:hover {
 .dropdown-content .new:after,
 .drop-nav .new:after {
   content: "NEW";
-  background: #E39040;
+  background: $accent-color;
   font-size: 10px;
   padding: 0 5px;
   border-radius: 15px;
@@ -152,8 +152,8 @@ nav ul li a:hover {
 }
 
 .dropdown-content a:hover {
-  fill: #E39040;
-  color: #E39040;
+  fill: $accent-color;
+  color: $accent-color;
 }
 
 .dropdown-content a .icon svg path {
@@ -162,7 +162,7 @@ nav ul li a:hover {
 }
 
 .dropdown-content a:hover > .icon svg path {
-  fill: #E39040;
+  fill: $accent-color;
 }
 
 
