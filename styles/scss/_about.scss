@@ -6,7 +6,7 @@
     font-family: 'Brandon_med', sans-serif;
     margin-bottom: 23px;
     flex-grow: 1;
-    height: 335px;
+    // height: 335px;
     box-shadow: 0px 9px 16px rgba(0, 0, 0, .15);
     display: flex;
   }
@@ -34,20 +34,11 @@
     background-color: rgba(255,255,255,0);
   }
   .img-bg {
-
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-  }
-  .long {
-    // margin-top: -100px;
-  }
-
-  .short {
-    // height: 100%;
-    // width: 550px;
   }
 }
 
@@ -110,7 +101,7 @@
       margin-right: 20px;
       margin-bottom: 20px;
       width: 40%;
-      height: 800px;
+      // height: 800px;
       flex-direction: column-reverse;
       &:nth-child(2n) {
         margin-right: 0px;
@@ -123,11 +114,13 @@
 
   .card .text {
     width: 100%;
-    height: 500px;
+    // height: 500px;
   }
 
+  .card .img-bg,
+  .img .overlay,
   .card .img {
-    height: 140px;
+    max-height: 140px;
   }
 
 
@@ -140,14 +133,14 @@
       margin: 0;
       margin-bottom: 23px;
       flex-grow: 1;
-      height: 428px;
+      // height: 428px;
       width: 100%;
     }
   }
 
   .card .text {
     width: 100%;
-    height: 268px;
+    // height: 268px;
   }
 
   .card .img {
