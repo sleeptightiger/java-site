@@ -1160,7 +1160,8 @@ nav a {
   .card .img-bg,
   .img .overlay,
   .card .img {
-    height: 140px; } }
+    height: 140px;
+    max-height: 140px; } }
 @media screen and (max-width: 480px) {
   .wrapper {
     flex-direction: column; }
