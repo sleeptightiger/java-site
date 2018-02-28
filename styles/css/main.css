@@ -1084,6 +1084,7 @@ nav a {
   flex-grow: 2;
   overflow: hidden;
   width: 100%;
+  height: 100%;
   position: relative; }
   .card .img .overlay {
     background-color: rgba(255, 255, 255, 0.3);
@@ -1092,16 +1093,36 @@ nav a {
     transition: all ease-out .3s; }
   .card .img .clear {
     background-color: rgba(255, 255, 255, 0); }
-  .card .img img {
+  .card .img .img-bg {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: -5; }
-  .card .img .long {
-    margin-top: -100px; }
-  .card .img .short {
     height: 100%;
-    width: 550px; }
+    z-index: -1; }
+
+.food-img .img-bg {
+  background: url("../../img/pexels-photo-803897.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.catering-img .img-bg {
+  background: url("../../img/nick-hillier-313992.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.event-img .img-bg {
+  background: url("../../img/pexels-photo-800406.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.coffee-img .img-bg {
+  background: url("../../img/andrew-spencer-332965.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .card .text {
   width: 80%;
@@ -1138,16 +1159,7 @@ nav a {
     height: 500px; }
 
   .card .img {
-    height: 140px; }
-    .card .img .long {
-      margin-top: -30px;
-      margin-left: -70px;
-      height: 180%;
-      width: 160%; }
-    .card .img .short {
-      height: 130%;
-      margin-top: -50px;
-      margin-left: -20px; } }
+    height: 140px; } }
 @media screen and (max-width: 480px) {
   .wrapper {
     flex-direction: column; }
@@ -1163,15 +1175,7 @@ nav a {
     height: 268px; }
 
   .card .img {
-    height: 160px; }
-    .card .img .long {
-      margin-top: -100px;
-      height: 300%;
-      width: 125%; }
-    .card .img .short {
-      height: 200%;
-      margin-top: -40px;
-      margin-left: 0px; } }
+    height: 160px; } }
 .menus {
   margin: 120px auto;
   text-align: center;
