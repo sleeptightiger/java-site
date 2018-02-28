@@ -38,11 +38,11 @@ arrowUp = () => {
   }
 }
 
-const width = window.innerWidth;
+let width = window.innerWidth;
 responsive(width);
 
 window.addEventListener('resize', (e) => {
-  const width = window.innerWidth;
+  let width = window.innerWidth;
   responsive(width);
 });
 
@@ -53,7 +53,7 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('close');
   hidden.classList.toggle('unhide');
   modalOpen = !modalOpen;
-  const width = window.innerWidth;
+  let width = window.innerWidth;
   responsive(width);
 });
 

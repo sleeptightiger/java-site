@@ -63,21 +63,29 @@ setHeight = (elements, height) => {
   }
 }
 
+removeHeight = (elements) => {
+  for(let i = 0; i < elements.length; i++) {
+    elements[i].style.height = null;
+  }
+}
 
 
-// const width = window.innerWidth;
-// if(width > 768) {
-//   const heights = findHeights(text);
-//   const maxHeight = findMax(heights);
-//   setHeight(card, maxHeight);
-// }
-//
-// window.addEventListener('resize', (e) => {
-//   const width = window.innerWidth;
-//   if(width > 768) {
-//     const heights = findHeights(text);
-//     const maxHeight = findMax(heights);
-//     setHeight(card, maxHeight);
-//   }
-//
-// });
+
+width = window.innerWidth;
+if(width > 768) {
+  const heights = findHeights(text);
+  const maxHeight = findMax(heights);
+  setHeight(card, maxHeight);
+}
+
+window.addEventListener('resize', (e) => {
+  width = window.innerWidth;
+  if(width > 768) {
+    const heights = findHeights(text);
+    const maxHeight = findMax(heights);
+    setHeight(card, maxHeight);
+  } else {
+    removeHeight(card);
+  }
+
+});
