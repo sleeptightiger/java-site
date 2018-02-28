@@ -38,6 +38,10 @@ footer {
   line-height: 31px;
 }
 
+.footer-nav nav ul a:hover {
+  color: $accent-color;
+}
+
 .footer-nav .button {
   margin-top: 24px;
   display: inline-block;

@@ -1317,6 +1317,9 @@ footer {
   font-size: 14px;
   line-height: 31px; }
 
+.footer-nav nav ul a:hover {
+  color: #E39040; }
+
 .footer-nav .button {
   margin-top: 24px;
   display: inline-block;
