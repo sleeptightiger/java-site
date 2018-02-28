@@ -6,7 +6,7 @@
     font-family: 'Brandon_med', sans-serif;
     margin-bottom: 23px;
     // flex-grow: 1;
-    // height: 335px;
+    min-height: 265px;
     box-shadow: 0px 9px 16px rgba(0, 0, 0, .15);
     display: flex;
   }
@@ -27,7 +27,7 @@
   .overlay {
     background-color: rgba(255,255,255,.3);
     position: relative;
-    // height: 335px;
+    height: 100%;
     transition: all ease-out .3s;
   }
   .clear {
@@ -121,7 +121,7 @@
   .card .img-bg,
   .img .overlay,
   .card .img {
-    max-height: 140px;
+    height: 140px;
   }
 
 
