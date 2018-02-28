@@ -1385,7 +1385,10 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     height: 768px; }
 
   .footer-nav {
-    width: 25%; } }
+    width: 25%; }
+
+  .address {
+    margin-bottom: 48.4px; } }
 @media screen and (max-width: 600px) {
   .lower-footer {
     flex-direction: column;
