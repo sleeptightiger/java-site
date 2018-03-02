@@ -24,7 +24,8 @@ footer.loc-pg:before {
   margin-right: 28px;
   margin-bottom: 28px;
   box-shadow: 0px 9px 16px rgba(0, 0, 0, .15);
-  max-height: 453.75px;
+  // max-height: 453.75px;
+  // display: flex;
 }
 
 .card-gallery .info:nth-child(3) {
@@ -74,16 +75,17 @@ footer.loc-pg:before {
 
 .details {
   padding: 30px;
+  position: relative;
 }
 
-.info h3 {
+.info-header {
   word-spacing: -5px;
   margin-top: 0;
   margin-bottom: 15px;
   padding-left: 0;
 }
 
-.info .detail-text p {
+.info .details .detail-text p  {
   font-size: 16px;
   line-height: 24px;
 }
@@ -91,6 +93,23 @@ footer.loc-pg:before {
 .info .details .detail .icon svg {
   margin-left: 0;
   font-size: 15px;
+}
+
+.view-msg {
+  float: right;
+  display: inline-block;
+  margin-bottom: 25px;
+  display: none;
+  // margin-left: -15px;
+}
+
+.view-msg p {
+  color: $accent-color;
+  font-size: 16px;
+}
+
+.view-msg p span svg {
+  height: 13px;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,5 +140,9 @@ footer.loc-pg:before {
 
   .card-gallery .info:nth-child(3) {
     margin-right: 0px;
+  }
+
+  .view-msg {
+    display: inline-block;
   }
 }

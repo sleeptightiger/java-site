@@ -1526,8 +1526,7 @@ footer.loc-pg:before {
   width: 30%;
   margin-right: 28px;
   margin-bottom: 28px;
-  box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.15);
-  max-height: 453.75px; }
+  box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.15); }
 
 .card-gallery .info:nth-child(3) {
   margin-right: 0; }
@@ -1567,21 +1566,35 @@ footer.loc-pg:before {
   background-size: cover; }
 
 .details {
-  padding: 30px; }
+  padding: 30px;
+  position: relative; }
 
-.info h3 {
+.info-header {
   word-spacing: -5px;
   margin-top: 0;
   margin-bottom: 15px;
   padding-left: 0; }
 
-.info .detail-text p {
+.info .details .detail-text p {
   font-size: 16px;
   line-height: 24px; }
 
 .info .details .detail .icon svg {
   margin-left: 0;
   font-size: 15px; }
+
+.view-msg {
+  float: right;
+  display: inline-block;
+  margin-bottom: 25px;
+  display: none; }
+
+.view-msg p {
+  color: #E39040;
+  font-size: 16px; }
+
+.view-msg p span svg {
+  height: 13px; }
 
 @media screen and (max-width: 768px) {
   .card-gallery .info {
@@ -1603,6 +1616,9 @@ footer.loc-pg:before {
     margin-right: 0; }
 
   .card-gallery .info:nth-child(3) {
-    margin-right: 0px; } }
+    margin-right: 0px; }
+
+  .view-msg {
+    display: inline-block; } }
 
 /*# sourceMappingURL=main.css.map */
