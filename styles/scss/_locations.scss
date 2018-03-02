@@ -148,12 +148,9 @@
   to {opacity: 1}
 }
 
-.info {
- font-family: 'Brandon_med', sans-serif;
- background-color: #FFF;
-}
 
-.info h3 {
+
+.mySlides h3 {
   font-family: 'Monthoers', sans-serif;
   font-size: 38px;
   margin: 30px auto;
@@ -161,13 +158,13 @@
   padding-left: 15px;
 }
 
-.info .detail {
+.detail {
   display: flex;
   flex-direction: row;
   margin: 20px 0;
 }
 
-.info .detail > .icon svg {
+.detail > .icon svg {
   margin: 15px;
   margin-top: 5px;
 }

@@ -956,23 +956,19 @@ nav a {
     opacity: .4; }
   to {
     opacity: 1; } }
-.info {
-  font-family: 'Brandon_med', sans-serif;
-  background-color: #FFF; }
-
-.info h3 {
+.mySlides h3 {
   font-family: 'Monthoers', sans-serif;
   font-size: 38px;
   margin: 30px auto;
   text-align: left;
   padding-left: 15px; }
 
-.info .detail {
+.detail {
   display: flex;
   flex-direction: row;
   margin: 20px 0; }
 
-.info .detail > .icon svg {
+.detail > .icon svg {
   margin: 15px;
   margin-top: 5px; }
 
@@ -1511,7 +1507,7 @@ footer.loc-pg:before {
   display: block;
   position: absolute;
   bottom: 100%;
-  z-index: -1; }
+  z-index: -2; }
 
 .card-gallery {
   display: flex;
@@ -1531,45 +1527,18 @@ footer.loc-pg:before {
 .card-gallery .info:nth-child(3) {
   margin-right: 0; }
 
-.info-img {
-  height: 140.75px;
-  opacity: .7; }
-
-.info-barton {
-  background: url("../../img/aj-bartonsprings.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.info-cityhall {
-  background: url("../../img/aj-cityhall.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.info-360 {
-  background: url("../../img/aj-360express.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.info-airport {
-  background: url("../../img/aj-airport.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.info-dripping {
-  background: url("../../img/aj-drippingsprings.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.info {
+  font-family: 'Brandon_med', sans-serif; }
 
 .details {
   padding: 30px;
-  position: relative; }
+  position: relative;
+  background-color: #FFF;
+  height: 100%; }
 
 .info-header {
+  font-family: 'Monthoers', sans-serif;
+  font-size: 38px;
   word-spacing: -5px;
   margin-top: 0;
   margin-bottom: 15px;
