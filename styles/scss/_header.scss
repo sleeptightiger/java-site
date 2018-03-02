@@ -13,6 +13,7 @@ header {
 
 nav {
   align-self: center;
+  margin-right: -26px;
 }
 
 nav ul {
@@ -76,7 +77,7 @@ nav ul li a:hover {
 .parent3	{
 	transition-property: all;
 	transition-duration: 300ms;
-	transform: rotateX(-45deg);
+	transform: rotateX(-25deg);
 	transform-origin: top;
   opacity: 0;
 }

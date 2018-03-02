@@ -17,6 +17,9 @@
 body {
   position: relative; }
 
+h1, h2, h3, h4, h5, h6 {
+  word-spacing: -0.15em; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -521,7 +524,8 @@ header {
   max-width: 1000px; }
 
 nav {
-  align-self: center; }
+  align-self: center;
+  margin-right: -26px; }
 
 nav ul {
   display: flex;
@@ -574,7 +578,7 @@ nav ul li a:hover {
 .parent3 {
   transition-property: all;
   transition-duration: 300ms;
-  transform: rotateX(-45deg);
+  transform: rotateX(-25deg);
   transform-origin: top;
   opacity: 0; }
 
@@ -1139,7 +1143,7 @@ nav a {
     font-family: 'Brandon_med', sans-serif;
     font-size: 16px;
     line-height: 25px; }
-    .card .text p a {
+    .card .text p .check-out {
       color: #E39040; }
 
 @media screen and (max-width: 768px) {
