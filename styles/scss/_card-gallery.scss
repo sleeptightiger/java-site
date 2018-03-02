@@ -13,87 +13,181 @@ footer.loc-pg:before {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 60.2px;
   margin-bottom: 100px;
+  &::after {
+    content: '';
+    flex: auto;
+    width: 31%;
+    max-width: 31%;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    width: 31%;
+    max-width: 31%;
+
+    margin-right: 2%;
+    margin-bottom: 28px;
+    box-shadow: 0px 9px 16px rgba(0, 0, 0, .15);
+    font-family: 'Brandon_med', sans-serif;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:nth-child(4) {
+      // max-width: 30.5%;
+    }
+    &:nth-child(5) {
+      // align-self: ;
+    }
+
+    .details {
+      padding: 30px;
+      position: relative;
+      background-color: #FFF;
+      flex-grow: 1;
+      .info-header {
+        font-family: 'Monthoers', sans-serif;
+        font-size: 38px;
+        word-spacing: -5px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-left: 0;
+      }
+      .detail-text p  {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .detail .icon svg {
+        margin-left: 0;
+        font-size: 15px;
+      }
+      .view-msg {
+        float: right;
+        display: inline-block;
+        margin-bottom: 25px;
+        display: none;
+        p {
+          color: $accent-color;
+          font-size: 16px;
+          span svg {
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
 }
 
-.card-gallery .info {
-  flex-grow: 1;
-  max-width: 315px;
-  width: 30%;
-  margin-right: 28px;
-  margin-bottom: 28px;
-  box-shadow: 0px 9px 16px rgba(0, 0, 0, .15);
-}
-
-.card-gallery .info:nth-child(3) {
-  margin-right: 0;
-}
-
-.info {
- font-family: 'Brandon_med', sans-serif;
-
-}
-
-
-
-
-
-.details {
-  padding: 30px;
+.info .info-img {
+  height: 140.75px;
   position: relative;
-  background-color: #FFF;
-  height: 100%;
+  .info-overlay {
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    transition: all ease-out .3s;
+
+  }
+  .hover {
+    background-color: rgba(0,0,0,.6);
+  }
+  .info-img-bg {
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: -1;
+  }
+  .hover-text {
+    opacity: 0;
+    transform: translateX(-50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    transition: all ease-out .3s;
+    p {
+      font-size: 16px;
+      span {
+        margin-left: 5px;
+        svg {
+          height: 13px;
+        }
+      }
+    }
+  }
+  .move-in {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
-.info-header {
-  font-family: 'Monthoers', sans-serif;
-  font-size: 38px;
-  word-spacing: -5px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  padding-left: 0;
+.info-barton .info-img-bg {
+  background: url('../../img/aj-bartonsprings.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.info .details .detail-text p  {
-  font-size: 16px;
-  line-height: 24px;
+.info-cityhall .info-img-bg {
+  background: url('../../img/aj-cityhall.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.info .details .detail .icon svg {
-  margin-left: 0;
-  font-size: 15px;
+.info-360 .info-img-bg {
+  background: url('../../img/aj-360express.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.view-msg {
-  float: right;
-  display: inline-block;
-  margin-bottom: 25px;
-  display: none;
-  // margin-left: -15px;
+.info-airport .info-img-bg {
+  background: url('../../img/aj-airport.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.view-msg p {
-  color: $accent-color;
-  font-size: 16px;
+.info-dripping .info-img-bg {
+  background: url('../../img/aj-drippingsprings.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.view-msg p span svg {
-  height: 13px;
-}
 
 @media screen and (max-width: 768px) {
+
+  .card-gallery::after {
+    content: '';
+    flex: auto;
+    width: 45%;
+    max-width: 335px;
+  }
 
   .card-gallery .info {
     width: 45%;
     max-width: 335px;
-  }
-  .card-gallery .info:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  .card-gallery .info:nth-child(3) {
-    margin-right: 28px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-child(3) {
+      margin-right: 2%;
+    }
   }
 
   footer.loc-pg:before {
