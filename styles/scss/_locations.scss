@@ -20,9 +20,10 @@
   height: 70px;
   width: 415px;
   line-height: 25px;
+  font-family: 'Brandon_med', sans-serif;
 }
 
-.locations p {
+.detail-text p {
   font-size: 18px;
   line-height: 30px;
   font-family: 'Brandon_med', sans-serif;
@@ -99,15 +100,6 @@
     text-align: left;
 }
 
-.mySlides h3 {
-  font-family: 'Monthoers', sans-serif;
-  font-size: 38px;
-  margin: 30px auto;
-  text-align: left;
-  padding-left: 15px;
-}
-
-
 
 .prev, .next {
   cursor: pointer;
@@ -156,13 +148,26 @@
   to {opacity: 1}
 }
 
-.detail {
+.info {
+ font-family: 'Brandon_med', sans-serif;
+ background-color: #FFF;
+}
+
+.info h3 {
+  font-family: 'Monthoers', sans-serif;
+  font-size: 38px;
+  margin: 30px auto;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.info .detail {
   display: flex;
   flex-direction: row;
   margin: 20px 0;
 }
 
-.detail > .icon svg {
+.info .detail > .icon svg {
   margin: 15px;
   margin-top: 5px;
 }

@@ -1,0 +1,125 @@
+footer.loc-pg:before {
+  content: '';
+  background-color: #F2F2F2;
+  height: 1247px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  z-index: -1;
+}
+
+.card-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 60.2px;
+  margin-bottom: 100px;
+}
+
+.card-gallery .info {
+  flex-grow: 1;
+  max-width: 315px;
+  width: 30%;
+  margin-right: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0px 9px 16px rgba(0, 0, 0, .15);
+  max-height: 453.75px;
+}
+
+.card-gallery .info:nth-child(3) {
+  margin-right: 0;
+}
+
+
+.info-img {
+  height: 140.75px;
+  opacity: .7;
+}
+
+.info-barton {
+  background: url('../../img/aj-bartonsprings.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-cityhall {
+  background: url('../../img/aj-cityhall.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-360 {
+  background: url('../../img/aj-360express.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-airport {
+  background: url('../../img/aj-airport.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-dripping {
+  background: url('../../img/aj-drippingsprings.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details {
+  padding: 30px;
+}
+
+.info h3 {
+  word-spacing: -5px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-left: 0;
+}
+
+.info .detail-text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.info .details .detail .icon svg {
+  margin-left: 0;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .card-gallery .info {
+    width: 45%;
+    max-width: 335px;
+  }
+  .card-gallery .info:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .card-gallery .info:nth-child(3) {
+    margin-right: 28px;
+  }
+
+  footer.loc-pg:before {
+    height: 1709px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-gallery .info {
+    width: 100%;
+    max-width: 480px;
+    margin-right: 0;
+  }
+
+  .card-gallery .info:nth-child(3) {
+    margin-right: 0px;
+  }
+}
