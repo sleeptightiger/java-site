@@ -84,7 +84,7 @@ evenHeights = (className) => {
 
 
 hoverOverlayToggle(photos, text, 'clear');
-evenHeights("card");
+// evenHeights("card");
 
 
 // width = window.innerWidth;

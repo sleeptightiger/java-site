@@ -1,0 +1,70 @@
+.barton-hero {
+  height: 220px;
+  position: relative;
+  margin-top: 70.2px;
+  .barton-hero-img {
+    background: url('../../img/aj-bartonsprings.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+  }
+  .box-headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 129px;
+    width: 174px;
+    text-align: center;
+    padding: 17px 21px;
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .barton-hero {
+    .box-headline {
+      height: 73px;
+      width: 312px;
+      padding: 12px 24px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .barton-hero {
+    height: 300px;
+    .box-headline {
+      height: 104px;
+      width: 435px;
+      padding: 18px 23px;
+      padding-bottom: 0;
+      h2 {
+        font-size: 73px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .barton-hero {
+    height: 339.91px;
+
+    .barton-hero-img {
+      width: 695px;
+      position: absolute;
+      right: 0;
+    }
+    .box-headline {
+      position: absolute;
+      left: 0;
+      transform: translate(0%, -50%);
+    }
+  }
+}
