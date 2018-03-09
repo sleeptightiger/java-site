@@ -12,11 +12,17 @@ if(width > 1024) {
 window.addEventListener('resize', (e) => {
   width = window.innerWidth;
   if(width > 1024) {
-    schedule.removeChild(headline);
-    menus.insertBefore(headline, menus.childNodes[0]);
+    if(schedule.contains(headline)) {
+      schedule.removeChild(headline);
+      menus.insertBefore(headline, menus.childNodes[0]);
+    }
+
   } else if (width < 1024) {
-    menus.removeChild(headline);
-    schedule.insertBefore(headline, schedule.childNodes[0]);
+    if(menus.contains(headline)) {
+      menus.removeChild(headline);
+      schedule.insertBefore(headline, schedule.childNodes[0]);
+    }
+
   }
 
 });
@@ -43,7 +49,6 @@ if(d.getDay() == 0) {
 } else {
   margin = 30*(d.getDay() - 1) + 5;
 }
-console.log(margin);
 clock.setAttribute('style', `margin-top: ${margin}px;`);
 day[0].setAttribute('style', 'color: #000;');
 day[1].setAttribute('style', 'color: #000;');
