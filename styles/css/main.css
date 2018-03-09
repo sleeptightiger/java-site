@@ -1669,7 +1669,8 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
 .barton-hero {
   height: 220px;
   position: relative;
-  margin-top: 70.2px; }
+  margin-top: 70.2px;
+  margin-bottom: 40px; }
   .barton-hero .barton-hero-img {
     background: url("../../img/aj-bartonsprings.jpg");
     background-position: center;
@@ -1733,6 +1734,97 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
           font-family: 'Brandon_med', sans-serif;
           letter-spacing: 1px; }
 
+.barton-menus {
+  margin-bottom: 60px;
+  margin-top: 40px; }
+  .barton-menus .barton-menus-wrap .schedule {
+    width: 100%;
+    margin-bottom: 71px; }
+    .barton-menus .barton-menus-wrap .schedule .info {
+      max-width: 334px;
+      margin: 0 auto; }
+      .barton-menus .barton-menus-wrap .schedule .info .schedule-description {
+        font-size: 16px;
+        font-family: 'Brandon_med', sans-serif;
+        line-height: 23px;
+        margin-top: 28px;
+        display: inline-block;
+        width: 80%; }
+    .barton-menus .barton-menus-wrap .schedule .detail-text {
+      display: inline-block;
+      width: 100%; }
+    .barton-menus .barton-menus-wrap .schedule .days {
+      color: #AFAFAF;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .barton-menus .barton-menus-wrap .schedule .days p {
+        width: 50%;
+        display: inline-block; }
+      .barton-menus .barton-menus-wrap .schedule .days .time {
+        text-align: right; }
+  .barton-menus .barton-menus-wrap h1 {
+    max-width: 290px;
+    margin: 0 auto;
+    margin-bottom: 22px; }
+  .barton-menus .barton-menus-wrap .breakfast {
+    margin-bottom: 18px; }
+  .barton-menus .barton-menus-wrap .barton-menu {
+    width: 100%;
+    height: 335px;
+    position: relative; }
+    .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text {
+      width: 80%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text h3 {
+        font-family: 'Monthoers', sans-serif;
+        font-size: 38px;
+        color: #FFF;
+        letter-spacing: 1px;
+        margin-bottom: 29px; }
+      .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text button {
+        height: 50px;
+        width: 186px;
+        margin: 0 auto;
+        border: 3px solid #FFF;
+        background-color: transparent;
+        margin-bottom: 16px;
+        padding: 0;
+        transition: all ease-out .3s; }
+        .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text button a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          padding-top: 13.8px;
+          font-size: 16px;
+          color: #FFF;
+          font-family: 'Brandon_med', sans-serif;
+          letter-spacing: 1px;
+          transition: all ease-out .3s; }
+      .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text button:hover {
+        background-color: #FFF; }
+        .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text button:hover a {
+          color: #000; }
+    .barton-menus .barton-menus-wrap .barton-menu .barton-img {
+      width: 100%;
+      height: 100%; }
+    .barton-menus .barton-menus-wrap .barton-menu .breakfast-img {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/eggs.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .barton-menus .barton-menus-wrap .barton-menu .lunch-img {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../img/burgers.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+
 .map-shadow {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); }
 
@@ -1768,7 +1860,14 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       text-align: left;
       padding-left: 30px;
       padding-top: 46px;
-      padding-right: 54px; } }
+      padding-right: 54px; }
+
+  .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper {
+    display: flex;
+    flex-direction: row; }
+    .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .breakfast {
+      margin-bottom: 0;
+      margin-right: 18.1px; } }
 @media screen and (min-width: 1024px) {
   .barton-hero {
     height: 339.91px; }
@@ -1779,6 +1878,43 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     .barton-hero .box-headline {
       position: absolute;
       left: 0;
-      transform: translate(0%, -50%); } }
+      transform: translate(0%, -50%); }
+
+  .barton-menus .barton-menus-wrap {
+    display: flex;
+    flex-direction: row; }
+    .barton-menus .barton-menus-wrap .schedule {
+      width: 334px; }
+    .barton-menus .barton-menus-wrap .breakfast-lunch {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      .barton-menus .barton-menus-wrap .breakfast-lunch .barton-menu-headline {
+        width: 100%;
+        height: 39px;
+        margin: 0;
+        align-self: center;
+        margin-bottom: 29px; }
+      .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-left: 21.1px; }
+        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu .barton-menu-text h3 {
+          transform: translateY(70px);
+          transition: all ease-out .3s; }
+        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu .barton-menu-text button {
+          opacity: 0;
+          z-index: -999;
+          transform: translateY(100px);
+          transition: all ease-out .3s; }
+        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu:hover .barton-menu-text h3 {
+          transform: translateY(-100px);
+          opacity: 0;
+          z-index: -999; }
+        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu:hover .barton-menu-text button {
+          transform: translateY(-30px);
+          opacity: 1;
+          z-index: 999; } }
 
 /*# sourceMappingURL=main.css.map */
