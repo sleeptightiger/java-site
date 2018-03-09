@@ -39,7 +39,6 @@ weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
 let n = weekday[d.getDay()];
-console.log(n);
 
 const day = document.querySelectorAll(`.${n}`);
 const clock = document.querySelector('.clock');
