@@ -1821,6 +1821,7 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text button:hover a {
           color: #000; }
     .barton-menus .barton-menus-wrap .barton-menu .barton-img {
+      z-index: -7;
       width: 100%;
       height: 100%;
       position: relative; }
