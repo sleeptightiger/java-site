@@ -187,22 +187,45 @@
       .barton-img {
         width: 100%;
         height: 100%;
+        position: relative;
+        .barton-img-overlay {
+          z-index: -8;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, .3);
+          transition: all ease-out .2s;
+        }
+        .breakfast-img {
+          z-index: -9;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background:
+            url('../../img/eggs.jpeg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .lunch-img {
+          z-index: -9;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background:
+            url('../../img/burgers.jpeg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
       }
-      .breakfast-img {
-        background:
-          linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
-          url('../../img/eggs.jpeg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .lunch-img {
-        background:
-          linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
-          url('../../img/burgers.jpeg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+
+
+    }
+    .barton-menu:hover {
+      .barton-img-overlay {
+        background-color: rgba(227, 144, 64, .5);
       }
     }
   }
@@ -326,7 +349,7 @@
           .barton-menu {
             .barton-menu-text {
               h3 {
-                transform: translateY(70px);
+                transform: translateY(80px);
                 transition: all ease-out .3s;
               }
               button {
