@@ -1724,7 +1724,8 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         height: 50px;
         width: 265px;
         background-color: #E39040;
-        padding: 0; }
+        padding: 0;
+        transition: all ease-out .3s; }
         .barton-blends .blend-card .blend-text button a {
           color: #FFF;
           display: inline-block;
@@ -1732,7 +1733,12 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
           height: 100%;
           padding: 14px 20px;
           font-family: 'Brandon_med', sans-serif;
-          letter-spacing: 1px; }
+          letter-spacing: 1px;
+          transition: all ease-out .3s; }
+      .barton-blends .blend-card .blend-text button:hover {
+        background-color: #FFF; }
+        .barton-blends .blend-card .blend-text button:hover a {
+          color: #E39040; }
 
 .barton-menus {
   margin-bottom: 60px;
@@ -1750,6 +1756,9 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         margin-top: 28px;
         display: inline-block;
         width: 80%; }
+    .barton-menus .barton-menus-wrap .schedule .clock {
+      margin-bottom: 0;
+      margin-top: 5px; }
     .barton-menus .barton-menus-wrap .schedule .detail-text {
       display: inline-block;
       width: 100%; }
