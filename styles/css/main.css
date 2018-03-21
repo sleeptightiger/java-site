@@ -926,13 +926,14 @@ nav a {
     margin: 30px auto;
     text-align: left;
     padding-left: 15px; }
-  .mySlides .detail {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0; }
-    .mySlides .detail .icon svg {
-      margin: 15px;
-      margin-top: 5px; }
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0; }
+  .detail .icon svg {
+    margin: 15px;
+    margin-top: 5px; }
 
 .dot {
   cursor: pointer;
