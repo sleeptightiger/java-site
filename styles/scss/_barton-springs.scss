@@ -21,8 +21,13 @@
     width: 174px;
     text-align: center;
     padding: 17px 21px;
+    border: 5px solid #000;
+    display: inline-block;
     h2 {
       margin: 0;
+      font-size: 50px;
+      font-family: 'Monthoers', sans-serif;
+      // margin-top: 15px;
     }
   }
 }

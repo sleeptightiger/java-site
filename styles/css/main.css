@@ -1660,9 +1660,13 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     height: 129px;
     width: 174px;
     text-align: center;
-    padding: 17px 21px; }
+    padding: 17px 21px;
+    border: 5px solid #000;
+    display: inline-block; }
     .barton-hero .box-headline h2 {
-      margin: 0; }
+      margin: 0;
+      font-size: 50px;
+      font-family: 'Monthoers', sans-serif; }
 
 .barton-blends {
   margin-top: 60px;
