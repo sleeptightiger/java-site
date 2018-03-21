@@ -1384,7 +1384,8 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
   .upper-footer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-top: 40.4px; }
 
   .footer-map {
     order: -1;
