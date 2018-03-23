@@ -517,6 +517,9 @@ a {
 header {
   transition: all ease-out .3s; }
 
+.sticky-header {
+  display: none; }
+
 .head-container {
   font-family: 'Brandon_bld', sans-serif;
   margin: 0 auto;

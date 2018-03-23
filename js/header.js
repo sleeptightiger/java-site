@@ -1,6 +1,7 @@
 const header = document.querySelector("header");
 const headContainer = header.querySelector(".head-container");
 const logo = header.querySelector(".logo-withstar img");
+const body = document.querySelector("body");
 
 
 const height = header.offsetHeight;
@@ -20,12 +21,17 @@ function myFunction() {
     logo.style.height = "60px";
     logo.style.width = "65px";
     logo.style.margin = "5px 0";
+    body.style.top = "70px";
   } else {
     header.classList.remove("sticky");
     headContainer.classList.remove("sticky-head");
-    // logo.classList.remove("sticky-logo");
     logo.style.height = "98px";
     logo.style.width = "103px";
     logo.style.margin = "0";
+    body.style.top = "0px";
   }
 }
+
+window.addEventListener('scroll', (e) => {
+  console.log(window.pageYOffset);
+});
