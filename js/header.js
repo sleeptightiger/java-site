@@ -10,11 +10,11 @@ console.log(height);
 
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {sticky()};
 
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function sticky() {
   if (window.pageYOffset >= height) {
     header.classList.add("sticky");
     headContainer.classList.add("sticky-head");
@@ -31,7 +31,3 @@ function myFunction() {
     body.style.top = "0px";
   }
 }
-
-window.addEventListener('scroll', (e) => {
-  console.log(window.pageYOffset);
-});
