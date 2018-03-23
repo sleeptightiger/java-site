@@ -518,7 +518,8 @@ header {
   transition: all ease-out .3s; }
 
 .sticky-header {
-  display: none; }
+  display: none;
+  transition: all ease-out .3s; }
 
 .head-container {
   font-family: 'Brandon_bld', sans-serif;
@@ -686,11 +687,11 @@ nav a {
   font-size: 16px; }
 
 @media screen and (max-width: 1024px) {
-  header {
+  .head-container {
     width: 90%;
     max-width: 905px; } }
 @media screen and (max-width: 875px) {
-  header {
+  head-container {
     width: 90%;
     margin-bottom: 0px; } }
 .hidden-menu {
@@ -788,7 +789,8 @@ nav a {
   z-index: 101;
   cursor: pointer;
   box-sizing: content-box;
-  padding: 5px; }
+  padding: 5px;
+  top: 20px; }
 
 .line {
   position: absolute;
@@ -897,7 +899,7 @@ nav a {
   position: relative; }
   .locations-left .locations-map .pointer {
     position: absolute;
-    z-index: 100; }
+    z-index: 99; }
     .locations-left .locations-map .pointer svg path {
       transition: all ease-out .3s; }
     .locations-left .locations-map .pointer svg polygon {

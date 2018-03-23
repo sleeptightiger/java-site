@@ -35,7 +35,7 @@
 
     .pointer {
       position: absolute;
-      z-index: 100;
+      z-index: 99;
       svg {
         path {
           transition: all ease-out .3s;

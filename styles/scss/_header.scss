@@ -4,6 +4,7 @@ header {
 
 .sticky-header {
   display: none;
+  transition: all ease-out .3s;
 }
 
 .head-container {
@@ -213,7 +214,7 @@ nav a {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
+  .head-container {
     width: 90%;
     max-width: 905px;
   }
@@ -221,7 +222,7 @@ nav a {
 }
 
 @media screen and (max-width: 875px) {
-  header {
+  head-container {
     width: 90%;
     margin-bottom: 0px;
   }
