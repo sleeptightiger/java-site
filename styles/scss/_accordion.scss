@@ -1,5 +1,5 @@
 .hidden-menu {
-  transform: translateY(-454px);
+  transform: translateY(-1130px);
   z-index: 100;
   transition: all ease-out .3s;
   position: absolute;
@@ -16,6 +16,14 @@
 .tab {
   width: 100%;
   position: relative;
+  button {
+    cursor: pointer;
+    a {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
 }
 
 .arrow {

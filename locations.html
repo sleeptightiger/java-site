@@ -13,9 +13,9 @@
     <div class="tab-group hidden-menu">
       <div class="tab">
         <button type="button" name="button" class="tabLocal">LOCATIONS
-          <img class="arrow" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/>
+          <img class="arrow arrow-down" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/>
         </button>
-        <div class="tab-content">
+        <div class="tab-content open-tab">
           <ul class="locations-nav drop-nav">
             <li><a href="barton.html"><span>Barton Springs</span></a></li>
             <li><a href="#"><span>City Hall</span></a></li>
@@ -26,8 +26,8 @@
         </div>
       </div>
       <div class="tab">
-        <button type="button" name="button">MENUS <img class="arrow" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/></button></button>
-        <div class="tab-content">
+        <button type="button" name="button">MENUS <img class="arrow arrow-down" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/></button></button>
+        <div class="tab-content open-tab">
           <ul class="menus-nav drop-nav">
             <li><a href="barton.html"><span>Barton Springs</span></a></li>
             <li><a href="#"><span>City Hall</span></a></li>
@@ -37,16 +37,16 @@
         </div>
       </div>
       <div class="tab">
-        <button type="button" name="button">CATERING<img class="arrow" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/></button></button>
-        <div class="tab-content">
+        <button type="button" name="button">CATERING<img class="arrow arrow-down" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/></button></button>
+        <div class="tab-content open-tab">
           <ul class="catering-nav drop-nav">
             <li><a href="#"><span>Onsite Events</span></a></li>
           </ul>
         </div>
       </div>
       <div class="tab">
-        <button type="button" name="button">STORE<img class="arrow" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/></button></button>
-        <div class="tab-content">
+        <button type="button" name="button">STORE<img class="arrow arrow-down" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/></button></button>
+        <div class="tab-content open-tab">
           <ul class="store-nav drop-nav">
             <li><a href="#"><span>Merchandise</span></a></li>
             <li><a href="#"><span>Gift Cards</span></a></li>
@@ -55,16 +55,16 @@
         </div>
       </div>
       <div class="tab">
-        <button type="button" name="button">ABOUT<img class="arrow" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/></button></button>
-        <div class="tab-content">
+        <button type="button" name="button">ABOUT<img class="arrow arrow-down" src="img/arrow-right.svg" alt="arrow" height="10px" width="10px"/></button></button>
+        <div class="tab-content open-tab">
           <ul class="about-nav drop-nav">
             <li><a href="#"><span>Calendar</span></a></li>
           </ul>
         </div>
       </div>
       <div class="tab">
-        <button type="button" name="button">CONTACT<span class="arrow"></span></button>
-        <div class="tab-content">
+        <button type="button" name="button">CONTACT<span class="arrow arrow-down"></span></button>
+        <div class="tab-content open-tab">
         </div>
       </div>
     </div>
@@ -72,107 +72,111 @@
     <!-- HEADER -->
     <header>
 
-      <a href="index.html">
-        <div class="logo-withstar">
-          <img src="img/withstar.png" alt="logo">
+      <div class="head-container">
+        <a href="index.html">
+          <div class="logo-withstar">
+            <img src="img/withstar.png" alt="logo">
+          </div>
+        </a>
+
+
+        <div class="hamburger">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
         </div>
-      </a>
+        <nav>
 
+          <ul>
+            <li class="dropdown">
+              <div class="tab">
+                <a href="#" >LOCATIONS</a>
+              </div>
+              <div class="parent1">
+            		<div class="parent2">
+            			<div class="parent3">
+                        <div class="dropdown-content drop-location">
+                          <a href="barton.html">Barton Springs</a>
+                          <a href="#">City Hall</a>
+                          <a href="#">360 Express</a>
+                          <a href="#">Austin Airport</a>
+                          <a class="new" href="#">Dripping Springs</a>
+                        </div>
+            			</div>
+            		</div>
+            	</div>
+            </li>
+            <li class="dropdown">
+              <div class="tab">
+                <a href="#">MENUS</a>
+              </div>
+              <div class="parent1">
+            		<div class="parent2">
+            			<div class="parent3">
+                    <div class="dropdown-content drop-menu">
+                      <a href="barton.html">Barton Springs</a>
+                      <a href="#">City Hall</a>
+                      <a href="#">360 Express</a>
+                      <a href="#">Dripping Springs</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="hamburger">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
+            </li>
+            <li class="dropdown">
+              <div class="tab">
+                <a href="#">CATERING</a>
+              </div>
+              <div class="parent1">
+            		<div class="parent2">
+            			<div class="parent3">
+                    <div class="dropdown-content drop-catering">
+                      <a href="#">Onsite Events</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li class="dropdown">
+              <div class="tab">
+                <a href="#">STORE</a>
+              </div>
+              <div class="parent1">
+            		<div class="parent2">
+            			<div class="parent3">
+                    <div class="dropdown-content drop-store">
+                      <a href="#">Austin Java Swag</a>
+                      <a href="#">Gift Cards</a>
+                      <a href="#">Buy Coffee</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li class="dropdown">
+              <div class="tab">
+                <a href="#">ABOUT</a>
+              </div>
+              <div class="parent1">
+            		<div class="parent2">
+            			<div class="parent3">
+                    <div class="dropdown-content drop-about">
+                      <a href="#">Events</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
 
-        <ul>
-          <li class="dropdown">
-            <div class="tab">
-              <a href="#" >LOCATIONS</a>
-            </div>
-            <div class="parent1">
-          		<div class="parent2">
-          			<div class="parent3">
-                      <div class="dropdown-content drop-location">
-                        <a href="barton.html">Barton Springs</a>
-                        <a href="#">City Hall</a>
-                        <a href="#">360 Express</a>
-                        <a href="#">Austin Airport</a>
-                        <a class="new" href="#">Dripping Springs</a>
-                      </div>
-          			</div>
-          		</div>
-          	</div>
-          </li>
-          <li class="dropdown">
-            <div class="tab">
-              <a href="#">MENUS</a>
-            </div>
-            <div class="parent1">
-          		<div class="parent2">
-          			<div class="parent3">
-                  <div class="dropdown-content drop-menu">
-                    <a href="barton.html">Barton Springs</a>
-                    <a href="#">City Hall</a>
-                    <a href="#">360 Express</a>
-                    <a href="#">Dripping Springs</a>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-          </li>
-          <li class="dropdown">
-            <div class="tab">
-              <a href="#">CATERING</a>
-            </div>
-            <div class="parent1">
-          		<div class="parent2">
-          			<div class="parent3">
-                  <div class="dropdown-content drop-catering">
-                    <a href="#">Onsite Events</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </li>
-          <li class="dropdown">
-            <div class="tab">
-              <a href="#">STORE</a>
-            </div>
-            <div class="parent1">
-          		<div class="parent2">
-          			<div class="parent3">
-                  <div class="dropdown-content drop-store">
-                    <a href="#">Austin Java Swag</a>
-                    <a href="#">Gift Cards</a>
-                    <a href="#">Buy Coffee</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </li>
-          <li class="dropdown">
-            <div class="tab">
-              <a href="#">ABOUT</a>
-            </div>
-            <div class="parent1">
-          		<div class="parent2">
-          			<div class="parent3">
-                  <div class="dropdown-content drop-about">
-                    <a href="#">Events</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
     </header>
 
     <section class="loc-pg-hero">
@@ -182,7 +186,7 @@
             <div class="loc-pg-hero">
               <h1 class="horizontal-line-headline">locations</h1>
             </div>
-            <div style="height:310px; width:100%; display:inline-block; overflow:hidden;">
+            <div style="height:310px; width:100%; margin-top: 50px; display:inline-block; overflow:hidden;">
               <iframe class="custom-google-map" style="position:relative; top:-50px; border:none;" src="https://www.google.com/maps/d/u/0/embed?mid=1B1jo_g6RGUWDN60agBIxKJxMuv1hhkcW" width="100%" height="360"></iframe>
             </div>
           </div>
@@ -698,5 +702,6 @@
 
     <script type="text/javascript" src="js/loc-pg.js"></script>
     <script type="text/javascript" src="js/mobile.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
   </body>
 </html>

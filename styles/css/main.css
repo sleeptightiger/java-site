@@ -515,6 +515,9 @@ a {
   .container {
     width: 90%; } }
 header {
+  transition: all ease-out .3s; }
+
+.head-container {
   font-family: 'Brandon_bld', sans-serif;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -522,6 +525,20 @@ header {
   display: flex;
   justify-content: space-between;
   max-width: 1000px; }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #FFF;
+  max-width: 100%;
+  margin: 0;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+  height: 70px; }
+
+.sticky-head {
+  height: 70px;
+  padding-top: 0; }
 
 nav {
   align-self: center;
@@ -652,6 +669,11 @@ nav ul li a:hover {
   width: 103px;
   height: 98px; }
 
+.sticky-logo {
+  height: 60px;
+  width: 65px;
+  margin: 5px 0; }
+
 .logo-typeonly img {
   width: 88px;
   height: 91px; }
@@ -669,7 +691,7 @@ nav a {
     width: 90%;
     margin-bottom: 0px; } }
 .hidden-menu {
-  transform: translateY(-454px);
+  transform: translateY(-1130px);
   z-index: 100;
   transition: all ease-out .3s;
   position: absolute; }
@@ -683,6 +705,12 @@ nav a {
 .tab {
   width: 100%;
   position: relative; }
+  .tab button {
+    cursor: pointer; }
+    .tab button a {
+      height: 100%;
+      width: 100%;
+      display: block; }
 
 .arrow {
   margin-left: 6px;

@@ -48,8 +48,8 @@ window.addEventListener('resize', (e) => {
 
 hamburger.addEventListener('click', () => {
 
-  hide(buttons);
-  arrowUp();
+  // hide(buttons);
+  // arrowUp();
   hamburger.classList.toggle('close');
   hidden.classList.toggle('unhide');
   modalOpen = !modalOpen;
@@ -57,21 +57,21 @@ hamburger.addEventListener('click', () => {
   responsive(width);
 });
 
-for(let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', () => {
-    const tab = buttons[i].nextElementSibling;
-    if(arrows[i].classList.contains('arrow-down')) {
-      arrowUp();
-    } else {
-      arrowUp();
-      arrows[i].classList.toggle('arrow-down');
-    }
-    if(tab.classList.contains('open-tab')) {
-      hide(buttons);
-    } else {
-      hide(buttons);
-      tab.classList.toggle('open-tab');
-    }
-  });
-
-}
+// for(let i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener('click', () => {
+//     const tab = buttons[i].nextElementSibling;
+//     if(arrows[i].classList.contains('arrow-down')) {
+//       arrowUp();
+//     } else {
+//       arrowUp();
+//       arrows[i].classList.toggle('arrow-down');
+//     }
+//     if(tab.classList.contains('open-tab')) {
+//       hide(buttons);
+//     } else {
+//       hide(buttons);
+//       tab.classList.toggle('open-tab');
+//     }
+//   });
+//
+// }
