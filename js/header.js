@@ -8,14 +8,17 @@ const diagonal = document.querySelector(".diagonal-bg");
 
 const height = header.offsetHeight;
 
-console.log(indexBody);
+
+window.addEventListener('resize', (e) => {
+  let width = window.innerWidth;
+  if(width > 875) {
+    window.onscroll = function() {sticky()};
+  }
+  // responsive(width);
+});
 
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {sticky()};
 
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function sticky() {
   if (window.pageYOffset > height) {
     header.classList.add("sticky");
@@ -40,6 +43,9 @@ function sticky() {
     logo.style.width = "103px";
     logo.style.margin = "0";
     body.style.marginTop = "0px";
-    diagonal.style.height = "780px"
+    if(indexBody != null) {
+      diagonal.style.height = "780px";
+    }
+
   }
 }
