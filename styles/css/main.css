@@ -562,6 +562,13 @@ nav ul li a:hover {
   position: relative;
   display: inline-block; }
 
+.unhidden {
+  display: block; }
+
+.visuallyunhidden {
+  transform: rotateX(0deg);
+  opacity: 1; }
+
 .dropdown .dropdown-content {
   position: absolute;
   background-color: #FFF;
@@ -599,17 +606,10 @@ nav ul li a:hover {
 .parent3 {
   transition-property: all;
   transition-duration: 300ms;
-  transform: rotateX(-25deg);
   transform-origin: top;
-  opacity: 0; }
-
-.dropdown:hover .parent1 {
-  opacity: 1;
-  z-index: 10; }
-
-.dropdown:hover .parent1 .parent2 .parent3 {
-  transform: rotateX(0deg);
-  opacity: 1; }
+  display: none;
+  opacity: 0;
+  transform: rotateX(-25deg); }
 
 .drop-location {
   margin-left: -25px; }

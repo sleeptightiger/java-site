@@ -7,7 +7,11 @@ const diagonal = document.querySelector(".diagonal-bg");
 
 
 const height = header.offsetHeight;
-
+console.log('connected');
+width = window.innerWidth;
+if(width > 875) {
+  window.onscroll = function() {sticky()};
+}
 
 window.addEventListener('resize', (e) => {
   let width = window.innerWidth;
@@ -49,3 +53,66 @@ function sticky() {
 
   }
 }
+
+
+
+const drop = document.querySelectorAll(".dropdown");
+const parent3 = document.querySelectorAll(".parent3");
+const parent1 = document.querySelectorAll(".parent1");
+
+
+for(let i = 0; i < drop.length; i++) {
+  drop[i].addEventListener('mouseover', (e) => {
+
+    parent3[i].style.display = "block";
+    // parent1[i].style.zIndex = "10";
+    setTimeout(function () {
+      parent3[i].style.transform = "rotateX(0deg)";
+      parent3[i].style.opacity = "1";
+      // parent1[i].style.opacity = "1";
+    }, 4);
+
+
+  });
+
+  drop[i].addEventListener('mouseleave', (e) => {
+    parent3[i].style.transform = "rotateX(-25deg)";
+    // parent1[i].style.zIndex = "-1";
+    // parent3[i].style.opacity = "0";
+    setTimeout(function () {
+      parent3[i].style.opacity = "0";
+      // parent1[i].style.opacity = "0";
+    }, 50);
+    setTimeout(function () {
+      parent3[i].style.display = "none";
+    }, 200);
+
+
+  });
+}
+
+
+
+
+// $('button').on('click', function () {
+//
+//   if (box.hasClass('hidden')) {
+//
+//     box.removeClass('hidden');
+//     setTimeout(function () {
+//       box.removeClass('visuallyhidden');
+//     }, 20);
+//
+//   } else {
+//
+//     box.addClass('visuallyhidden');
+//
+//     box.one('transitionend', function(e) {
+//
+//       box.addClass('hidden');
+//
+//     });
+//
+//   }
+//
+// });
