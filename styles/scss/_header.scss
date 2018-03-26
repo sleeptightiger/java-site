@@ -57,16 +57,7 @@ nav ul li a:hover {
   display: inline-block;
 }
 
-.unhidden {
-  display: block;
-}
 
-.visuallyunhidden {
-  transform: rotateX(0deg);
-  opacity: 1;
-  // opacity: 0;
-  // transform: rotateX(-25deg);
-}
 
 .dropdown .dropdown-content {
   position: absolute;
@@ -105,7 +96,7 @@ nav ul li a:hover {
 	transition-duration: 300ms;
 	perspective: 1000px;
 	transform-style: preserve-3d;
-  z-index: -1;
+  z-index: 10;
 }
 
 .parent3	{

@@ -562,13 +562,6 @@ nav ul li a:hover {
   position: relative;
   display: inline-block; }
 
-.unhidden {
-  display: block; }
-
-.visuallyunhidden {
-  transform: rotateX(0deg);
-  opacity: 1; }
-
 .dropdown .dropdown-content {
   position: absolute;
   background-color: #FFF;
@@ -601,7 +594,7 @@ nav ul li a:hover {
   transition-duration: 300ms;
   perspective: 1000px;
   transform-style: preserve-3d;
-  z-index: -1; }
+  z-index: 10; }
 
 .parent3 {
   transition-property: all;
