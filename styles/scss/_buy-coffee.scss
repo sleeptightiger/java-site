@@ -1,0 +1,136 @@
+.container {
+  // background-color: red;
+  // height: 1000px;
+}
+
+
+.coffee-hero {
+  margin-bottom: 75px;
+  .coffee-hero-img {
+    background-color: #333;
+    height: 300px;
+    background: url('../../img/beans.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h1 {
+      font-family: 'Monthoers', sans-serif;
+      font-size: 73px;
+      color: #FFF;
+    }
+  }
+}
+
+.coffee-shop {
+  margin-bottom: 129px;
+  .selections {
+    h3 {
+      font-family: 'Monthoers', sans-serif;
+      font-size: 38px;
+      margin-bottom: 37px;
+    }
+    h5 {
+      font-family: 'Brandon_bld', sans-serif;
+      font-size: 16px;
+      line-height: 43px;
+      word-spacing: 2px;
+      transition: all ease-out .3s;
+      cursor: pointer;
+      &:before {
+        content: '';
+        transition: all ease-out .5s;
+      }
+    }
+
+    h5:hover {
+      color: $accent-color;
+      &:before {
+        content: '\2014';
+        color: $accent-color;
+        margin-right: 5px;
+      }
+    }
+  }
+  .store {
+    background-color: #FFF;
+    .filters {
+      .sort {
+        select#sort-by {
+          position: relative;
+          left: 0;
+          height: 40px;
+          width: 230px;
+          -webkit-appearance: none;
+          border-radius: 0px;
+          border: 1px solid #9A958E;
+          color: #9A958E;
+          font-family: 'Brandon_med', sans-serif;
+          font-size: 14px;
+          padding: 10px 16px;
+          background: url('../../img/chevron-down.svg');
+          background-color: #FFF;
+          background-repeat: no-repeat;
+          background-position: 95% 50%;
+          background-size: 10px 5px;
+        }
+      }
+      .cart {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .numberOfItems {
+          color: #8D8D8D;
+          font-size: 20px;
+          font-family: 'Brandon_med', sans-serif;
+          margin-right: 8px;
+        }
+        p {
+          font-family: 'Brandon_med', sans-serif;
+          color: #8D8D8D;
+          margin-right: 11.5px;
+        }
+        .cart-icon {
+          svg {
+            height: 29px;
+            width: 29px;
+          }
+          margin-right: 12px;
+        }
+        .cart-arrow {
+          svg {
+            height: 9.98px;
+            width: 15.08px;
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .selections {
+    margin-bottom: 56px;
+  }
+  .coffee-shop {
+    .store {
+      margin-bottom: 27px;
+      .filters {
+        .sort {
+          select#sort-by {
+            width: 100%;
+            margin-bottom: 24px;
+          }
+        }
+        .cart {
+          position: relative;
+        }
+      }
+    }
+  }
+
+}

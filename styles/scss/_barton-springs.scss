@@ -1,7 +1,7 @@
 .barton-hero {
   height: 220px;
   position: relative;
-  margin-top: 70.2px;
+  margin-top: 52.7px;
   margin-bottom: 40px;
   .barton-hero-img {
     background: url('../../img/aj-bartonsprings.jpg');
@@ -200,7 +200,7 @@
           width: 100%;
           height: 100%;
           background-color: rgba(0, 0, 0, .3);
-          transition: all ease-out .2s;
+          transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
         }
         .breakfast-img {
           z-index: -9;
@@ -334,6 +334,9 @@
       flex-direction: row;
       .schedule {
         width: 334px;
+        .info {
+          margin-right: 53.1px;
+        }
       }
       .breakfast-lunch {
         flex-grow: 1;
@@ -356,14 +359,14 @@
             .barton-menu-text {
               h3 {
                 transform: translateY(80px);
-                transition: all ease-out .3s;
+                transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
               }
               button {
                 // display: none;
                 opacity: 0;
                 z-index: -999;
                 transform: translateY(100px);
-                transition: all ease-out .3s;
+                transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
               }
             }
           }
