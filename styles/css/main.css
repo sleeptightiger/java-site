@@ -2830,6 +2830,43 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       .coffee-shop .store .filters .cart .cart-arrow svg {
         height: 9.98px;
         width: 15.08px; }
+    .coffee-shop .store .items .merch {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .coffee-shop .store .items .merch .coffee-bag {
+        height: 318px;
+        width: 33%;
+        background-color: #F0EEEB;
+        position: relative;
+        text-align: center; }
+        .coffee-shop .store .items .merch .coffee-bag a {
+          display: none; }
+        .coffee-shop .store .items .merch .coffee-bag h5 {
+          font-family: 'Monthoers', sans-serif;
+          font-size: 26px;
+          position: absolute;
+          bottom: 35%;
+          left: 50%;
+          transform: translate(-50%, 100%);
+          width: 80%; }
+        .coffee-shop .store .items .merch .coffee-bag p {
+          font-family: 'Brandon_med', sans-serif;
+          font-size: 16px;
+          line-height: 23px;
+          position: absolute;
+          bottom: 15%;
+          left: 50%;
+          transform: translate(-50%, 100%); }
+        .coffee-shop .store .items .merch .coffee-bag .coffee-bag-img {
+          position: absolute;
+          top: 10%;
+          height: 50%;
+          width: 100%;
+          background-image: url("../../img/coffee-bag-brazil-santos.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover; }
 
 @media screen and (max-width: 768px) {
   .selections {
