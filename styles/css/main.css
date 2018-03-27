@@ -2902,6 +2902,54 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       content: "";
       flex: auto; }
 
+.promos {
+  margin-bottom: 88.5px; }
+  .promos .card {
+    box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.15);
+    border-top: 10px solid #E39040;
+    background-color: #FFF;
+    height: 481px;
+    width: 49%; }
+    .promos .card a {
+      height: 100%;
+      width: 100%;
+      display: block;
+      text-align: center;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      position: relative; }
+      .promos .card a h5 {
+        padding-top: 51px;
+        font-family: 'Monthoers', sans-serif;
+        font-size: 38px;
+        margin-bottom: 8px; }
+      .promos .card a p {
+        font-family: 'Brandon_med', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        width: 373px; }
+      .promos .card a .promo-img {
+        position: absolute;
+        bottom: 0; }
+  .promos .giftcard {
+    margin-right: 2%; }
+    .promos .giftcard a .giftcard-img {
+      background: url("../../img/giftcard-placeholder1.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 302px;
+      width: 302px; }
+  .promos .merch-promo a .merch-promo-img {
+    background: url("../../img/coffee-mug.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 302px;
+    width: 302px; }
+
 @media screen and (max-width: 1024px) {
   .coffee-shop .store .items .merch .coffee-bag {
     height: 318px;
@@ -2936,6 +2984,13 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         min-width: 300px;
         margin: 0 auto;
         margin-top: 32px;
-        margin-bottom: 15.3px; } }
+        margin-bottom: 15.3px; }
+
+  .promos .giftcard {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 20.4px; }
+  .promos .merch-promo {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

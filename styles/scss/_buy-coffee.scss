@@ -198,6 +198,73 @@
   }
 }
 
+.promos {
+  margin-bottom: 88.5px;
+  .card {
+    box-shadow: 0px 9px 16px rgba(0,0,0, .15);
+    border-top: 10px solid $accent-color;
+    background-color: #FFF;
+    height: 481px;
+    width: 49%;
+
+    a {
+      height: 100%;
+      width: 100%;
+      display: block;
+      text-align: center;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      h5 {
+        padding-top: 51px;
+        font-family: 'Monthoers', sans-serif;
+        font-size: 38px;
+        margin-bottom: 8px;
+      }
+      p {
+        font-family: 'Brandon_med', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        width: 373px;
+      }
+      .promo-img {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+  .giftcard {
+
+    margin-right: 2%;
+    a {
+      .giftcard-img {
+        background: url('../../img/giftcard-placeholder1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 302px;
+        width: 302px;
+      }
+    }
+
+
+  }
+  .merch-promo {
+    a {
+      .merch-promo-img {
+        background: url('../../img/coffee-mug.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 302px;
+        width: 302px;
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
   .coffee-shop {
@@ -211,12 +278,6 @@
             margin-bottom: 20px;
             &:nth-child(2n) {
               margin-right: 0;
-            }
-            a {
-            }
-            h5 {
-            }
-            p {
             }
             .coffee-bag-img {
               margin-bottom: 22.5px;
@@ -270,6 +331,16 @@
           }
         }
       }
+    }
+  }
+  .promos {
+    .giftcard {
+      width: 100%;
+      margin-right: 0%;
+      margin-bottom: 20.4px;
+    }
+    .merch-promo {
+      width: 100%;
     }
   }
 
