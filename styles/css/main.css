@@ -2789,85 +2789,104 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       margin-right: 5px; }
   .coffee-shop .store {
     background-color: #FFF; }
-    .coffee-shop .store .filters .sort select#sort-by {
-      position: relative;
-      left: 0;
-      height: 40px;
-      width: 230px;
-      -webkit-appearance: none;
-      border-radius: 0px;
-      border: 1px solid #9A958E;
-      color: #9A958E;
-      font-family: 'Brandon_med', sans-serif;
-      font-size: 14px;
-      padding: 10px 16px;
-      background: url("../../img/chevron-down.svg");
-      background-color: #FFF;
-      background-repeat: no-repeat;
-      background-position: 95% 50%;
-      background-size: 10px 5px; }
-    .coffee-shop .store .filters .cart {
-      position: absolute;
-      right: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-      .coffee-shop .store .filters .cart .numberOfItems {
-        color: #8D8D8D;
-        font-size: 20px;
+    .coffee-shop .store .filters {
+      margin-bottom: 36px; }
+      .coffee-shop .store .filters .sort select#sort-by {
+        position: relative;
+        left: 0;
+        height: 40px;
+        width: 230px;
+        -webkit-appearance: none;
+        border-radius: 0px;
+        border: 1px solid #9A958E;
+        color: #9A958E;
         font-family: 'Brandon_med', sans-serif;
-        margin-right: 8px; }
-      .coffee-shop .store .filters .cart p {
-        font-family: 'Brandon_med', sans-serif;
-        color: #8D8D8D;
-        margin-right: 11.5px; }
-      .coffee-shop .store .filters .cart .cart-icon {
-        margin-right: 12px; }
-        .coffee-shop .store .filters .cart .cart-icon svg {
-          height: 29px;
-          width: 29px; }
-      .coffee-shop .store .filters .cart .cart-arrow svg {
-        height: 9.98px;
-        width: 15.08px; }
+        font-size: 14px;
+        padding: 10px 16px;
+        background: url("../../img/chevron-down.svg");
+        background-color: #FFF;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        background-size: 10px 5px; }
+      .coffee-shop .store .filters .cart {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .coffee-shop .store .filters .cart .numberOfItems {
+          color: #8D8D8D;
+          font-size: 20px;
+          font-family: 'Brandon_med', sans-serif;
+          margin-right: 8px; }
+        .coffee-shop .store .filters .cart p {
+          font-family: 'Brandon_med', sans-serif;
+          color: #8D8D8D;
+          margin-right: 11.5px; }
+        .coffee-shop .store .filters .cart .cart-icon {
+          margin-right: 12px; }
+          .coffee-shop .store .filters .cart .cart-icon svg {
+            height: 29px;
+            width: 29px; }
+        .coffee-shop .store .filters .cart .cart-arrow svg {
+          height: 9.98px;
+          width: 15.08px; }
     .coffee-shop .store .items .merch {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap; }
       .coffee-shop .store .items .merch .coffee-bag {
         height: 318px;
-        width: 33%;
+        width: 31%;
         background-color: #F0EEEB;
         position: relative;
-        text-align: center; }
+        text-align: center;
+        margin-right: 24px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column; }
+        .coffee-shop .store .items .merch .coffee-bag:nth-child(3n) {
+          margin-right: 0; }
         .coffee-shop .store .items .merch .coffee-bag a {
           display: none; }
         .coffee-shop .store .items .merch .coffee-bag h5 {
           font-family: 'Monthoers', sans-serif;
           font-size: 26px;
-          position: absolute;
-          bottom: 35%;
-          left: 50%;
-          transform: translate(-50%, 100%);
-          width: 80%; }
+          width: 100%;
+          margin-bottom: 32px; }
         .coffee-shop .store .items .merch .coffee-bag p {
+          position: absolute;
+          bottom: 32px;
+          left: 50%;
+          transform: translate(-50%, 0%);
           font-family: 'Brandon_med', sans-serif;
           font-size: 16px;
-          line-height: 23px;
-          position: absolute;
-          bottom: 15%;
-          left: 50%;
-          transform: translate(-50%, 100%); }
+          line-height: 23px; }
         .coffee-shop .store .items .merch .coffee-bag .coffee-bag-img {
-          position: absolute;
-          top: 10%;
+          margin-top: 32px;
+          margin-bottom: 13px;
           height: 50%;
           width: 100%;
           background-image: url("../../img/coffee-bag-brazil-santos.png");
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover; }
+      .coffee-shop .store .items .merch:after {
+        content: "";
+        flex: auto; }
 
+@media screen and (max-width: 1024px) {
+  .coffee-shop .store .items .merch .coffee-bag {
+    height: 318px;
+    width: 48%;
+    margin-right: 18.4px;
+    margin-bottom: 20px; }
+    .coffee-shop .store .items .merch .coffee-bag:nth-child(2n) {
+      margin-right: 0; }
+    .coffee-shop .store .items .merch .coffee-bag .coffee-bag-img {
+      margin-bottom: 22.5px; } }
 @media screen and (max-width: 768px) {
   .selections {
     margin-bottom: 56px; }
@@ -2878,6 +2897,20 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       width: 100%;
       margin-bottom: 24px; }
     .coffee-shop .store .filters .cart {
-      position: relative; } }
+      position: relative; }
+    .coffee-shop .store .items .merch .coffee-bag {
+      height: 360px;
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 20px; }
+      .coffee-shop .store .items .merch .coffee-bag p {
+        bottom: 24px; }
+      .coffee-shop .store .items .merch .coffee-bag .coffee-bag-img {
+        height: 60%;
+        width: 50%;
+        min-width: 300px;
+        margin: 0 auto;
+        margin-top: 32px;
+        margin-bottom: 15.3px; } }
 
 /*# sourceMappingURL=main.css.map */

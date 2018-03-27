@@ -54,6 +54,7 @@
   .store {
     background-color: #FFF;
     .filters {
+      margin-bottom: 36px;
       .sort {
         select#sort-by {
           position: relative;
@@ -114,37 +115,39 @@
         flex-wrap: wrap;
         .coffee-bag {
           height: 318px;
-          width: 33%;
+          width: 31%;
           background-color: #F0EEEB;
           position: relative;
           text-align: center;
+          margin-right: 24px;
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
           a {
             display: none;
           }
           h5 {
             font-family: 'Monthoers', sans-serif;
             font-size: 26px;
-            position: absolute;
-            bottom: 35%;
-            left: 50%;
-            transform: translate(-50%, 100%);
-            width: 80%;
-            // line-height: 74px;
+            width: 100%;
+            margin-bottom: 32px;
           }
           p {
+            position: absolute;
+            bottom: 32px;
+            left: 50%;
+            transform: translate(-50%, 0%);
             font-family: 'Brandon_med', sans-serif;
             font-size: 16px;
             line-height: 23px;
-            position: absolute;
-            bottom: 15%;
-            left: 50%;
-            transform: translate(-50%, 100%);
           }
           .coffee-bag-img {
-            // flex-grow: 1;
-            // width: 30%;
-            position: absolute;
-            top: 10%;
+            margin-top: 32px;
+            margin-bottom: 13px;
             height: 50%;
             width: 100%;
             background-image: url('../../img/coffee-bag-brazil-santos.png');
@@ -154,10 +157,47 @@
           }
 
         }
+        &:after {
+          content: "";
+          flex: auto;
+        }
       }
     }
 
   }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .coffee-shop {
+    .store {
+      .items {
+        .merch {
+          .coffee-bag {
+            height: 318px;
+            width: 48%;
+            margin-right: 18.4px;
+            margin-bottom: 20px;
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
+            a {
+            }
+            h5 {
+            }
+            p {
+            }
+            .coffee-bag-img {
+              margin-bottom: 22.5px;
+              // height: 180px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -176,6 +216,27 @@
         }
         .cart {
           position: relative;
+        }
+      }
+      .items {
+        .merch {
+          .coffee-bag {
+            height: 360px;
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 20px;
+            p {
+              bottom: 24px;
+            }
+            .coffee-bag-img {
+              height: 60%;
+              width: 50%;
+              min-width: 300px;
+              margin: 0 auto;
+              margin-top: 32px;
+              margin-bottom: 15.3px;
+            }
+          }
         }
       }
     }
