@@ -7,39 +7,42 @@ const diagonal = document.querySelector(".diagonal-bg");
 
 
 const height = header.offsetHeight;
-console.log('connected');
 width = window.innerWidth;
 if(width > 875) {
   window.onscroll = function() {sticky()};
 }
 
 window.addEventListener('resize', (e) => {
-  let width = window.innerWidth;
+  width = window.innerWidth;
   if(width > 875) {
-    window.onscroll = function() {sticky()};
-  }
-  // responsive(width);
-});
+    if (window.pageYOffset > height) {
+      header.classList.add("sticky");
+      headContainer.classList.add("sticky-head");
+      logo.style.height = "60px";
+      logo.style.width = "65px";
+      logo.style.margin = "5px 0";
+      if(indexBody == null) {
+        body.style.marginTop = "86px";
+      } else {
+        body.style.marginTop = "57px";
+        diagonal.style.height = "665px"
+      }
 
 
-
-function sticky() {
-  if (window.pageYOffset > height) {
-    header.classList.add("sticky");
-    headContainer.classList.add("sticky-head");
-    logo.style.height = "60px";
-    logo.style.width = "65px";
-    logo.style.margin = "5px 0";
-    console.log(modalOpen);
-    if(indexBody == null) {
-      body.style.marginTop = "86px";
+      // header.style.display = "none";
     } else {
-      body.style.marginTop = "57px";
-      diagonal.style.height = "665px"
+      header.classList.remove("sticky");
+      headContainer.classList.remove("sticky-head");
+      logo.style.height = "98px";
+      logo.style.width = "103px";
+      logo.style.margin = "0";
+      body.style.marginTop = "0px";
+      if(indexBody != null) {
+        diagonal.style.height = "780px";
+      }
+
     }
-
-
-    // header.style.display = "none";
+    window.onscroll = function() {sticky()};
   } else {
     header.classList.remove("sticky");
     headContainer.classList.remove("sticky-head");
@@ -50,8 +53,44 @@ function sticky() {
     if(indexBody != null) {
       diagonal.style.height = "780px";
     }
-
   }
+});
+
+
+
+function sticky() {
+  let width = window.innerWidth;
+  // console.log(width);
+  if (width > 875) {
+    if (window.pageYOffset > height) {
+      header.classList.add("sticky");
+      headContainer.classList.add("sticky-head");
+      logo.style.height = "60px";
+      logo.style.width = "65px";
+      logo.style.margin = "5px 0";
+      if(indexBody == null) {
+        body.style.marginTop = "86px";
+      } else {
+        body.style.marginTop = "57px";
+        diagonal.style.height = "665px"
+      }
+
+
+      // header.style.display = "none";
+    } else {
+      header.classList.remove("sticky");
+      headContainer.classList.remove("sticky-head");
+      logo.style.height = "98px";
+      logo.style.width = "103px";
+      logo.style.margin = "0";
+      body.style.marginTop = "0px";
+      if(indexBody != null) {
+        diagonal.style.height = "780px";
+      }
+
+    }
+  }
+
 }
 
 

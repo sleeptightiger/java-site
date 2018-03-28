@@ -162,6 +162,10 @@
             font-family: 'Brandon_med', sans-serif;
             font-size: 16px;
             padding: 9px 0;
+            &:hover {
+              background-color: #FFF;
+              color: #000;
+            }
           }
           h5 {
             font-family: 'Monthoers', sans-serif;

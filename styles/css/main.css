@@ -2880,6 +2880,9 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         font-family: 'Brandon_med', sans-serif;
         font-size: 16px;
         padding: 9px 0; }
+        .coffee-shop .store .items .merch .coffee-bag a:hover {
+          background-color: #FFF;
+          color: #000; }
       .coffee-shop .store .items .merch .coffee-bag h5 {
         font-family: 'Monthoers', sans-serif;
         font-size: 26px;
