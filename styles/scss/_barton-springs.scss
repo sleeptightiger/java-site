@@ -109,6 +109,9 @@
           display: inline-block;
           width: 80%;
         }
+        .last-detail {
+          margin-bottom: 0px;
+        }
       }
       .clock {
         margin-bottom: 0;
@@ -165,8 +168,8 @@
           height: 50px;
           width: 186px;
           margin: 0 auto;
-          border: 3px solid #FFF;
-          background-color: transparent;
+
+          // background-color: transparent;
           margin-bottom: 16px;
           padding: 0;
           transition: all ease-out .3s;
@@ -181,13 +184,40 @@
             letter-spacing: 1px;
             transition: all ease-out .3s;
           }
+
         }
-        button:hover {
+        .view-menu {
+          // border: 3px solid #FFF;
           background-color: #FFF;
           a {
-            color: #000;
+
+            color: rgba(0,0,0,1);
+            border: none;
+          }
+          &:hover {
+            // border: 3px solid #000;
+            background-color: #000;
+            a {
+              background-color: #000;
+              color: #FFF;
+            }
+          }
+
+        }
+        .pdf {
+          border: 3px solid #FFF;
+          background-color: transparent;
+          a {
+            color: #FFF;
+          }
+          &:hover {
+            background-color: #FFF;
+            a {
+              color: #000;
+            }
           }
         }
+
       }
       .barton-img {
         z-index: -7;
@@ -229,11 +259,11 @@
 
 
     }
-    .barton-menu:hover {
-      .barton-img-overlay {
-        background-color: rgba(227, 144, 64, .5);
-      }
-    }
+    // .barton-menu:hover {
+    //   .barton-img-overlay {
+    //     background-color: rgba(227, 144, 64, .5);
+    //   }
+    // }
   }
 }
 
@@ -329,11 +359,13 @@
   }
 
   .barton-menus {
+    margin-bottom: 0px;
     .barton-menus-wrap {
       display: flex;
       flex-direction: row;
       .schedule {
         width: 334px;
+        // margin-bottom: 0px;
         .info {
           margin-right: 53.1px;
         }
@@ -371,6 +403,9 @@
             }
           }
           .barton-menu:hover {
+            .barton-img-overlay {
+              background-color: rgba(227, 144, 64, .5);
+            }
             .barton-menu-text {
               h3 {
                 transform: translateY(-100px);

@@ -1,0 +1,245 @@
+
+
+.merch-description {
+  margin-bottom: 125px;
+  .merch-img {
+    display: flex;
+    height: 467px;
+    background-color: #F0EEEB;
+    .merch-pic {
+      align-self: center;
+      height: 90%;
+      width: 100%;
+      background-image: url('../../img/coffee-bag-brazil-santos.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+  }
+  .merch-text {
+    width: 100%;
+    padding-left: 67px;
+    padding-top: 10px;
+    form {
+      font-family: 'Brandon_med', sans-serif;
+      h2 {
+        font-family: 'Monthoers', sans-serif;
+        font-size: 50px;
+        margin-bottom: 16px;
+      }
+      .merch-description-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+      .price {
+        font-size: 26px;
+        margin-bottom: 25px;
+      }
+      .label {
+        margin-bottom: 8px;
+      }
+      #grind {
+        margin-bottom: 20px;
+        height: 40px;
+        width: 315px;
+        -webkit-appearance: none;
+        border-radius: 2px;
+        border: 1px solid #9A958E;
+        color: #9A958E;
+        font-family: 'Brandon_med', sans-serif;
+        font-size: 14px;
+        padding: 10px 16px;
+        background: url('../../img/chevron-down.svg');
+        background-color: #FFF;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        background-size: 10px 5px;
+      }
+      #quantity {
+        margin-bottom: 20px;
+        height: 40px;
+        width: 77px;
+        border: 1px solid #000;
+      }
+      button {
+        display: block;
+        background-color: $accent-color;
+        color: #FFF;
+        font-size: 16px;
+        padding: 14px 47px;
+        border: none;
+        transition: all ease-out .3s;
+        cursor: pointer;
+        &:hover {
+          background-color: #000;
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
+
+
+.merch-horizontal-noline {
+  font-family: 'Monthoers', sans-serif;
+  font-size: 44px;
+}
+
+
+.merch-horizontal-line {
+  overflow: hidden;
+  text-align: left;
+  font-family: 'Monthoers', sans-serif;
+  font-size: 44px;
+  margin-bottom: 52px;
+  &:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 80%;
+    left: 28.5px;
+    margin-right: -50%;
+  }
+  &:before {
+    right: 28.5px;
+    margin-left: -50%;
+  }
+}
+
+.like {
+  .items {
+    .merch {
+      flex-wrap: nowrap;
+      .coffee-bag {
+        flex-grow: 1;
+        height: 318px;
+        // min-width: 230px;
+        // width: 24%;
+        margin-right: 27px;
+        &:nth-child(3) {
+          margin-right: 27px;
+        }
+        &:nth-child(4) {
+          margin-right: 0px;
+        }
+        .coffee-bag-img {
+
+          // width: 80%;
+          margin: 0 auto;
+          margin-bottom: 13px;
+          margin-top: 32px;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      flex: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .like {
+    .items {
+      .merch {
+        flex-wrap: wrap;
+        .coffee-bag {
+          max-width: 217px;
+          width: 33%;
+          min-width: 30%;
+          // margin-right: 24px;
+          &:nth-child(3n) {
+            margin-right: 0px;
+          }
+          .coffee-bag-img {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .merch-description {
+    .merch-img {
+      height: 340px;
+      margin-bottom: 60px;
+    }
+    .merch-text {
+      width: 100%;
+      padding: 0px;
+
+    }
+  }
+  .merch-horizontal-line {
+    margin-bottom: 45px;
+  }
+  .like {
+    .items {
+      .merch {
+        flex-wrap: wrap;
+        .coffee-bag {
+          // max-width: 217px;
+          width: 50%;
+          min-width: 48%;
+          margin-right: 18.4px;
+          &:nth-child(2n) {
+            margin-right: 0px;
+          }
+          &:nth-child(3) {
+            margin-right: 18.4px;
+          }
+          .coffee-bag-img {
+            min-width: 0px;
+            width: 100%;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .merch-description {
+    .merch-text {
+      form {
+        #grind {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .merch-horizontal-noline {
+    margin-bottom: 45px;
+  }
+  .like {
+    .items {
+      .merch {
+        flex-wrap: wrap;
+        .coffee-bag {
+          // max-width: 217px;
+          width: 100%;
+          min-width: 100%;
+          margin-right: 0px;
+          &:nth-child(2n) {
+            margin-right: 0px;
+          }
+          &:nth-child(3) {
+            margin-right: 0px;
+          }
+          .coffee-bag-img {
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -2105,7 +2105,7 @@ footer {
   border-top: 1px solid #F2F2F2; }
 
 .upper-footer {
-  margin-top: 88.4px;
+  margin-top: 87.9px;
   display: flex; }
 
 .footer-section {
@@ -2562,6 +2562,8 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         margin-top: 28px;
         display: inline-block;
         width: 80%; }
+      .barton-menus .barton-menus-wrap .schedule .info .last-detail {
+        margin-bottom: 0px; }
     .barton-menus .barton-menus-wrap .schedule .clock {
       margin-bottom: 0;
       margin-top: 5px; }
@@ -2607,8 +2609,6 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         height: 50px;
         width: 186px;
         margin: 0 auto;
-        border: 3px solid #FFF;
-        background-color: transparent;
         margin-bottom: 16px;
         padding: 0;
         transition: all ease-out .3s; }
@@ -2622,10 +2622,25 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
           font-family: 'Brandon_med', sans-serif;
           letter-spacing: 1px;
           transition: all ease-out .3s; }
-      .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text button:hover {
+      .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text .view-menu {
         background-color: #FFF; }
-        .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text button:hover a {
-          color: #000; }
+        .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text .view-menu a {
+          color: black;
+          border: none; }
+        .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text .view-menu:hover {
+          background-color: #000; }
+          .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text .view-menu:hover a {
+            background-color: #000;
+            color: #FFF; }
+      .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text .pdf {
+        border: 3px solid #FFF;
+        background-color: transparent; }
+        .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text .pdf a {
+          color: #FFF; }
+        .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text .pdf:hover {
+          background-color: #FFF; }
+          .barton-menus .barton-menus-wrap .barton-menu .barton-menu-text .pdf:hover a {
+            color: #000; }
     .barton-menus .barton-menus-wrap .barton-menu .barton-img {
       z-index: -7;
       width: 100%;
@@ -2656,8 +2671,6 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
-  .barton-menus .barton-menus-wrap .barton-menu:hover .barton-img-overlay {
-    background-color: rgba(227, 144, 64, 0.5); }
 
 .map-shadow {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); }
@@ -2714,44 +2727,48 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       left: 0;
       transform: translate(0%, -50%); }
 
-  .barton-menus .barton-menus-wrap {
-    display: flex;
-    flex-direction: row; }
-    .barton-menus .barton-menus-wrap .schedule {
-      width: 334px; }
-      .barton-menus .barton-menus-wrap .schedule .info {
-        margin-right: 53.1px; }
-    .barton-menus .barton-menus-wrap .breakfast-lunch {
-      flex-grow: 1;
+  .barton-menus {
+    margin-bottom: 0px; }
+    .barton-menus .barton-menus-wrap {
       display: flex;
-      flex-direction: column;
-      align-content: center; }
-      .barton-menus .barton-menus-wrap .breakfast-lunch .barton-menu-headline {
-        width: 100%;
-        height: 39px;
-        margin: 0;
-        align-self: center;
-        margin-bottom: 29px; }
-      .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper {
+      flex-direction: row; }
+      .barton-menus .barton-menus-wrap .schedule {
+        width: 334px; }
+        .barton-menus .barton-menus-wrap .schedule .info {
+          margin-right: 53.1px; }
+      .barton-menus .barton-menus-wrap .breakfast-lunch {
+        flex-grow: 1;
         display: flex;
-        flex-direction: row;
-        margin-left: 21.1px; }
-        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu .barton-menu-text h3 {
-          transform: translateY(80px);
-          transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s; }
-        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu .barton-menu-text button {
-          opacity: 0;
-          z-index: -999;
-          transform: translateY(100px);
-          transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s; }
-        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu:hover .barton-menu-text h3 {
-          transform: translateY(-100px);
-          opacity: 0;
-          z-index: -999; }
-        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu:hover .barton-menu-text button {
-          transform: translateY(-30px);
-          opacity: 1;
-          z-index: 999; } }
+        flex-direction: column;
+        align-content: center; }
+        .barton-menus .barton-menus-wrap .breakfast-lunch .barton-menu-headline {
+          width: 100%;
+          height: 39px;
+          margin: 0;
+          align-self: center;
+          margin-bottom: 29px; }
+        .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper {
+          display: flex;
+          flex-direction: row;
+          margin-left: 21.1px; }
+          .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu .barton-menu-text h3 {
+            transform: translateY(80px);
+            transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s; }
+          .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu .barton-menu-text button {
+            opacity: 0;
+            z-index: -999;
+            transform: translateY(100px);
+            transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s; }
+          .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu:hover .barton-img-overlay {
+            background-color: rgba(227, 144, 64, 0.5); }
+          .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu:hover .barton-menu-text h3 {
+            transform: translateY(-100px);
+            opacity: 0;
+            z-index: -999; }
+          .barton-menus .barton-menus-wrap .breakfast-lunch .bk-lunch-wrapper .barton-menu:hover .barton-menu-text button {
+            transform: translateY(-30px);
+            opacity: 1;
+            z-index: 999; } }
 .bg-lower-store {
   height: 800px; }
 
@@ -2791,6 +2808,9 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       content: '\2014';
       color: #E39040;
       margin-right: 5px; }
+  .coffee-shop .store .items .merch:after {
+    content: "";
+    flex: auto; }
   .coffee-shop .store .filters {
     margin-bottom: 36px; }
     .coffee-shop .store .filters .sort select#sort-by {
@@ -2834,80 +2854,78 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       .coffee-shop .store .filters .cart .cart-arrow svg {
         height: 9.98px;
         width: 15.08px; }
-  .coffee-shop .store .items .merch {
+
+.items .merch {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .items .merch .coffee-bag {
+    height: 318px;
+    width: 31%;
+    background-color: #F0EEEB;
+    position: relative;
+    text-align: center;
+    margin-right: 24px;
+    margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .coffee-shop .store .items .merch .coffee-bag {
-      height: 318px;
-      width: 31%;
-      background-color: #F0EEEB;
-      position: relative;
-      text-align: center;
-      margin-right: 24px;
-      margin-bottom: 30px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      opacity: 1.5; }
-      .coffee-shop .store .items .merch .coffee-bag:nth-child(3n) {
-        margin-right: 0; }
-      .coffee-shop .store .items .merch .coffee-bag:hover .overlay {
-        opacity: 1; }
-      .coffee-shop .store .items .merch .coffee-bag:hover a {
-        opacity: 1;
-        top: 50%; }
-      .coffee-shop .store .items .merch .coffee-bag .overlay {
-        transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s;
-        opacity: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); }
-      .coffee-shop .store .items .merch .coffee-bag a {
-        transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s;
-        opacity: 0;
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #FFF;
-        border: 2px solid #FFF;
-        height: 40px;
-        width: 80%;
-        font-family: 'Brandon_med', sans-serif;
-        font-size: 16px;
-        padding: 9px 0; }
-        .coffee-shop .store .items .merch .coffee-bag a:hover {
-          background-color: #FFF;
-          color: #000; }
-      .coffee-shop .store .items .merch .coffee-bag h5 {
-        font-family: 'Monthoers', sans-serif;
-        font-size: 26px;
-        width: 100%;
-        margin-bottom: 32px; }
-      .coffee-shop .store .items .merch .coffee-bag p {
-        position: absolute;
-        bottom: 32px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        font-family: 'Brandon_med', sans-serif;
-        font-size: 16px;
-        line-height: 23px; }
-      .coffee-shop .store .items .merch .coffee-bag .coffee-bag-img {
-        margin-top: 32px;
-        margin-bottom: 13px;
-        height: 50%;
-        width: 100%;
-        background-image: url("../../img/coffee-bag-brazil-santos.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
-    .coffee-shop .store .items .merch:after {
-      content: "";
-      flex: auto; }
+    justify-content: flex-start;
+    flex-direction: column;
+    opacity: 1.5; }
+    .items .merch .coffee-bag:nth-child(3n) {
+      margin-right: 0; }
+    .items .merch .coffee-bag:hover .overlay {
+      opacity: 1; }
+    .items .merch .coffee-bag:hover a {
+      opacity: 1;
+      top: 50%; }
+    .items .merch .coffee-bag .overlay {
+      transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); }
+    .items .merch .coffee-bag a {
+      transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s;
+      opacity: 0;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFF;
+      border: 2px solid #FFF;
+      height: 40px;
+      width: 80%;
+      font-family: 'Brandon_med', sans-serif;
+      font-size: 16px;
+      padding: 9px 0; }
+      .items .merch .coffee-bag a:hover {
+        background-color: #FFF;
+        color: #000; }
+    .items .merch .coffee-bag h5 {
+      font-family: 'Monthoers', sans-serif;
+      font-size: 26px;
+      width: 100%;
+      margin-bottom: 32px; }
+    .items .merch .coffee-bag p {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      font-family: 'Brandon_med', sans-serif;
+      font-size: 16px;
+      line-height: 23px; }
+    .items .merch .coffee-bag .coffee-bag-img {
+      margin-top: 32px;
+      margin-bottom: 13px;
+      height: 50%;
+      width: 100%;
+      background-image: url("../../img/coffee-bag-brazil-santos.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
 
 .promos {
   margin-bottom: 88.5px; }
@@ -2958,14 +2976,14 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     width: 302px; }
 
 @media screen and (max-width: 1024px) {
-  .coffee-shop .store .items .merch .coffee-bag {
+  .items .merch .coffee-bag {
     height: 318px;
     width: 48%;
     margin-right: 18.4px;
     margin-bottom: 20px; }
-    .coffee-shop .store .items .merch .coffee-bag:nth-child(2n) {
+    .items .merch .coffee-bag:nth-child(2n) {
       margin-right: 0; }
-    .coffee-shop .store .items .merch .coffee-bag .coffee-bag-img {
+    .items .merch .coffee-bag .coffee-bag-img {
       margin-bottom: 22.5px; } }
 @media screen and (max-width: 768px) {
   .selections {
@@ -2978,20 +2996,21 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       margin-bottom: 24px; }
     .coffee-shop .store .filters .cart {
       position: relative; }
-    .coffee-shop .store .items .merch .coffee-bag {
-      height: 360px;
-      width: 100%;
-      margin-right: 0px;
-      margin-bottom: 20px; }
-      .coffee-shop .store .items .merch .coffee-bag p {
-        bottom: 24px; }
-      .coffee-shop .store .items .merch .coffee-bag .coffee-bag-img {
-        height: 60%;
-        width: 50%;
-        min-width: 300px;
-        margin: 0 auto;
-        margin-top: 32px;
-        margin-bottom: 15.3px; }
+
+  .items .merch .coffee-bag {
+    height: 360px;
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px; }
+    .items .merch .coffee-bag p {
+      bottom: 24px; }
+    .items .merch .coffee-bag .coffee-bag-img {
+      height: 60%;
+      width: 50%;
+      min-width: 300px;
+      margin: 0 auto;
+      margin-top: 32px;
+      margin-bottom: 15.3px; }
 
   .promos .giftcard {
     width: 100%;
@@ -2999,5 +3018,165 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     margin-bottom: 20.4px; }
   .promos .merch-promo {
     width: 100%; } }
+.merch-description {
+  margin-bottom: 125px; }
+  .merch-description .merch-img {
+    display: flex;
+    height: 467px;
+    background-color: #F0EEEB; }
+    .merch-description .merch-img .merch-pic {
+      align-self: center;
+      height: 90%;
+      width: 100%;
+      background-image: url("../../img/coffee-bag-brazil-santos.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+  .merch-description .merch-text {
+    width: 100%;
+    padding-left: 67px;
+    padding-top: 10px; }
+    .merch-description .merch-text form {
+      font-family: 'Brandon_med', sans-serif; }
+      .merch-description .merch-text form h2 {
+        font-family: 'Monthoers', sans-serif;
+        font-size: 50px;
+        margin-bottom: 16px; }
+      .merch-description .merch-text form .merch-description-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px; }
+      .merch-description .merch-text form .price {
+        font-size: 26px;
+        margin-bottom: 25px; }
+      .merch-description .merch-text form .label {
+        margin-bottom: 8px; }
+      .merch-description .merch-text form #grind {
+        margin-bottom: 20px;
+        height: 40px;
+        width: 315px;
+        -webkit-appearance: none;
+        border-radius: 2px;
+        border: 1px solid #9A958E;
+        color: #9A958E;
+        font-family: 'Brandon_med', sans-serif;
+        font-size: 14px;
+        padding: 10px 16px;
+        background: url("../../img/chevron-down.svg");
+        background-color: #FFF;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        background-size: 10px 5px; }
+      .merch-description .merch-text form #quantity {
+        margin-bottom: 20px;
+        height: 40px;
+        width: 77px;
+        border: 1px solid #000; }
+      .merch-description .merch-text form button {
+        display: block;
+        background-color: #E39040;
+        color: #FFF;
+        font-size: 16px;
+        padding: 14px 47px;
+        border: none;
+        transition: all ease-out .3s;
+        cursor: pointer; }
+        .merch-description .merch-text form button:hover {
+          background-color: #000;
+          color: #FFF; }
+
+.merch-horizontal-noline {
+  font-family: 'Monthoers', sans-serif;
+  font-size: 44px; }
+
+.merch-horizontal-line {
+  overflow: hidden;
+  text-align: left;
+  font-family: 'Monthoers', sans-serif;
+  font-size: 44px;
+  margin-bottom: 52px; }
+  .merch-horizontal-line:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 80%;
+    left: 28.5px;
+    margin-right: -50%; }
+  .merch-horizontal-line:before {
+    right: 28.5px;
+    margin-left: -50%; }
+
+.like .items .merch {
+  flex-wrap: nowrap; }
+  .like .items .merch .coffee-bag {
+    flex-grow: 1;
+    height: 318px;
+    margin-right: 27px; }
+    .like .items .merch .coffee-bag:nth-child(3) {
+      margin-right: 27px; }
+    .like .items .merch .coffee-bag:nth-child(4) {
+      margin-right: 0px; }
+    .like .items .merch .coffee-bag .coffee-bag-img {
+      margin: 0 auto;
+      margin-bottom: 13px;
+      margin-top: 32px; }
+.like .items:after {
+  content: "";
+  flex: none; }
+
+@media screen and (max-width: 1023px) {
+  .like .items .merch {
+    flex-wrap: wrap; }
+    .like .items .merch .coffee-bag {
+      max-width: 217px;
+      width: 33%;
+      min-width: 30%; }
+      .like .items .merch .coffee-bag:nth-child(3n) {
+        margin-right: 0px; } }
+@media screen and (max-width: 768px) {
+  .merch-description .merch-img {
+    height: 340px;
+    margin-bottom: 60px; }
+  .merch-description .merch-text {
+    width: 100%;
+    padding: 0px; }
+
+  .merch-horizontal-line {
+    margin-bottom: 45px; }
+
+  .like .items .merch {
+    flex-wrap: wrap; }
+    .like .items .merch .coffee-bag {
+      width: 50%;
+      min-width: 48%;
+      margin-right: 18.4px; }
+      .like .items .merch .coffee-bag:nth-child(2n) {
+        margin-right: 0px; }
+      .like .items .merch .coffee-bag:nth-child(3) {
+        margin-right: 18.4px; }
+      .like .items .merch .coffee-bag .coffee-bag-img {
+        min-width: 0px;
+        width: 100%;
+        background-size: contain; } }
+@media screen and (max-width: 510px) {
+  .merch-description .merch-text form #grind {
+    width: 100%; }
+
+  .merch-horizontal-noline {
+    margin-bottom: 45px; }
+
+  .like .items .merch {
+    flex-wrap: wrap; }
+    .like .items .merch .coffee-bag {
+      width: 100%;
+      min-width: 100%;
+      margin-right: 0px; }
+      .like .items .merch .coffee-bag:nth-child(2n) {
+        margin-right: 0px; }
+      .like .items .merch .coffee-bag:nth-child(3) {
+        margin-right: 0px; } }
 
 /*# sourceMappingURL=main.css.map */

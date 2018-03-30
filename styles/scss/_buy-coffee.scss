@@ -55,6 +55,14 @@
   }
   .store {
     // background-color: #FFF;
+    .items {
+      .merch {
+        &:after {
+          content: "";
+          flex: auto;
+        }
+      }
+    }
     .filters {
       margin-bottom: 36px;
       .sort {
@@ -110,97 +118,99 @@
         }
       }
     }
-    .items {
-      .merch {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        .coffee-bag {
-          height: 318px;
-          width: 31%;
-          background-color: #F0EEEB;
-          position: relative;
-          text-align: center;
-          margin-right: 24px;
-          margin-bottom: 30px;
-          display: flex;
-          justify-content: flex-start;
-          flex-direction: column;
-          opacity: 1.5;
-          &:nth-child(3n) {
-            margin-right: 0;
-          }
-          &:hover .overlay {
-            opacity: 1;
-          }
-          &:hover a {
-            opacity: 1;
-            top: 50%;
-          }
-          .overlay {
-            transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
-            opacity: 0;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-          }
-          a {
-            // transform: translateY(-80px);
-            transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
-            opacity: 0;
-            position: absolute;
-            top: 0%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #FFF;
-            border: 2px solid #FFF;
-            height: 40px;
-            width: 80%;
-            font-family: 'Brandon_med', sans-serif;
-            font-size: 16px;
-            padding: 9px 0;
-            &:hover {
-              background-color: #FFF;
-              color: #000;
-            }
-          }
-          h5 {
-            font-family: 'Monthoers', sans-serif;
-            font-size: 26px;
-            width: 100%;
-            margin-bottom: 32px;
-          }
-          p {
-            position: absolute;
-            bottom: 32px;
-            left: 50%;
-            transform: translate(-50%, 0%);
-            font-family: 'Brandon_med', sans-serif;
-            font-size: 16px;
-            line-height: 23px;
-          }
-          .coffee-bag-img {
-            margin-top: 32px;
-            margin-bottom: 13px;
-            height: 50%;
-            width: 100%;
-            background-image: url('../../img/coffee-bag-brazil-santos.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
 
-        }
-        &:after {
-          content: "";
-          flex: auto;
+
+  }
+}
+
+.items {
+  .merch {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .coffee-bag {
+      height: 318px;
+      width: 31%;
+      background-color: #F0EEEB;
+      position: relative;
+      text-align: center;
+      margin-right: 24px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      opacity: 1.5;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:hover .overlay {
+        opacity: 1;
+      }
+      &:hover a {
+        opacity: 1;
+        top: 50%;
+      }
+      .overlay {
+        transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+      }
+      a {
+        // transform: translateY(-80px);
+        transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
+        opacity: 0;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFF;
+        border: 2px solid #FFF;
+        height: 40px;
+        width: 80%;
+        font-family: 'Brandon_med', sans-serif;
+        font-size: 16px;
+        padding: 9px 0;
+        &:hover {
+          background-color: #FFF;
+          color: #000;
         }
       }
-    }
+      h5 {
+        font-family: 'Monthoers', sans-serif;
+        font-size: 26px;
+        width: 100%;
+        margin-bottom: 32px;
+      }
+      p {
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        font-family: 'Brandon_med', sans-serif;
+        font-size: 16px;
+        line-height: 23px;
+      }
+      .coffee-bag-img {
+        margin-top: 32px;
+        margin-bottom: 13px;
+        height: 50%;
+        width: 100%;
+        background-image: url('../../img/coffee-bag-brazil-santos.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
+    }
+    // &:after {
+    //   content: "";
+    //   flex: auto;
+    // }
   }
 }
 
@@ -273,25 +283,23 @@
 
 
 @media screen and (max-width: 1024px) {
-  .coffee-shop {
-    .store {
-      .items {
-        .merch {
-          .coffee-bag {
-            height: 318px;
-            width: 48%;
-            margin-right: 18.4px;
-            margin-bottom: 20px;
-            &:nth-child(2n) {
-              margin-right: 0;
-            }
-            .coffee-bag-img {
-              margin-bottom: 22.5px;
-              // height: 180px;
-            }
 
-          }
+
+  .items {
+    .merch {
+      .coffee-bag {
+        height: 318px;
+        width: 48%;
+        margin-right: 18.4px;
+        margin-bottom: 20px;
+        &:nth-child(2n) {
+          margin-right: 0;
         }
+        .coffee-bag-img {
+          margin-bottom: 22.5px;
+          // height: 180px;
+        }
+
       }
     }
   }
@@ -316,25 +324,26 @@
           position: relative;
         }
       }
-      .items {
-        .merch {
-          .coffee-bag {
-            height: 360px;
-            width: 100%;
-            margin-right: 0px;
-            margin-bottom: 20px;
-            p {
-              bottom: 24px;
-            }
-            .coffee-bag-img {
-              height: 60%;
-              width: 50%;
-              min-width: 300px;
-              margin: 0 auto;
-              margin-top: 32px;
-              margin-bottom: 15.3px;
-            }
-          }
+
+    }
+  }
+  .items {
+    .merch {
+      .coffee-bag {
+        height: 360px;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        p {
+          bottom: 24px;
+        }
+        .coffee-bag-img {
+          height: 60%;
+          width: 50%;
+          min-width: 300px;
+          margin: 0 auto;
+          margin-top: 32px;
+          margin-bottom: 15.3px;
         }
       }
     }
