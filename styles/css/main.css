@@ -3178,5 +3178,38 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
         margin-right: 0px; }
       .like .items .merch .coffee-bag:nth-child(3) {
         margin-right: 0px; } }
+.catering-hero {
+  margin-bottom: 75px; }
+  .catering-hero .catering-hero-img {
+    background-color: #333;
+    height: 300px;
+    background: url("../../img/catering.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+    .catering-hero .catering-hero-img .overlay {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
+    .catering-hero .catering-hero-img h1 {
+      font-family: 'Monthoers', sans-serif;
+      font-size: 73px;
+      color: #FFF; }
+
+.additional-info {
+  border: 4px solid #9A958E;
+  padding: 25px 60px;
+  padding-bottom: 31px; }
+  .additional-info p {
+    font-family: 'Brandon_med', sans-serif;
+    font-size: 24px;
+    color: #9A958E; }
+    .additional-info p span {
+      color: #E39040;
+      text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+.catering-hero {
+  margin-bottom: 75px;
+  .catering-hero-img {
+    background-color: #333;
+    height: 300px;
+    background: url('../../img/catering.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+    h1 {
+      font-family: 'Monthoers', sans-serif;
+      font-size: 73px;
+      color: #FFF;
+    }
+  }
+}
+
+.additional-info {
+  border: 4px solid #9A958E;
+  padding: 25px 60px;
+  padding-bottom: 31px;
+  p {
+    font-family: 'Brandon_med', sans-serif;
+    font-size: 24px;
+    color: #9A958E;
+    span {
+      color: $accent-color;
+      text-decoration: underline;
+
+    }
+  }
+}
