@@ -24,10 +24,216 @@
   }
 }
 
+.catering-description {
+  text-align: center;
+  h2 {
+    font-family: 'Monthoers', sans-serif;
+    font-size: 38px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 42px;
+  }
+  p {
+    font-family: 'Brandon_med', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+    width: 80%;
+    line-height: 24px;
+    span {
+      color: $accent-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+// .catering-info-menu, .catering-info {
+//   background-color: #333;
+//   width: 358px;
+//   height: 358px;
+//   margin-bottom: 60px;
+// }
+
+.catering {
+  display: flex;
+  flex-direction: column;
+}
+
+.catering-info-menu {
+  width: 100%;
+  height: 334px;
+  margin-bottom: 45px;
+  .catering-menu {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .catering-menu-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+      text-align: center;
+      h3 {
+        margin-bottom: 24px;
+        color: #FFF;
+        font-size: 38px;
+        font-family: 'Monthoers', sans-serif;
+      }
+      button {
+        height: 50px;
+        width: 186px;
+        margin: 0 auto;
+
+        // background-color: transparent;
+        margin-bottom: 16px;
+        padding: 0;
+        transition: all ease-out .3s;
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          padding-top: 13.8px;
+          font-size: 16px;
+          color: #FFF;
+          font-family: 'Brandon_med', sans-serif;
+          letter-spacing: 1px;
+          transition: all ease-out .3s;
+        }
+
+      }
+      .view-menu {
+        // border: 3px solid #FFF;
+        background-color: #FFF;
+        a {
+
+          color: rgba(0,0,0,1);
+          border: none;
+        }
+        &:hover {
+          // border: 3px solid #000;
+          background-color: #000;
+          a {
+            background-color: #000;
+            color: #FFF;
+          }
+        }
+
+      }
+      .pdf {
+        border: 3px solid #FFF;
+        background-color: transparent;
+        a {
+          color: #FFF;
+        }
+        &:hover {
+          background-color: #FFF;
+          a {
+            color: #000;
+          }
+        }
+      }
+
+    }
+    .catering-img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      .catering-img-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+      }
+      .burger-img {
+        width: 100%;
+        height: 100%;
+        background: url('../../img/burgers.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+
+
+.catering-info {
+  margin-bottom: 60px;
+  width: 100%;
+  h2 {
+    text-align: center;
+    font-family: 'Monthoers', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  ul {
+    font-family: 'Brandon_med', sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+    li {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 24px;
+      p {
+        flex-grow: 1;
+        line-height: 24px;
+        font-family: 'Brandon_med', sans-serif;
+        font-size: 16px;
+        color: #9A958E;
+      }
+      .star-bullet {
+        background: url('../../img/star-bullet.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 16px;
+        height: 15.25px;
+        margin-right: 16px;
+        margin-top: 3px;
+      }
+    }
+  }
+  button {
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    a {
+      transition: all ease-out .3s;
+      font-size: 16px;
+      font-family: 'Brandon_med', sans-serif;
+      color: #FFF;
+      background-color: $accent-color;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      span {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &:hover a {
+      background-color: #000;
+    }
+  }
+}
+
 .additional-info {
   border: 4px solid #9A958E;
-  padding: 25px 60px;
-  padding-bottom: 31px;
+  padding: 25px 23px;
+  line-height: 36px;
+  // padding-bottom: 31px;
+  text-align: center;
   p {
     font-family: 'Brandon_med', sans-serif;
     font-size: 24px;
@@ -36,6 +242,112 @@
       color: $accent-color;
       text-decoration: underline;
 
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .additional-info {
+    padding: 25px 33px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .additional-info {
+    padding: 25px 56px;
+  }
+  .catering-description {
+    h2 {
+      width: 70%;
+    }
+    p {
+      width: 80%;
+    }
+  }
+  .catering {
+    flex-direction: row;
+    .catering-info {
+      margin-left: 19px;
+      width: 50%;
+      button {
+        width: 230px;
+        height: 50px;
+        // padding: 14px 32px;
+      }
+    }
+  }
+  .catering-info-menu {
+    height: 334px;
+    width: 334px;
+
+    .catering-menu {
+      height: 100%;
+      width: 100%;
+      .catering-menu-text {
+        // transform: translateY(30px);
+        .view-menu {
+
+        }
+        .pdf {
+
+        }
+      }
+      .catering-img {
+        .catering-img-overlay {
+          background-color: rgba(0, 0, 0, .3);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .catering {
+    .catering-info {
+      margin-left: 69.9px;
+    }
+  }
+  .catering-info-menu {
+    height: 358px;
+    width: 358px;
+    .catering-menu {
+      .catering-menu-text {
+        h3 {
+          transform: translateY(80px);
+          transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
+        }
+        button {
+          // display: none;
+          opacity: 0;
+          z-index: -999;
+          transform: translateY(100px);
+          transition: all cubic-bezier(0, 0, 0.01, 1) .3s;
+        }
+      }
+      .catering-img {
+        .catering-img-overlay {
+          background-color: rgba(0, 0, 0, .3);
+          transition: all ease-out .3s;
+        }
+      }
+    }
+    .catering-menu:hover {
+      .catering-img-overlay {
+        background-color: rgba(227, 144, 64, .5);
+      }
+      .catering-menu-text {
+        h3 {
+          transform: translateY(-100px);
+          opacity: 0;
+          z-index: -999;
+        }
+        button {
+          transform: translateY(-30px);
+          // display: block;
+          opacity: 1;
+          z-index: 999;
+        }
+      }
     }
   }
 }

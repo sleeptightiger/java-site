@@ -3200,10 +3200,166 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       font-size: 73px;
       color: #FFF; }
 
+.catering-description {
+  text-align: center; }
+  .catering-description h2 {
+    font-family: 'Monthoers', sans-serif;
+    font-size: 38px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 42px; }
+  .catering-description p {
+    font-family: 'Brandon_med', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+    width: 80%;
+    line-height: 24px; }
+    .catering-description p span {
+      color: #E39040;
+      text-decoration: underline; }
+
+.catering {
+  display: flex;
+  flex-direction: column; }
+
+.catering-info-menu {
+  width: 100%;
+  height: 334px;
+  margin-bottom: 45px; }
+  .catering-info-menu .catering-menu {
+    height: 100%;
+    width: 100%;
+    position: relative; }
+    .catering-info-menu .catering-menu .catering-menu-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+      text-align: center; }
+      .catering-info-menu .catering-menu .catering-menu-text h3 {
+        margin-bottom: 24px;
+        color: #FFF;
+        font-size: 38px;
+        font-family: 'Monthoers', sans-serif; }
+      .catering-info-menu .catering-menu .catering-menu-text button {
+        height: 50px;
+        width: 186px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        padding: 0;
+        transition: all ease-out .3s; }
+        .catering-info-menu .catering-menu .catering-menu-text button a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          padding-top: 13.8px;
+          font-size: 16px;
+          color: #FFF;
+          font-family: 'Brandon_med', sans-serif;
+          letter-spacing: 1px;
+          transition: all ease-out .3s; }
+      .catering-info-menu .catering-menu .catering-menu-text .view-menu {
+        background-color: #FFF; }
+        .catering-info-menu .catering-menu .catering-menu-text .view-menu a {
+          color: black;
+          border: none; }
+        .catering-info-menu .catering-menu .catering-menu-text .view-menu:hover {
+          background-color: #000; }
+          .catering-info-menu .catering-menu .catering-menu-text .view-menu:hover a {
+            background-color: #000;
+            color: #FFF; }
+      .catering-info-menu .catering-menu .catering-menu-text .pdf {
+        border: 3px solid #FFF;
+        background-color: transparent; }
+        .catering-info-menu .catering-menu .catering-menu-text .pdf a {
+          color: #FFF; }
+        .catering-info-menu .catering-menu .catering-menu-text .pdf:hover {
+          background-color: #FFF; }
+          .catering-info-menu .catering-menu .catering-menu-text .pdf:hover a {
+            color: #000; }
+    .catering-info-menu .catering-menu .catering-img {
+      position: relative;
+      height: 100%;
+      width: 100%; }
+      .catering-info-menu .catering-menu .catering-img .catering-img-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3); }
+      .catering-info-menu .catering-menu .catering-img .burger-img {
+        width: 100%;
+        height: 100%;
+        background: url("../../img/burgers.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+
+.catering-info {
+  margin-bottom: 60px;
+  width: 100%; }
+  .catering-info h2 {
+    text-align: center;
+    font-family: 'Monthoers', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px; }
+  .catering-info ul {
+    font-family: 'Brandon_med', sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px; }
+    .catering-info ul li {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 24px; }
+      .catering-info ul li p {
+        flex-grow: 1;
+        line-height: 24px;
+        font-family: 'Brandon_med', sans-serif;
+        font-size: 16px;
+        color: #9A958E; }
+      .catering-info ul li .star-bullet {
+        background: url("../../img/star-bullet.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 16px;
+        height: 15.25px;
+        margin-right: 16px;
+        margin-top: 3px; }
+  .catering-info button {
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    border: none; }
+    .catering-info button a {
+      transition: all ease-out .3s;
+      font-size: 16px;
+      font-family: 'Brandon_med', sans-serif;
+      color: #FFF;
+      background-color: #E39040;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative; }
+      .catering-info button a span {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .catering-info button:hover a {
+      background-color: #000; }
+
 .additional-info {
   border: 4px solid #9A958E;
-  padding: 25px 60px;
-  padding-bottom: 31px; }
+  padding: 25px 23px;
+  line-height: 36px;
+  text-align: center; }
   .additional-info p {
     font-family: 'Brandon_med', sans-serif;
     font-size: 24px;
@@ -3211,5 +3367,63 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     .additional-info p span {
       color: #E39040;
       text-decoration: underline; }
+
+@media screen and (min-width: 480px) {
+  .additional-info {
+    padding: 25px 33px; } }
+@media screen and (min-width: 768px) {
+  .additional-info {
+    padding: 25px 56px; }
+
+  .catering-description h2 {
+    width: 70%; }
+  .catering-description p {
+    width: 80%; }
+
+  .catering {
+    flex-direction: row; }
+    .catering .catering-info {
+      margin-left: 19px;
+      width: 50%; }
+      .catering .catering-info button {
+        width: 230px;
+        height: 50px; }
+
+  .catering-info-menu {
+    height: 334px;
+    width: 334px; }
+    .catering-info-menu .catering-menu {
+      height: 100%;
+      width: 100%; }
+      .catering-info-menu .catering-menu .catering-img .catering-img-overlay {
+        background-color: rgba(0, 0, 0, 0.3); } }
+@media screen and (min-width: 1024px) {
+  .catering .catering-info {
+    margin-left: 69.9px; }
+
+  .catering-info-menu {
+    height: 358px;
+    width: 358px; }
+    .catering-info-menu .catering-menu .catering-menu-text h3 {
+      transform: translateY(80px);
+      transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s; }
+    .catering-info-menu .catering-menu .catering-menu-text button {
+      opacity: 0;
+      z-index: -999;
+      transform: translateY(100px);
+      transition: all cubic-bezier(0, 0, 0.01, 1) 0.3s; }
+    .catering-info-menu .catering-menu .catering-img .catering-img-overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all ease-out .3s; }
+    .catering-info-menu .catering-menu:hover .catering-img-overlay {
+      background-color: rgba(227, 144, 64, 0.5); }
+    .catering-info-menu .catering-menu:hover .catering-menu-text h3 {
+      transform: translateY(-100px);
+      opacity: 0;
+      z-index: -999; }
+    .catering-info-menu .catering-menu:hover .catering-menu-text button {
+      transform: translateY(-30px);
+      opacity: 1;
+      z-index: 999; } }
 
 /*# sourceMappingURL=main.css.map */
