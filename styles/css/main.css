@@ -1318,7 +1318,8 @@ a {
     -ms-flex-order: 1;
     order: 1; } }
 header {
-  transition: all ease-out .3s; }
+  transition: all ease-out .3s;
+  transform: translate3d(0, 0, 0); }
 
 .sticky-header {
   display: none;
@@ -1615,57 +1616,50 @@ nav a {
 .hero {
   margin: 50px auto;
   margin-top: 80px; }
-
-.hero-img {
-  height: 340px;
-  width: 743px;
-  background-color: #FFF;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../img/seemi-samuel-15564.jpg");
-  background-position: 0% 90%;
-  background-size: cover;
-  z-index: -9; }
-
-.hero-headline {
-  font-family: 'Monthoers', sans-serif;
-  width: 315px;
-  border-bottom: 5px solid black;
-  position: absolute;
-  top: 60px;
-  right: 38px;
-  display: flex; }
-
-.hero-headline h1 {
-  font-size: 73px;
-  word-spacing: -20px;
-  line-height: 74px; }
+  .hero .hero-img {
+    height: 340px;
+    width: 743px;
+    background-color: #FFF;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../img/seemi-samuel-15564.jpg");
+    background-position: 0% 90%;
+    background-size: cover;
+    z-index: -9; }
+  .hero .hero-headline {
+    font-family: 'Monthoers', sans-serif;
+    width: 315px;
+    border-bottom: 5px solid black;
+    position: absolute;
+    top: 60px;
+    right: 38px;
+    display: flex; }
+    .hero .hero-headline h1 {
+      font-size: 73px;
+      word-spacing: -20px;
+      line-height: 74px; }
 
 @media screen and (max-width: 1024px) {
-  .hero-headline {
+  .hero .hero-headline {
     right: -10px; } }
 @media screen and (max-width: 875px) {
-  .hero-img {
-    height: 300px;
-    width: 100%;
-    background-position: 0% 70%; }
-
-  .hero-headline {
-    top: 40px;
-    right: 45px; }
-
   .hero {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+    .hero .hero-img {
+      height: 300px;
+      width: 100%;
+      background-position: 0% 70%; }
+    .hero .hero-headline {
+      top: 40px;
+      right: 45px; } }
 @media screen and (max-width: 480px) {
   .hero {
     margin-top: 20px;
     margin-bottom: 210px; }
-
-  .hero-img {
-    height: 220px;
-    background-position: 0% 0%; }
-
-  .hero-headline {
-    top: 110px;
-    right: 0px; } }
+    .hero .hero-img {
+      height: 220px;
+      background-position: 0% 0%; }
+    .hero .hero-headline {
+      top: 110px;
+      right: 0px; } }
 .locations {
   margin: 43px auto;
   position: relative; }
@@ -3220,7 +3214,7 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       color: #E39040;
       text-decoration: underline; }
 
-.catering {
+.catering-stuff {
   display: flex;
   flex-direction: column; }
 
@@ -3380,12 +3374,12 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
   .catering-description p {
     width: 80%; }
 
-  .catering {
+  .catering-stuff {
     flex-direction: row; }
-    .catering .catering-info {
+    .catering-stuff .catering-info {
       margin-left: 19px;
       width: 50%; }
-      .catering .catering-info button {
+      .catering-stuff .catering-info button {
         width: 230px;
         height: 50px; }
 
@@ -3398,7 +3392,7 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
       .catering-info-menu .catering-menu .catering-img .catering-img-overlay {
         background-color: rgba(0, 0, 0, 0.3); } }
 @media screen and (min-width: 1024px) {
-  .catering .catering-info {
+  .catering-stuff .catering-info {
     margin-left: 69.9px; }
 
   .catering-info-menu {
