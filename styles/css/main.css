@@ -1470,9 +1470,18 @@ nav ul li a:hover {
 .dropdown-content a:hover > .icon svg path {
   fill: #E39040; }
 
+.logo-withstar {
+  transition: all ease-out .3ms; }
+
 .logo-withstar img {
   width: 103px;
   height: 98px; }
+
+.display-none {
+  display: none; }
+
+.display-block {
+  display: block; }
 
 .sticky-logo {
   height: 60px;

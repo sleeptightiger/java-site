@@ -46,12 +46,15 @@ window.addEventListener('resize', (e) => {
   responsive(width);
 });
 
+const logoStar = document.querySelector('.logo-withstar');
+
 hamburger.addEventListener('click', () => {
 
   // hide(buttons);
   // arrowUp();
   hamburger.classList.toggle('close');
   hidden.classList.toggle('unhide');
+  logoStar.classList.toggle('display-none');
   modalOpen = !modalOpen;
   let width = window.innerWidth;
   responsive(width);

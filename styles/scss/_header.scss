@@ -202,11 +202,23 @@ nav ul li a:hover {
 }
 
 
+.logo-withstar {
+  transition: all ease-out .3ms;
+}
+
 .logo-withstar img {
   width: 103px;
   height: 98px;
   // transition: all ease-out .3s;
 
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
 }
 
 .sticky-logo {
