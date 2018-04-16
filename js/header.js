@@ -104,10 +104,11 @@ for(let i = 0; i < drop.length; i++) {
   drop[i].addEventListener('mouseover', (e) => {
 
     parent3[i].style.display = "block";
-    // parent1[i].style.zIndex = "10";
+
     setTimeout(function () {
       parent3[i].style.transform = "rotateX(0deg)";
       parent3[i].style.opacity = "1";
+      parent3[i].style.zIndex = "100";
       // parent1[i].style.opacity = "1";
     }, 4);
 

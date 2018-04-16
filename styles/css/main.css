@@ -1319,7 +1319,9 @@ a {
     order: 1; } }
 header {
   transition: all ease-out .3s;
-  transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0);
+  z-index: 999;
+  position: relative; }
 
 .sticky-header {
   display: none;
@@ -1399,6 +1401,9 @@ nav ul li a:hover {
   perspective: 1000px;
   transform-style: preserve-3d;
   z-index: 10; }
+
+.parent2 {
+  position: absolute; }
 
 .parent3 {
   transition-property: all;
