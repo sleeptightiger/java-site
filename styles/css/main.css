@@ -2800,22 +2800,42 @@ span:hover .favor, span:hover #inst, span:hover #twit, span:hover #fb {
     font-family: 'Monthoers', sans-serif;
     font-size: 38px;
     margin-bottom: 37px; }
-  .coffee-shop .selections h5 {
-    font-family: 'Brandon_bld', sans-serif;
-    font-size: 16px;
-    line-height: 43px;
-    word-spacing: 2px;
-    transition: all ease-out .3s;
-    cursor: pointer; }
-    .coffee-shop .selections h5:before {
-      content: '';
-      transition: all ease-out .5s; }
-  .coffee-shop .selections h5:hover {
-    color: #E39040; }
-    .coffee-shop .selections h5:hover:before {
-      content: '\2014';
-      color: #E39040;
-      margin-right: 5px; }
+  .coffee-shop .selections ul {
+    font-family: 'Brandon_bld', sans-serif; }
+    .coffee-shop .selections ul li {
+      text-transform: uppercase;
+      line-height: 43px;
+      position: relative; }
+      .coffee-shop .selections ul li a {
+        text-decoration: none;
+        color: black;
+        transition: all .16s ease-in-out; }
+        .coffee-shop .selections ul li a.new-pill:after {
+          content: 'new';
+          background: #E39049;
+          display: inline-block;
+          font-size: 10px;
+          line-height: 12px;
+          color: white;
+          position: relative;
+          bottom: 2px;
+          padding: 3px 8px 2px;
+          border-radius: 12px;
+          margin-left: 8px; }
+        .coffee-shop .selections ul li a:hover {
+          color: #E39049; }
+        .coffee-shop .selections ul li a:before {
+          content: '';
+          width: 0px;
+          height: 3px;
+          background: #E39049;
+          display: inline-block;
+          position: relative;
+          top: -5px;
+          margin-right: 14px;
+          transition: all .16s ease-in-out; }
+        .coffee-shop .selections ul li a:hover:before {
+          width: 24px; }
   .coffee-shop .store .items .merch:after {
     content: "";
     flex: auto; }

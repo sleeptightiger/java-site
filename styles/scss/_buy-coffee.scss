@@ -31,27 +31,73 @@
       font-size: 38px;
       margin-bottom: 37px;
     }
-    h5 {
+    ul {
       font-family: 'Brandon_bld', sans-serif;
-      font-size: 16px;
-      line-height: 43px;
-      word-spacing: 2px;
-      transition: all ease-out .3s;
-      cursor: pointer;
-      &:before {
-        content: '';
-        transition: all ease-out .5s;
-      }
-    }
+      li {
+        text-transform: uppercase;
+        line-height: 43px;
+        position: relative;
 
-    h5:hover {
-      color: $accent-color;
-      &:before {
-        content: '\2014';
-        color: $accent-color;
-        margin-right: 5px;
+        a {
+          text-decoration: none;
+          color: black;
+          transition: all .16s ease-in-out;
+          &.new-pill {
+            &:after {
+              content: 'new';
+              background: $yellow;
+              display: inline-block;
+              font-size: 10px;
+              line-height: 12px;
+              color: white;
+              position: relative;
+              bottom: 2px;
+              padding: 3px 8px 2px;
+              border-radius: 12px;
+              margin-left: 8px;
+            }
+          }
+          &:hover {
+            color: $yellow;
+          }
+          &:before {
+            content: '';
+            width: 0px;
+            height: 3px;
+            background: $yellow;
+            display: inline-block;
+            position: relative;
+            top: -5px;
+            margin-right: 14px;
+            transition: all .16s ease-in-out;
+          }
+          &:hover:before {
+            width: 24px;
+          }
+        }
       }
     }
+    // h5 {
+    //   font-family: 'Brandon_bld', sans-serif;
+    //   font-size: 16px;
+    //   line-height: 43px;
+    //   word-spacing: 2px;
+    //   transition: all ease-out .3s;
+    //   cursor: pointer;
+    //   &:before {
+    //     content: '';
+    //     transition: all ease-out .5s;
+    //   }
+    // }
+    //
+    // h5:hover {
+    //   color: $accent-color;
+    //   &:before {
+    //     content: '\2014';
+    //     color: $accent-color;
+    //     margin-right: 5px;
+    //   }
+    // }
   }
   .store {
     // background-color: #FFF;
